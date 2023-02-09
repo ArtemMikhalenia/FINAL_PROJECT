@@ -68,6 +68,10 @@ a:visited {
 	text-decoration: none;
 }
 
+a {
+	color: rgb(255, 255, 255);
+}
+
 a:hover {
 	text-decoration: none;
 }
@@ -237,7 +241,7 @@ body.ie .ibg img {
 	display: -ms-flexbox;
 	display: flex;
 	font-size: 0;
-	max-width: 703px;
+	max-width: 702.65px;
 	width: 100%;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
@@ -247,19 +251,32 @@ body.ie .ibg img {
 	        justify-content: space-between;
 }
 .header__logo {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	font-size: 0;
+	max-width: 99px;
+	width: 100%;
 }
 .header__address {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	font-size: 0;
+	max-width: 442.5px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+}
+.header__address::before {
+	content: "|";
+	width: 1px;
+	margin: 0px 16px 0px 3px;
+	height: 31.5px;
+	background: rgba(255, 255, 255, 0.5);
+}
+.header__address::after {
+	content: "";
+	width: 1px;
+	margin: 0px 0px 0px 7px;
+	height: 31.5px;
+	background: rgba(255, 255, 255, 0.5);
 }
 .header__phone {
 	display: -webkit-box;
@@ -304,16 +321,21 @@ body.ie .ibg img {
 	padding: 6px 0px 7px 0px;
 	font-size: 12px;
 	line-height: 100%;
-	color: rgb(255, 255, 255);
 }
 .header__language._active {
 	padding: 6px 0px 6px 0px;
-	border-bottom: 1px solid white;
+	border-bottom: 1px solid rgb(255, 255, 255);
 }
 .header__menu {
 	display: inline-block;
 }
 
+.logo-header__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 0;
+}
 .logo-header__image {
 	margin: 0px 8px 0px 0px;
 }
@@ -323,10 +345,9 @@ body.ie .ibg img {
 }
 
 .address-header__image {
-	margin: 0px 10.74px 0px 0px;
+	margin: 0px 12px 0px 0px;
 }
 .address-header__text {
-	color: rgb(255, 255, 255);
 	font-size: 15px;
 	line-height: 160%;
 }
@@ -335,7 +356,6 @@ body.ie .ibg img {
 	margin: 0px 3.75px 0px 0px;
 }
 .phone-header__number {
-	color: rgb(255, 255, 255);
 	font-size: 15px;
 	line-height: 160%;
 }
@@ -344,7 +364,7 @@ body.ie .ibg img {
 	display: block;
 	position: absolute;
 	top: 25%;
-	right: 10px;
+	right: 0px;
 	width: 16px;
 	height: 14px;
 	cursor: pointer;
