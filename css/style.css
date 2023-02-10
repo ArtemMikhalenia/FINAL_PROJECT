@@ -56,6 +56,7 @@ input::-ms-clear {
 
 button {
 	cursor: pointer;
+	background: none;
 }
 
 button::-moz-focus-inner {
@@ -129,6 +130,12 @@ body.lock {
 		max-width: none;
 		padding: 0 10px;
 	}
+}
+
+.text-style {
+	font-family: Manrope;
+	font-size: 15px;
+	line-height: 24px;
 }
 
 .ibg {
@@ -234,7 +241,7 @@ body.ie .ibg img {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding: 43px 0px 0px 0px;
+	padding: 43px 0px 230.5px 0px;
 }
 .header__rightside {
 	display: -webkit-box;
@@ -405,4 +412,28 @@ body.ie .ibg img {
 	-webkit-transform: rotate(45deg);
 	transform: rotate(45deg);
 	bottom: 6.5px;
+}
+
+.mainblock__title {
+	max-width: 900px;
+	font-family: "Playfair Display";
+	font-size: 71px;
+	line-height: 64px;
+	margin: 0px 0px 29px 0px;
+}
+.mainblock__text {
+	max-width: 511px;
+	margin: 0px 0px 27px 0px;
+}
+.button-block {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.button-block__presentation {
+	padding: 0px 0px 5px 0px;
+	border-bottom: 1px solid rgb(255, 255, 255);
 }
