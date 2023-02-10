@@ -423,12 +423,13 @@ body.ie .ibg img {
 }
 .mainblock__text {
 	max-width: 511px;
-	margin: 0px 0px 27px 0px;
+	padding: 0px 0px 27px 0px;
 }
 .button-block {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	width: 100%;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
@@ -436,4 +437,10 @@ body.ie .ibg img {
 .button-block__presentation {
 	padding: 0px 0px 5px 0px;
 	border-bottom: 1px solid rgb(255, 255, 255);
+}
+.button-block__contact {
+	padding: 16px 15px;
+	border-radius: 7px;
+	background-color: rgb(255, 249, 236);
+	color: rgb(190, 126, 0);
 }

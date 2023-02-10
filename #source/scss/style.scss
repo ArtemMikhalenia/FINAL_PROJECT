@@ -100,14 +100,18 @@ body {
 
 	&__text {
 		max-width: 511px;
-		margin: 0px 0px 27px 0px;
+		padding: 0px 0px 27px 0px;
 	}
 
 	&__buttons {}
 }
 
+.button-contact {
+}
+
 .button-block {
 	display: flex;
+	width: 100%;
 	justify-content: space-between;
 
 	&__presentation {
@@ -115,7 +119,12 @@ body {
 		border-bottom: 1px solid rgba(255, 255, 255, 1);
 	}
 
-	&__contact {}
+	&__contact {
+		padding: 16px 15px;
+		border-radius: 7px;
+		background-color: rgba(255, 249, 236, 1);
+		color: rgba(190, 126, 0, 1);
+	}
 }
 
 
