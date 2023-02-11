@@ -234,7 +234,6 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 0;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -247,7 +246,6 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 0;
 	max-width: 702.65px;
 	width: 100%;
 	-webkit-box-align: center;
@@ -265,14 +263,13 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 0;
 	max-width: 442.5px;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
 }
 .header__address::before {
-	content: "|";
+	content: "";
 	width: 1px;
 	margin: 0px 16px 0px 3px;
 	height: 31.5px;
@@ -289,7 +286,6 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 0;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -299,7 +295,6 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 0;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -313,7 +308,6 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 0;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
@@ -328,6 +322,7 @@ body.ie .ibg img {
 	padding: 6px 0px 7px 0px;
 	font-size: 12px;
 	line-height: 100%;
+	z-index: 1;
 }
 .header__language._active {
 	padding: 6px 0px 6px 0px;
@@ -341,7 +336,6 @@ body.ie .ibg img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	font-size: 0;
 }
 .logo-header__image {
 	margin: 0px 8px 0px 0px;
@@ -365,6 +359,46 @@ body.ie .ibg img {
 .phone-header__number {
 	font-size: 15px;
 	line-height: 160%;
+}
+
+.menu__body {
+	position: fixed;
+	top: 0%;
+	right: -100%;
+	width: 36%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(26, 26, 26);
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+	padding: 184px 0px 0px 71px;
+}
+.menu__body.active {
+	right: 0;
+	padding: 184px 0px 0px 71px;
+}
+.menu__link {
+	display: inline-block;
+	position: relative;
+	font-family: Manrope;
+	font-size: 20px;
+	line-height: 24px;
+	color: rgb(101, 101, 101);
+	margin: 0px 0px 25px 0px;
+}
+.menu__link._active {
+	color: rgb(255, 255, 255);
+}
+.menu__link._active::before {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: -35%;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: rgb(255, 255, 255);
 }
 
 .icon-menu {
@@ -414,33 +448,59 @@ body.ie .ibg img {
 	bottom: 6.5px;
 }
 
+.mainblock {
+	padding: 0px 0px 240px 0px;
+	background: url("../img/mainblock/background.png") 50% 62.5% no-repeat;
+	background-size: cover;
+}
+.mainblock__shadow {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: all 0.5s ease 0.1s;
+	-o-transition: all 0.5s ease 0.1s;
+	transition: all 0.5s ease 0.1s;
+}
+.mainblock__shadow.active {
+	background: rgba(16, 16, 16, 0.5);
+}
 .mainblock__title {
 	max-width: 900px;
 	font-family: "Playfair Display";
 	font-size: 71px;
 	line-height: 64px;
 	margin: 0px 0px 29px 0px;
+	vertical-align: top;
+	text-align: left;
+	letter-spacing: -0.02em;
 }
 .mainblock__text {
 	max-width: 511px;
-	padding: 0px 0px 27px 0px;
+	margin: 0px 0px 27px 0px;
 }
 .button-block {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 }
-.button-block__presentation {
-	padding: 0px 0px 5px 0px;
-	border-bottom: 1px solid rgb(255, 255, 255);
-}
-.button-block__contact {
+
+.button-contact {
 	padding: 16px 15px;
 	border-radius: 7px;
 	background-color: rgb(255, 249, 236);
 	color: rgb(190, 126, 0);
+}
+
+.button-presentation {
+	padding: 6px 0px 4px 0px;
+	border-bottom: 1px solid rgb(255, 255, 255);
 }

@@ -27,7 +27,7 @@
 		align-items: center;
 
 		&::before {
-			content: '|';
+			content: '';
 			width: 1px;
 			margin: 0px 16px 0px 3px;
 			height: 31.5px;
@@ -69,6 +69,7 @@
 		padding: 6px 0px 7px 0px;
 		font-size: 12px;
 		line-height: 100%;
+		z-index: 1;
 
 		&._active {
 			padding: 6px 0px 6px 0px;
@@ -125,11 +126,49 @@
 
 	&__icon {}
 
-	&__body {}
+	&__body {
+		position: fixed;
+		top: 0%;
+		right: -100%;
+		width: 36%;
+		height: 100%;
+		overflow: auto;
+		background-color: rgba(26, 26, 26, 1);
+		transition: all 0.5s ease-in-out 0s;
+		padding: 184px 0px 0px 71px;
+
+		&.active {
+			right: 0;
+			padding: 184px 0px 0px 71px;
+		}
+	}
 
 	&__list {}
 
-	&__link {}
+	&__link {
+		display: inline-block;
+		position: relative;
+		font-family: Manrope;
+		font-size: 20px;
+		line-height: 24px;
+		color: rgba(101, 101, 101, 1);
+		margin: 0px 0px 25px 0px;
+
+		&._active {
+			color: rgba(255, 255, 255, 1);
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 40%;
+				left: -35%;
+				width: 7px;
+				height: 7px;
+				border-radius: 50%;
+				background-color: rgba(255, 255, 255, 1);
+			}
+		}
+	}
 }
 
 .icon-menu {}
