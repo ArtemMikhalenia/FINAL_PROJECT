@@ -1,0 +1,81 @@
+@import "mixins.scss";
+
+$minwidth: 320px;
+$mw: 1190;
+$md1: $mw + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+//==================================
+
+@media (max-width: $md1+px) {}
+
+@media (max-width: $md2+px) {
+   .header {
+
+      &__address,
+      &__phone {
+         display: none;
+      }
+   }
+
+}
+
+@media (max-width: $md3+px) {}
+
+@media (max-width: 600px) {
+   .mainblock {
+      &__title {
+         font-size: 48px;
+         line-height: 43px;
+      }
+   }
+
+   .mainblock {
+      &__text {
+         font-size: 12px;
+         line-height: 19px;
+      }
+   }
+
+   .button-block {
+      flex-direction: row-reverse;
+      align-items: center;
+      justify-content: flex-end;
+   }
+
+   .button-contact {
+      padding: 8px 22px;
+      font-size: 12px;
+      line-height: 19px;
+      margin: 0px 27px 0px 0px;
+   }
+
+   .button-presentation {
+      font-size: 12px;
+      line-height: 19px;
+   }
+}
+
+@media (max-width: $md4+px) {
+   .mainblock {
+      &__title {
+         font-size: 38px;
+         line-height: 43px;
+      }
+   }
+
+   .header {
+      &__body {
+         padding: 27px 0px 220px 0px;
+      }
+   }
+}
+
+@media (max-width: 375px) {
+   .header {
+      &__body {
+         padding: 27px 0px 218px 0px;
+      }
+   }
+}

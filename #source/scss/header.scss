@@ -6,6 +6,7 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 43px 0px 230.5px 0px;
+		z-index: 10;
 	}
 
 	&__rightside {
@@ -107,6 +108,10 @@
 	&__text {
 		font-size: 15px;
 		line-height: 160%;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -119,6 +124,10 @@
 	&__number {
 		font-size: 15px;
 		line-height: 160%;
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -129,8 +138,8 @@
 	&__body {
 		position: fixed;
 		top: 0%;
-		right: -100%;
-		width: 36%;
+		right: -200%;
+		width: 525px;
 		height: 100%;
 		overflow: auto;
 		background-color: rgba(26, 26, 26, 1);
@@ -143,7 +152,23 @@
 		}
 	}
 
-	&__list {}
+	&__list {
+		& li:nth-child(9) {
+			margin: 0px 0px 58px 0px;
+		}
+
+		& li:nth-child(10) {
+			margin: 0px 0px 0px 0px;
+		}
+
+		& li:nth-child(11) {
+			margin: 0px 0px 102px 0px;
+		}
+
+		& li:nth-child(12) {
+			margin: 0px 0px 79px 0px;
+		}
+	}
 
 	&__link {
 		display: inline-block;
@@ -153,6 +178,7 @@
 		line-height: 24px;
 		color: rgba(101, 101, 101, 1);
 		margin: 0px 0px 25px 0px;
+		transition: all 0.5s ease 0s;
 
 		&._active {
 			color: rgba(255, 255, 255, 1);
@@ -168,6 +194,11 @@
 				background-color: rgba(255, 255, 255, 1);
 			}
 		}
+
+		&:hover {
+			color: rgba(255, 255, 255, 1);
+		}
+
 	}
 }
 
