@@ -31,7 +31,7 @@
 						<a href="#" class="button-presentation">
 							Скачать презентацию
 						</a>
-						<a href="#" class="button-contact">
+						<a href="#popup" class="button-contact">
 							Напишите нам
 						</a>
 					</div>
@@ -39,6 +39,25 @@
 			</div>
 		</section>
 		<!-- @import "footer.kit" -->
+		<div id="popup" class="popup__contact">
+			<div class="popup__body">
+				<div class="popup__content">
+					<div class="popup__header header-popup">
+						<div class="header-popup__logo">Azur Life</div>
+						<a href="#">X</a>
+					</div>
+					<div class="popup__title">Свяжитесь с нами</div>
+					<div class="popup__sub-title">Мы готовы ответить на возникающие вопросы о недвижимости</div>
+					<form action="#" class="popup__form popup-form">
+						<input type="text" autocomplete="off" placeholder="Имя" name="names" class="popup-form__name">
+						<input type='tel' autocomplete='off' placeholder="Телефон" name='phone' class='popup-form__phone'>
+						<input type='email' autocomplete='off' placeholder="Email" name='email' class='popup-form__email'>
+						<textarea placeholder="Текст сообщения" autocomplete='off' name="textarea" maxlength="" cols="30"
+							rows="10" class="popup-form__textarea"></textarea>
+					</form>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- @import "js.kit" -->
 </body>

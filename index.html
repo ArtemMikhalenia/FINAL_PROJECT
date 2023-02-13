@@ -23,7 +23,7 @@
 			<div class="header__logo logo-header">
 				<a href="#" class="logo-header__content">
 					<div class="logo-header__image">
-						<img src="./img/header/Logo.svg" alt="Logo">
+						<img src="./img/header/logo.svg" alt="Logo">
 					</div>
 					<div class="logo-header__text">
 						Azur Life
@@ -32,15 +32,15 @@
 			</div>
 			<div class="header__address address-header">
 				<div class="address-header__image">
-					<img src="./img/header/Location.svg" alt="Location">
+					<img src="./img/header/location.svg" alt="Location">
 				</div>
 				<a href="https://goo.gl/maps/NJyibDTmGcGSr5486" target="_blank" class="address-header__text">
-				Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер
+					Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер
 				</a>
 			</div>
 			<div class="header__phone phone-header">
 				<div class="phone-header__image">
-					<img src="./img/header/Telephone.svg" alt="Telephone">
+					<img src="./img/header/telephone.svg" alt="Telephone">
 				</div>
 				<a href="tel:33493160631" class="phone-header__number">
 					+33 4 93 16 06 31
@@ -82,6 +82,10 @@
 						<li><a href="#" class="menu__link">Управление недвижимостью</a></li>
 						<li><a href="#" class="menu__link">Консьерж-сервис</a></li>
 						<li><a href="#" class="menu__link">Связаться с нами</a></li>
+						<li><a href="#" class="menu__link instagram-icon"><img src="./img/header/menu-burger/instagram.svg"
+									alt="instagram"></a></li>
+						<li><a href="#" class="menu__link facebook-icon"><img src="./img/header/menu-burger/facebook.svg"
+									alt="facebook"></a></li>
 						<li><a href="#" class="menu__link bottom-link link1">Наша комиссия</a></li>
 						<li><a href="#" class="menu__link bottom-link link2">Политика конфиденциальности</a></li>
 					</ul>
@@ -102,7 +106,7 @@
 						<a href="#" class="button-presentation">
 							Скачать презентацию
 						</a>
-						<a href="#" class="button-contact">
+						<a href="#popup" class="button-contact">
 							Напишите нам
 						</a>
 					</div>
@@ -115,7 +119,26 @@
 			
 		</div>
 	</div>
-</footer>	</div>
+</footer>		<div id="popup" class="popup__contact">
+			<div class="popup__body">
+				<div class="popup__content">
+					<div class="popup__header header-popup">
+						<div class="header-popup__logo">Azur Life</div>
+						<a href="#">X</a>
+					</div>
+					<div class="popup__title">Свяжитесь с нами</div>
+					<div class="popup__sub-title">Мы готовы ответить на возникающие вопросы о недвижимости</div>
+					<form action="#" class="popup__form popup-form">
+						<input type="text" autocomplete="off" placeholder="Имя" name="names" class="popup-form__name">
+						<input type='tel' autocomplete='off' placeholder="Телефон" name='phone' class='popup-form__phone'>
+						<input type='email' autocomplete='off' placeholder="Email" name='email' class='popup-form__email'>
+						<textarea placeholder="Текст сообщения" autocomplete='off' name="textarea" maxlength="" cols="30"
+							rows="10" class="popup-form__textarea"></textarea>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 <script src="js/script.js"></script></body>
 
 </html>

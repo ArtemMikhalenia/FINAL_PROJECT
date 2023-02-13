@@ -131,6 +131,11 @@
 	}
 }
 
+li.instagram-icon img,
+li.facebook-icon img {
+	display: none;
+}
+
 .menu {
 
 	&__icon {}
@@ -153,12 +158,16 @@
 	}
 
 	&__list {
+		& li:nth-child(-n + 8) {
+			margin: 0px 0px 25px 0px;
+		}
+
 		& li:nth-child(9) {
 			margin: 0px 0px 58px 0px;
 		}
 
 		& li:nth-child(10) {
-			margin: 0px 0px 0px 0px;
+			margin: 0px 0px 10px 0px;
 		}
 
 		& li:nth-child(11) {
@@ -167,6 +176,10 @@
 
 		& li:nth-child(12) {
 			margin: 0px 0px 79px 0px;
+		}
+
+		& li a.bottom-link {
+			margin: 0px 0px 89px 0px;
 		}
 	}
 
@@ -177,7 +190,6 @@
 		font-size: 20px;
 		line-height: 24px;
 		color: rgba(101, 101, 101, 1);
-		margin: 0px 0px 25px 0px;
 		transition: all 0.5s ease 0s;
 
 		&._active {
@@ -199,10 +211,13 @@
 			color: rgba(255, 255, 255, 1);
 		}
 
+		&.instagram-icon,
+		&.facebook-icon {
+			display: none;
+		}
+
 	}
 }
-
-.icon-menu {}
 
 //====================================================================================================
 
@@ -236,6 +251,9 @@
 	}
 
 	&.active {
+		width: 22px;
+		height: 22px;
+
 		span {
 			background-color: rgba(101, 101, 101, 1);
 			@include scale(0);
@@ -247,7 +265,7 @@
 
 			&:last-child {
 				@include rotate(45deg);
-				bottom: 6.5px;
+				bottom: 14.5px;
 			}
 		}
 	}
