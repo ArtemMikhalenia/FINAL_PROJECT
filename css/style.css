@@ -172,73 +172,100 @@ body.ie .ibg img {
 	visibility: hidden;
 }
 
-.popup {
-	-webkit-overflow-scrolling: touch;
-	background-color: rgba(0, 0, 0, 0.8);
-	display: none;
-	position: fixed !important;
+.popup__contact {
+	background-color: rgba(16, 16, 16, 0.5);
+	position: fixed;
 	top: 0px;
-	left: 0;
+	left: 0px;
 	width: 100%;
 	height: 100%;
 	overflow: auto;
 	z-index: 100;
 }
-.popup.active .popup-content {
+.popup__contact.active .popup-content {
 	-ms-transform: scale(1);
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-.popup.show {
+.popup__contact.show {
 	display: block;
 }
-.popup.show .popup-content {
+.popup__contact.show .popup-content {
 	-ms-transform: scale(1);
 	-webkit-transform: scale(1);
 	transform: scale(1);
 }
-
-.popup-table {
-	height: 100%;
-	table-layout: fixed;
+.popup__body {
+	max-width: 782px;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 129px;
+	background-color: rgb(26, 26, 26);
 }
-.popup-table > .cell {
-	height: 100%;
-	vertical-align: middle;
-	padding: 30px 10px;
-}
-
-.popup-content {
-	-ms-transform: scale(0);
-	-webkit-transform: scale(0);
-	transform: scale(0);
+.popup__content {
 	-webkit-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
+	max-width: 700px;
 	position: relative;
-	max-width: 1230px;
 	margin: 0px auto;
-	background-color: #fff;
+}
+.popup__header {
+	padding: 40px 0px 43px 0px;
+}
+.popup__title {
+	font-family: "Playfair Display";
+	font-size: 74px;
+	line-height: 67px;
+	letter-spacing: -0.02em;
+	margin: 0px 0px 22px -5px;
+}
+.popup__sub-title {
+	font-family: Manrope;
+	font-size: 15px;
+	line-height: 24px;
+	margin: 0px 0px 54px 0px;
+}
+.popup__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	max-width: 393px;
+	padding: 0px 0px 57px 0px;
 }
 
-.popup-close {
-	width: 15px;
-	height: 15px;
+.popup-background {
+	background: url("../img/mainblock/popup/background.png") 100% 0 no-repeat;
+}
+
+.header-popup__logo {
+	font-size: 15px;
+	line-height: 24px;
+	color: rgb(118, 118, 118);
+}
+.header-popup__close {
+	width: 16px;
+	height: 16px;
 	position: absolute;
-	top: 0px;
+	top: 40px;
 	right: 0px;
 	cursor: pointer;
-	background: url("../img/icons/close.png") 0 0 no-repeat;
+	background: url("../img/mainblock/popup/close.svg") center center no-repeat;
 }
 
-.popup-video .popup-close {
-	width: 40px;
-	height: 40px;
-	background-color: #000;
-	top: 0;
-	right: 0;
+.popup__footer {
+	padding: 0px 0px 50px 0px;
 }
 
+.footer-popup__phone {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
 .header__body {
 	display: -webkit-box;
 	display: -ms-flexbox;
