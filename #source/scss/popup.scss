@@ -10,43 +10,47 @@
 		left: 0px;
 		width: 100%;
 		height: 100%;
-		overflow: auto;
+		overflow-y: auto;
+		overflow-x: hidden;
 		z-index: 100;
 
 
-		&.active {
-			.popup-content {
-				@include scale(1);
-			}
-		}
+		// &.active {
+		// 	.popup-content {
+		// 		@include scale(1);
+		// 	}
+		// }
 
-		&.show {
-			display: block;
+		// &.show {
+		// 	display: block;
 
-			.popup-content {
-				@include scale(1);
-			}
-		}
+		// 	.popup-content {
+		// 		@include scale(1);
+		// 	}
+		// }
 	}
 
 	&__body {
+		@include flexbox();
+		align-items: center;
+		justify-content: center;
 		max-width: 782px;
 		width: 100%;
+		min-height: 100%;
 		margin: 0 auto;
-		margin-top: 129px;
-		background-color: rgba(26, 26, 26, 1);
+		z-index: 1;
 	}
 
 	&__content {
-		// @include scale(0);
-		@include anim(0.3s, 0s);
-		max-width: 700px;
+		width: 100%;
+		padding: 0px 34px 0px 44px;
 		position: relative;
-		margin: 0px auto;
+		background-color: rgba(26, 26, 26, 1);
+		z-index: 2;
 	}
 
 	&__header {
-		padding: 40px 0px 43px 0px;
+		padding: 39px 0px 43px 0px;
 	}
 
 	&__title {
@@ -65,18 +69,28 @@
 	}
 
 	&__form {
-		display: flex;
+		@include flexbox();
 		flex-direction: column;
-		max-width: 393px;
+		max-width: 410px;
 		padding: 0px 0px 57px 0px;
 	}
 }
 
 .popup-background {
-	background: url('../img/mainblock/popup/background.png') 100% 0 no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	z-index: -1;
+	overflow: hidden;
+	background: url('../img/mainblock/popup/background.png') 101% 0% no-repeat;
 }
 
 .header-popup {
+	position: relative;
+	max-width: 700px;
+	width: 100%;
 
 	&__logo {
 		font-size: 15px;
@@ -97,13 +111,77 @@
 
 .popup-form {
 
-	&__name {}
+	&__checkbox {
+		position: relative;
+		display: block;
+		width: 17px;
+		height: 17px;
+		cursor: pointer;
+		margin: 0px 11px 0px 0px;
+		border-radius: 6px;
 
-	&__phone {}
 
-	&__email {}
+		// &::before {
+		// 	content: '';
+		// 	position: absolute;
+		// 	width: 18px;
+		// 	height: 18px;
+		// 	top: 0;
+		// 	left: 0;
+		// 	border-radius: 6px;
+		// 	background-color: rgba(26, 26, 26, 1);
+		// 	border: 1px solid rgba(255, 255, 255, 0.3);
+		// }
+	}
 
-	&__textarea {}
+	&__label {
+		font-family: Manrope;
+		font-size: 12px;
+		font-weight: 300;
+		line-height: 19px;
+		color: rgba(255, 255, 255, 0.3);
+		cursor: pointer;
+
+		& a {
+			font-weight: 500;
+			color: rgba(255, 255, 255, 0.3);
+		}
+	}
+
+	&__textarea {
+		resize: none;
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__submit {
+		width: 132px;
+		font-family: Manrope;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 24px;
+		align-self: flex-end;
+		background: none;
+		color: rgba(255, 255, 255, 1);
+		border-bottom: 1px solid rgba(255, 255, 255, 1);
+		padding: 0px 0px 2px 0px;
+		cursor: pointer;
+		transition: border-bottom 0.5s ease 0s;
+
+		&:hover {
+			border-bottom: 1px solid rgba(255, 255, 255, 0);
+		}
+	}
+}
+
+.checkbox {
+
+	&__block {
+		@include flexbox();
+		align-items: center;
+		justify-content: start;
+		cursor: pointer;
+		margin: 0px 0px 35px 0px;
+	}
 }
 
 .popup {
@@ -117,30 +195,41 @@
 
 	&__phone {
 		@include flexbox();
+		align-items: center;
+		margin: 0px 0px 25px 0px;
 	}
 
-	&__email {}
+	&__email {
+		@include flexbox();
+		align-items: center;
+		margin: 0px 0px 20px 0px;
+	}
 
-	&__address {}
+	&__address {
+		@include flexbox();
+		align-items: center;
+	}
 }
 
 .phone-footer {
 
-	&__image {}
-
-	&__text {}
+	&__image {
+		margin: 0px 13px 0px 0px;
+	}
 }
 
 .email-footer {
 
-	&__image {}
-
-	&__email {}
+	&__image {
+		margin: 0px 13px 0px -2px;
+	}
 }
 
 .address-footer {
 
-	&__image {}
+	&__image {
+		margin: 0px 13px 0px 0px;
+	}
 }
 
 

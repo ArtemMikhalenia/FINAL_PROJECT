@@ -106,7 +106,7 @@
 						<a href="#" class="button-presentation">
 							Скачать презентацию
 						</a>
-						<a href="#popup" class="button-contact">
+						<a href="#popup" class="button-contact popup-link">
 							Напишите нам
 						</a>
 					</div>
@@ -121,46 +121,55 @@
 	</div>
 </footer>		<div id="popup" class="popup__contact">
 			<div class="popup__body">
-				<div class="popup-background">
-					<div class="popup__content">
-						<div class="popup__header header-popup">
-							<div class="header-popup__logo">Azur Life</div>
-							<a href="#" class="header-popup__close"></a>
+				<div class="popup__content">
+					<div class="popup-background">
+					</div>
+					<div class="popup__header header-popup">
+						<div class="header-popup__logo">Azur Life</div>
+						<a href="#" class="header-popup__close close-popup"></a>
+					</div>
+					<div class="popup__title">Свяжитесь с нами</div>
+					<div class="popup__sub-title">Мы готовы ответить на возникающие вопросы о недвижимости</div>
+					<form action="#" class="popup__form popup-form">
+						<input type="text" autocomplete="off" placeholder="Имя" name="names"
+							class="popup-form__name form-style">
+						<input type='tel' autocomplete='off' placeholder="Телефон" name='phone'
+							class='popup-form__phone form-style'>
+						<input type='email' autocomplete='off' placeholder="Email" name='email'
+							class='popup-form__email form-style'>
+						<textarea placeholder="Текст сообщения" autocomplete='off' name="textarea" maxlength="" cols="30"
+							rows="1" class="popup-form__textarea form-style"></textarea>
+						<div class="checkbox__block">
+							<input type="checkbox" id="checkbox" name="checkbox" class="popup-form__checkbox" value="">
+							<label for="checkbox" class="popup-form__label">Оставляя свой email, я принимаю <a
+									href="#">политику конфиденциальности.</a></label>
 						</div>
-						<div class="popup__title">Свяжитесь с нами</div>
-						<div class="popup__sub-title">Мы готовы ответить на возникающие вопросы о недвижимости</div>
-						<form action="#" class="popup__form popup-form">
-							<input type="text" autocomplete="off" placeholder="Имя" name="names" class="popup-form__name">
-							<input type='tel' autocomplete='off' placeholder="Телефон" name='phone' class='popup-form__phone'>
-							<input type='email' autocomplete='off' placeholder="Email" name='email' class='popup-form__email'>
-							<textarea placeholder="Текст сообщения" autocomplete='off' name="textarea" maxlength="" cols="30"
-								rows="10" class="popup-form__textarea"></textarea>
-						</form>
-						<div class="popup__footer footer-popup">
-							<div class="footer-popup__phone phone-footer">
-								<div class="phone-footer__image">
-									<img src="./img/mainblock/popup/phone.svg" alt="phone">
-								</div>
-								<a href="tel:33493160631" class="phone-footer__text">
-									+33 4 93 16 06 31
-								</a>
+						<input name="submit" type="submit" class="popup-form__submit" value="Отправить запрос">
+					</form>
+					<div class="popup__footer footer-popup">
+						<div class="footer-popup__phone phone-footer">
+							<div class="phone-footer__image">
+								<img src="./img/mainblock/popup/phone.svg" alt="phone">
 							</div>
-							<div class="footer-popup__email email-footer">
-								<div class="email-footer__image">
-									<img src="./img/mainblock/popup/mail.svg" alt="mail">
-								</div>
-								<a href="mailto:contact@azur-life.com" class="email-footer__email">
-									contact@azur-life.com
-								</a>
+							<a href="tel:33493160631" class="phone-footer__text">
+								+33 4 93 16 06 31
+							</a>
+						</div>
+						<div class="footer-popup__email email-footer">
+							<div class="email-footer__image">
+								<img src="./img/mainblock/popup/mail.svg" alt="mail">
 							</div>
-							<div class="footer-popup__address address-footer">
-								<div class="address-footer__image">
-									<img src="./img/mainblock/popup/location.svg" alt="location">
-								</div>
-								<a href="https://goo.gl/maps/NJyibDTmGcGSr5486" target="_blank">
-									Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер
-								</a>
+							<a href="mailto:contact@azur-life.com" class="email-footer__email">
+								contact@azur-life.com
+							</a>
+						</div>
+						<div class="footer-popup__address address-footer">
+							<div class="address-footer__image">
+								<img src="./img/mainblock/popup/location.svg" alt="location">
 							</div>
+							<a href="https://goo.gl/maps/NJyibDTmGcGSr5486" target="_blank">
+								Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер
+							</a>
 						</div>
 					</div>
 				</div>
