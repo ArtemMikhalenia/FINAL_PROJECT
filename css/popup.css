@@ -5,9 +5,18 @@
 	left: 0px;
 	width: 100%;
 	height: 100%;
+	opacity: 0;
+	visibility: hidden;
 	overflow-y: auto;
 	overflow-x: hidden;
 	z-index: 100;
+	-webkit-transition: all 0.8s ease 0s;
+	-o-transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0s;
+}
+.popup__contact.open {
+	opacity: 1;
+	visibility: visible;
 }
 .popup__body {
 	display: -webkit-box;
