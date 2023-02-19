@@ -23,6 +23,11 @@ a.bottom-link {
 	color: rgba(255, 255, 255, 1);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 	margin: 0px 0px 29px 0px;
+	transition: border-bottom 0.5s ease 0s;
+
+	&:focus {
+		border-bottom: 1px solid rgba(255, 255, 255, 1);
+	}
 }
 
 //<IBG>====================================================================================================

@@ -22,6 +22,12 @@ a.bottom-link {
 	color: rgb(255, 255, 255);
 	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 	margin: 0px 0px 29px 0px;
+	-webkit-transition: border-bottom 0.5s ease 0s;
+	-o-transition: border-bottom 0.5s ease 0s;
+	transition: border-bottom 0.5s ease 0s;
+}
+.form-style:focus {
+	border-bottom: 1px solid rgb(255, 255, 255);
 }
 
 .ibg {

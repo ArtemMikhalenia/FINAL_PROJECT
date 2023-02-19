@@ -13,6 +13,34 @@ if (iconMenu) {
 }
 
 
+//PLACEHOLDER
+
+const popupForm = document.forms.popup;
+
+const inputAll = document.querySelectorAll('input');
+const placeholder = document.querySelectorAll('[placeholder]');
+
+const nameInputPopup = popupForm.names;
+const namePlaceholderPopup = nameInputPopup.placeholder;
+const phoneInputPopup = popupForm.phone;
+const phonePlaceholderPopup = phoneInputPopup.placeholder;
+const emailInputPopup = popupForm.email;
+const emailPlaceholderPopup = emailInputPopup.placeholder;
+const textInputPopup = popupForm.textarea;
+const textPlaceholderPopup = textInputPopup.placeholder;
+
+placeholder.forEach(el =>
+	el.addEventListener("focus", function (element) {
+		el.placeholder = "";
+	})
+);
+placeholder.forEach(el =>
+	el.addEventListener("blur", function (element) {
+		nameInputPopup.placeholder = placeholder.value = "Имя";
+		phoneInputPopup.placeholder = placeholder.value = "Телефон";
+		emailInputPopup.placeholder = placeholder.value = "Email";
+		textInputPopup.placeholder = placeholder.value = "Текст сообщения";
+	}));
 
 //<IBG>
 

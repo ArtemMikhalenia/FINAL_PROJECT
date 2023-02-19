@@ -37,6 +37,12 @@ $md4: 479.98;
          }
       }
    }
+
+   .popup {
+      &__title {
+         font-size: 60px;
+      }
+   }
 }
 
 @media (max-width: 600px) {
@@ -114,6 +120,82 @@ $md4: 479.98;
    }
 }
 
+@media (max-width: 500px) {
+   .popup {
+      &__title {
+         font-size: 48px;
+         line-height: 43.2px;
+      }
+
+      &__sub-title {
+         font-size: 12px;
+         line-height: 19px;
+         margin: 0px 0px 49px 0px;
+      }
+
+      &__content {
+         padding: 0px 34px 0px 20px;
+      }
+
+      &__header {
+         padding: 20px 0px 43px 0px;
+      }
+   }
+
+   .form-style {
+      font-size: 12px;
+      font-weight: 300;
+      line-height: 19px;
+   }
+
+   .popup-background {
+      background: url('../img/mainblock/popup/background_mobile.png') 101% 0% no-repeat;
+      background-size: cover;
+   }
+
+   .header-popup {
+      &__logo {
+         font-size: 12px;
+         line-height: 19px;
+      }
+
+      &__close {
+         top: 20px;
+         background: url('../img/mainblock/popup/close_adapt.svg') center center no-repeat;
+      }
+   }
+
+   .popup-form {
+      &__submit {
+         font-size: 14px;
+         line-height: 22.4px;
+      }
+
+      &__label {
+
+         &::before,
+         &::after {
+            top: 20%;
+         }
+
+         & a {
+            font-weight: 700;
+         }
+      }
+   }
+
+   .footer-popup {
+
+      &__phone a,
+      &__email a,
+      &__address a {
+         font-size: 12px;
+         font-weight: 400;
+         line-height: 19px;
+      }
+   }
+}
+
 @media (max-width: $md4+px) {
    .mainblock {
       &__title {
@@ -136,6 +218,64 @@ $md4: 479.98;
             width: 300px;
             padding: 96px 10px 0px 34px;
          }
+      }
+   }
+
+   .footer-popup {
+      position: relative;
+
+      &__icons {
+         display: block;
+
+         & a {
+            position: absolute;
+            top: 0;
+            right: 0;
+         }
+      }
+
+      &__instagram,
+      &__facebook {
+         display: block;
+         transition: transform 0.5s ease 0s;
+
+         &:hover {
+            transform: scale(1.08);
+         }
+      }
+
+      &__instagram {
+         margin: 0px 40px 0px 0px;
+      }
+
+   }
+
+   .popup-form {
+      &__label {
+         & a {
+            font-weight: 700;
+         }
+      }
+   }
+
+   .phone-footer,
+   .address-footer {
+      &__text {
+         color: rgba(184, 184, 184, 1);
+      }
+
+      &__image path {
+         fill: rgba(184, 184, 184, 1);
+      }
+   }
+
+   .email-footer {
+      &__email {
+         color: rgba(184, 184, 184, 1);
+      }
+
+      &__image path {
+         fill: rgba(184, 184, 184, 1);
       }
    }
 }
