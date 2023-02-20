@@ -133,7 +133,6 @@ body.lock {
 }
 
 .text-style {
-	font-family: Manrope;
 	font-size: 15px;
 	line-height: 24px;
 }
@@ -148,7 +147,6 @@ a.bottom-link {
 }
 
 .form-style {
-	font-family: Manrope;
 	font-size: 15px;
 	font-weight: 300;
 	line-height: 24px;
@@ -767,6 +765,116 @@ li.facebook-icon img {
 }
 .button-presentation:hover {
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.information {
+	position: relative;
+	padding: 52px 0px 66px;
+	background-color: rgb(21, 21, 21);
+}
+.information__background img {
+	position: absolute;
+	max-width: 915px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	overflow: visible;
+}
+.information__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.information__left-column {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 42%;
+	        flex: 0 1 42%;
+}
+.information__right-column {
+	position: relative;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 0 42%;
+	        flex: 0 0 42%;
+}
+
+[data-bookref]::after {
+	content: "[" attr(data-bookref) "]";
+	position: relative;
+	font-family: Manrope;
+	top: -50px;
+	font-size: 15px;
+	line-height: 20px;
+}
+
+.information-left__title {
+	margin: 0px 0px 20px 0px;
+}
+.information-left__sub-title {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0px 0px 55px 0px;
+}
+.information-left__text {
+	margin: 0px 0px 58px 0px;
+}
+.information-left__stats {
+	margin: 0px 0px 45px 0px;
+}
+.information-left__button {
+	display: inline-block;
+	padding: 16px 31px;
+	border-radius: 7px;
+	background-color: rgba(255, 255, 255, 0.07);
+}
+
+.stats-info__items {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	text-align: center;
+}
+.stats-info__number {
+	font-family: "Playfair Display";
+	font-size: 85px;
+	line-height: 76px;
+	letter-spacing: -0.02em;
+	margin: 0px 0px 20px 0px;
+}
+.stats-info__label {
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+}
+
+.information-right__photo {
+	max-width: 490px;
+	width: 100%;
+}
+.information-right__photo img {
+	max-width: 100%;
+	width: 100%;
+}
+.information-right__founder {
+	position: absolute;
+	width: 100%;
+	bottom: 37px;
+	left: 28px;
+}
+
+.founder-info__name {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
 }
 
 @media (max-width: 991.98px) {
