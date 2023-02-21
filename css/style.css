@@ -772,6 +772,11 @@ li.facebook-icon img {
 	padding: 44px 0px 66px;
 	background-color: rgb(21, 21, 21);
 }
+.information__container {
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+}
 .information__background img {
 	position: absolute;
 	height: 122%;
@@ -788,22 +793,23 @@ li.facebook-icon img {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	margin: 0px 25px;
 }
 .information__left-column {
+	max-width: 470px;
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 1 42%;
-	        flex: 0 1 42%;
+	    -ms-flex: 0 1 59%;
+	        flex: 0 1 59%;
+	margin: 0px 20px 0px 0px;
 }
 .information__right-column {
 	position: relative;
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 42%;
-	        flex: 0 0 42%;
+	    -ms-flex: 0 1 41%;
+	        flex: 0 1 41%;
 }
 
 .information-left {
-	max-width: 454px;
-	width: 100%;
 	padding: 84px 0px 0px 0px;
 }
 .information-left__title {
@@ -820,7 +826,13 @@ li.facebook-icon img {
 	line-height: 20px;
 	letter-spacing: 0em;
 	border-bottom: 1px solid rgb(255, 255, 255);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
 	padding: 0px 0px 3px 0px;
+}
+.information-left__title sup:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 .information-left__sub-title {
 	font-size: 20px;
@@ -839,6 +851,23 @@ li.facebook-icon img {
 	padding: 16px 31px;
 	border-radius: 7px;
 	background-color: rgba(255, 255, 255, 0.07);
+	-webkit-transition: all 0.8s ease 0s;
+	-o-transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0s;
+}
+.information-left__button:hover {
+	color: rgb(21, 21, 21);
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
+	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
+}
+
+.number-line {
+	margin: 0px 5px;
+}
+.number-line img {
+	max-width: 73px;
+	width: 100%;
 }
 
 .stats-info__items {
@@ -852,12 +881,6 @@ li.facebook-icon img {
 	    -ms-flex-align: center;
 	        align-items: center;
 	text-align: center;
-}
-.stats-info__items span {
-	max-width: 73px;
-	width: 100%;
-	height: 1px;
-	background-color: rgba(255, 255, 255, 0.08);
 }
 .stats-info__number {
 	font-family: "Playfair Display";
@@ -896,6 +919,49 @@ li.facebook-icon img {
 @media (max-width: 991.98px) {
 	.header__address, .header__phone {
 		display: none;
+	}
+}
+@media (max-width: 940px) {
+	.information__background {
+		max-width: 100%;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	.information__background img {
+		height: 110%;
+		left: -10%;
+	}
+	.information__content {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		margin: 0px 25px;
+	}
+	.information__left-column {
+		max-width: 90%;
+		margin: 0px 0px 20px 0px;
+	}
+	.information-left {
+		padding: 44px 0px 0px 0px;
+	}
+	.information-left__text {
+		max-width: 100%;
+		margin: 0px 0px 38px 0px;
+	}
+	.information-left__stats {
+		max-width: 80%;
+		margin: 0 auto 35px;
 	}
 }
 @media (max-width: 767.98px) {
