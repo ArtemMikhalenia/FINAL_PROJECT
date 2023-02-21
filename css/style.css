@@ -769,16 +769,14 @@ li.facebook-icon img {
 
 .information {
 	position: relative;
-	padding: 52px 0px 66px;
+	padding: 44px 0px 66px;
 	background-color: rgb(21, 21, 21);
 }
 .information__background img {
 	position: absolute;
-	max-width: 915px;
-	width: 100%;
+	height: 122%;
 	top: -100px;
 	right: 0;
-	overflow: visible;
 }
 .information__content {
 	display: -webkit-box;
@@ -803,14 +801,19 @@ li.facebook-icon img {
 	        flex: 0 0 42%;
 }
 
+.information-left {
+	max-width: 454px;
+	width: 100%;
+	padding: 84px 0px 0px 0px;
+}
 .information-left__title {
 	display: inline-block;
 	margin: 0px 0px 20px 0px;
 }
 .information-left__title sup {
 	position: relative;
-	top: -25px;
-	right: 15px;
+	top: -37px;
+	right: 12px;
 	font-family: Manrope;
 	font-size: 15px;
 	font-weight: 400;
@@ -825,6 +828,7 @@ li.facebook-icon img {
 	margin: 0px 0px 55px 0px;
 }
 .information-left__text {
+	max-width: 466px;
 	margin: 0px 0px 58px 0px;
 }
 .information-left__stats {
@@ -844,14 +848,23 @@ li.facebook-icon img {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	text-align: center;
+}
+.stats-info__items span {
+	max-width: 73px;
+	width: 100%;
+	height: 1px;
+	background-color: rgba(255, 255, 255, 0.08);
 }
 .stats-info__number {
 	font-family: "Playfair Display";
 	font-size: 85px;
 	line-height: 76px;
 	letter-spacing: -0.02em;
-	margin: 0px 0px 20px 0px;
+	margin: 0px 0px 28px 0px;
 }
 .stats-info__label {
 	font-size: 12px;

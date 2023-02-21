@@ -158,19 +158,16 @@ body {
 
 .information {
 	position: relative;
-	padding: 52px 0px 66px;
+	padding: 44px 0px 66px;
 	background-color: rgba(21, 21, 21, 1);
 
 	&__background {
 
 		& img {
 			position: absolute;
-			max-width: 915px;
-			width: 100%;
-			// height: 1013px;
+			height: 122%;
 			top: -100px;
 			right: 0;
-			overflow: visible;
 		}
 	}
 
@@ -190,16 +187,10 @@ body {
 	}
 }
 
-// [data-bookref]::after {
-// 	content: '[' attr(data-bookref)']';
-// 	position: relative;
-// 	font-family: Manrope;
-// 	top: -50px;
-// 	font-size: 15px;
-// 	line-height: 20px;
-// }
-
 .information-left {
+	max-width: 454px;
+	width: 100%;
+	padding: 84px 0px 0px 0px;
 
 	&__title {
 		display: inline-block;
@@ -207,8 +198,8 @@ body {
 
 		& sup {
 			position: relative;
-			top: -25px;
-			right: 15px;
+			top: -37px;
+			right: 12px;
 			font-family: Manrope;
 			font-size: 15px;
 			font-weight: 400;
@@ -226,6 +217,7 @@ body {
 	}
 
 	&__text {
+		max-width: 466px;
 		margin: 0px 0px 58px 0px;
 	}
 
@@ -246,7 +238,15 @@ body {
 	&__items {
 		@include flexbox();
 		justify-content: space-between;
+		align-items: center;
 		text-align: center;
+
+		& span {
+			max-width: 73px;
+			width: 100%;
+			height: 1px;
+			background-color: rgba(255, 255, 255, 0.08);
+		}
 	}
 
 	&__item {}
@@ -256,7 +256,7 @@ body {
 		font-size: 85px;
 		line-height: 76px;
 		letter-spacing: -0.02em;
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 28px 0px;
 	}
 
 	&__label {
