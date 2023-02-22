@@ -161,13 +161,6 @@ body {
 	padding: 44px 0px 66px;
 	background-color: rgba(21, 21, 21, 1);
 
-	//& img {
-		// 	position: absolute;
-		// 	height: 122%;
-		// 	top: -100px;
-		// 	right: 0;
-		// }
-
 	&__container {
 		max-width: 1240px;
 		width: 100%;
@@ -274,13 +267,7 @@ body {
 		justify-content: space-between;
 		align-items: center;
 		text-align: center;
-
-		// & span {
-
-		// }
 	}
-
-	&__item {}
 
 	&__number {
 		font-family: 'Playfair Display';
