@@ -37,16 +37,13 @@ $md4: 479.98;
       }
 
       &__content {
-         @include flexbox();
          flex-direction: column;
-         align-items: center;
-         justify-content: space-between;
-         margin: 0px 25px;
+         margin: 0;
       }
 
       &__left-column {
          max-width: 90%;
-         margin: 0px 0px 20px 0px;
+         margin: 0px 0px 20px;
       }
    }
 
@@ -99,16 +96,14 @@ $md4: 479.98;
 
 @media (max-width: 600px) {
    .mainblock {
-      &__title {
-         font-size: 48px;
-         line-height: 43px;
-      }
-   }
-
-   .mainblock {
       &__text {
          font-size: 12px;
          line-height: 19px;
+      }
+
+      &__title {
+         font-size: 48px;
+         line-height: 43px;
       }
    }
 
@@ -171,18 +166,34 @@ $md4: 479.98;
       }
    }
 
+   .information {
+
+      &__background {
+
+         & img {
+            height: 75%;
+            top: -70px;
+            object-position: 0% 0%;
+         }
+      }
+
+      &__right-column {
+         width: 100%;
+      }
+   }
+
    .information-left {
+      padding: 0px 0px 0px 0px;
 
       &__title {
          font-size: 48px;
          line-height: 43px;
-
+         margin: 0px 0px 38px 0px;
 
          & sup {
             font-size: 10px;
             line-height: 16px;
             top: -20px;
-            right: 6px;
          }
       }
 
@@ -205,6 +216,21 @@ $md4: 479.98;
          padding: 16px 0px;
       }
    }
+
+   .information-right {
+
+      &__photo {
+         max-width: 100%;
+         width: 100%;
+      }
+
+      &__founder {
+         bottom: 33px;
+         left: 25px;
+      }
+   }
+
+
 }
 
 @media (max-width: 500px) {
@@ -367,7 +393,53 @@ $md4: 479.98;
    }
 }
 
+@media (max-width: 425px) {
+
+   .mainblock {
+      padding: 0px 0px 278px 0px;
+   }
+
+   .information__left-column {
+      margin: 0px 0px 0px;
+   }
+
+   .information-left {
+
+      &__title {
+         & sup {
+            top: 0;
+         }
+      }
+
+      &__button,
+      &__stats {
+         display: none;
+      }
+   }
+
+   .founder-info {
+
+      &__name {
+         font-weight: 600;
+         font-size: 15px;
+         line-height: 18px;
+      }
+
+      &__position {
+         font-size: 12px;
+         line-height: 19px;
+      }
+   }
+}
+
 @media (max-width: 375px) {
+
+   .mainblock {
+      &__title {
+         font-size: 36px;
+      }
+   }
+
    .header {
       &__body {
          padding: 27px 0px 218px 0px;

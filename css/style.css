@@ -103,6 +103,7 @@ body {
 }
 body.lock {
 	overflow: hidden;
+	padding-right: 17px;
 }
 
 .wrapper {
@@ -819,7 +820,7 @@ li.facebook-icon img {
 .information-left__title sup {
 	position: relative;
 	top: -37px;
-	right: 12px;
+	right: -7px;
 	font-family: Manrope;
 	font-size: 15px;
 	font-weight: 400;
@@ -905,7 +906,6 @@ li.facebook-icon img {
 }
 .information-right__founder {
 	position: absolute;
-	width: 100%;
 	bottom: 37px;
 	left: 28px;
 }
@@ -914,6 +914,142 @@ li.facebook-icon img {
 	font-size: 20px;
 	font-weight: 600;
 	line-height: 24px;
+}
+
+.houses {
+	padding: 118px 0px 149px 0px;
+}
+.houses__title {
+	margin: 0px 0px 63px 0px;
+}
+.houses__title sup {
+	position: relative;
+	top: -24px;
+	right: 2px;
+	font-family: Manrope;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 20.49px;
+	letter-spacing: 0em;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	padding: 0px 0px 3px 0px;
+}
+.houses__title sup:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.houses__swiper {
+	width: 100%;
+}
+.houses__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.houses__slide {
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	max-width: 708px;
+	width: 100%;
+}
+.slide-houses {
+	position: relative;
+}
+.slide-houses__horizontal-gradient {
+	position: absolute;
+	width: 100%;
+	height: 44%;
+	left: 0;
+	bottom: 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.63)));
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.63) 100%);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.63) 100%);
+}
+.slide-houses__vertical-gradient {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.29)));
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.29) 100%);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.29) 100%);
+}
+.slide-houses__icon {
+	position: absolute;
+	height: 100%;
+	top: -17px;
+	right: 37px;
+}
+.slide-houses__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+.slide-houses__location {
+	display: inline-block;
+	padding: 53px 0px 309px 0px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0px 0px 0px 54px;
+}
+.slide-houses__location::before {
+	content: url("../img/houses/location_icon.svg");
+	margin: 0px 11px 0px 0px;
+	vertical-align: middle;
+}
+.slide-houses__label {
+	max-width: 82px;
+	display: block;
+	line-height: 21px;
+	padding: 6px 11px;
+	margin: 0px 0px 27px 48px;
+	border-radius: 8px;
+	color: rgb(190, 126, 0);
+	background-color: rgb(255, 249, 236);
+	z-index: 2;
+}
+.slide-houses__title {
+	max-width: 374px;
+	font-size: 24px;
+	line-height: 29px;
+	margin: 0px 0px 26px 48px;
+	z-index: 2;
+}
+.slide-houses__text {
+	max-width: 340px;
+	font-size: 14px;
+	line-height: 21px;
+	margin: 0px 0px 81px 48px;
+	z-index: 2;
+}
+
+.slide-houses1 {
+	background-image: url("../img/houses/slide1.jpg");
+	background-repeat: no-repeat;
+	background-size: 152%;
+	background-position: 0% 55%;
+}
+
+.slide-houses2 {
+	background-image: url("../img/houses/slide2.jpg");
+	background-repeat: no-repeat;
+	background-size: 130%;
+	background-position: 91% 38%;
+}
+
+.slide-houses3 {
+	background-image: url("../img/houses/slide3.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: 0% 95%;
 }
 
 @media (max-width: 991.98px) {
@@ -933,24 +1069,15 @@ li.facebook-icon img {
 		   object-position: 45% 0%;
 	}
 	.information__content {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		        align-items: center;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
-		margin: 0px 25px;
+		margin: 0;
 	}
 	.information__left-column {
 		max-width: 90%;
-		margin: 0px 0px 20px 0px;
+		margin: 0px 0px 20px;
 	}
 	.information-left {
 		padding: 44px 0px 0px 0px;
@@ -983,13 +1110,13 @@ li.facebook-icon img {
 	}
 }
 @media (max-width: 600px) {
-	.mainblock__title {
-		font-size: 48px;
-		line-height: 43px;
-	}
 	.mainblock__text {
 		font-size: 12px;
 		line-height: 19px;
+	}
+	.mainblock__title {
+		font-size: 48px;
+		line-height: 43px;
 	}
 	.button-block {
 		-webkit-box-orient: horizontal;
@@ -1039,15 +1166,27 @@ li.facebook-icon img {
 	.menu__list li a.bottom-link {
 		margin: 0px 0px 14px 0px;
 	}
+	.information__background img {
+		height: 75%;
+		top: -70px;
+		-o-object-position: 0% 0%;
+		   object-position: 0% 0%;
+	}
+	.information__right-column {
+		width: 100%;
+	}
+	.information-left {
+		padding: 0px 0px 0px 0px;
+	}
 	.information-left__title {
 		font-size: 48px;
 		line-height: 43px;
+		margin: 0px 0px 38px 0px;
 	}
 	.information-left__title sup {
 		font-size: 10px;
 		line-height: 16px;
 		top: -20px;
-		right: 6px;
 	}
 	.information-left__sub-title {
 		font-size: 14px;
@@ -1064,6 +1203,14 @@ li.facebook-icon img {
 		width: 100%;
 		text-align: center;
 		padding: 16px 0px;
+	}
+	.information-right__photo {
+		max-width: 100%;
+		width: 100%;
+	}
+	.information-right__founder {
+		bottom: 33px;
+		left: 25px;
 	}
 }
 @media (max-width: 500px) {
@@ -1175,7 +1322,33 @@ li.facebook-icon img {
 		fill: rgb(184, 184, 184);
 	}
 }
+@media (max-width: 425px) {
+	.mainblock {
+		padding: 0px 0px 278px 0px;
+	}
+	.information__left-column {
+		margin: 0px 0px 0px;
+	}
+	.information-left__title sup {
+		top: 0;
+	}
+	.information-left__button, .information-left__stats {
+		display: none;
+	}
+	.founder-info__name {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 18px;
+	}
+	.founder-info__position {
+		font-size: 12px;
+		line-height: 19px;
+	}
+}
 @media (max-width: 375px) {
+	.mainblock__title {
+		font-size: 36px;
+	}
 	.header__body {
 		padding: 27px 0px 218px 0px;
 	}

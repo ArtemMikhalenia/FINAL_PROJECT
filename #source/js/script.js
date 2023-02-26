@@ -44,15 +44,15 @@ placeholder.forEach(el =>
 
 //<IBG>
 
-function ibg() {
-	let ibg = document.querySelectorAll(".ibg");
-	for (var i = 0; i < ibg.length; i++) {
-		if (ibg[i].querySelector('img') && ibg[i].querySelector('img').getAttribute('src') != null) {
-			ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
-		}
-	}
-}
-ibg();
+// function ibg() {
+// 	let ibg = document.querySelectorAll(".ibg");
+// 	for (var i = 0; i < ibg.length; i++) {
+// 		if (ibg[i].querySelector('img') && ibg[i].querySelector('img').getAttribute('src') != null) {
+// 			ibg[i].style.backgroundImage = 'url(' + ibg[i].querySelector('img').getAttribute('src') + ')';
+// 		}
+// 	}
+// }
+// ibg();
 
 
 //POPUP
@@ -86,8 +86,6 @@ if (popupCloseIcon.length > 0) {
 		});
 	}
 }
-
-
 
 function popupOpen(currentPopup) {
 	if (currentPopup && unlock) {
@@ -151,12 +149,12 @@ function bodyUnLock() {
 	}, timeout);
 }
 
-// document.addEventListener('keydown', function (e) {
-// 	if (e.which === 27) {
-// 		const popupActive = document.querySelector('.popup.open');
-// 		popupClose(popupActive);
-// 	}
-// });
+document.addEventListener('keydown', function (e) {
+	if (e.which === 27) {
+		const popupActive = document.querySelector('.popup__contact.open');
+		popupClose(popupActive);
+	}
+});
 
 // (function () {
 // 	// проверяем поддержку
@@ -182,3 +180,25 @@ function bodyUnLock() {
 // 			Element.prototype.msMatchesSelector;
 // 	}
 // })();
+
+
+//<SWIPER>
+
+const swiper = new Swiper('.houses__swiper', {
+	// Optional parameters
+	direction: 'horizontal',
+	slideClass: 'houses__slide',
+	wrapperClass: 'houses__wrapper',
+	loop: true,
+	grabCursor: true,
+	slidesPerView: 1,
+	spaceBetween: 200,
+	autoHeight: true,
+	// slidePrevClass:'houses__button-prev',
+	// slideNextClass:'houses__button-next',
+	// Navigation arrows
+	navigation: {
+		nextEl: '.houses__button-next',
+		prevEl: '.houses__button-prev',
+	},
+});
