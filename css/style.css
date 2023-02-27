@@ -944,6 +944,7 @@ li.facebook-icon img {
 .houses__swiper {
 	position: relative;
 	width: 100%;
+	left: -6%;
 }
 .houses__wrapper {
 	display: -webkit-box;
@@ -963,15 +964,15 @@ li.facebook-icon img {
 	position: absolute;
 	width: 30px;
 	height: 40px;
-	top: 50%;
-	left: 12%;
+	top: 44.9%;
+	left: 11.5%;
 }
 .houses__button-next {
 	position: absolute;
 	width: 30px;
 	height: 40px;
-	top: 50%;
-	right: 12%;
+	top: 44.9%;
+	right: 12.5%;
 }
 
 .slide-houses {
@@ -1070,9 +1071,26 @@ li.facebook-icon img {
 	background-position: 0% 95%;
 }
 
+@media (max-width: 1202px) {
+	.houses__button-prev {
+		left: 6.5%;
+	}
+	.houses__button-next {
+		right: 5.5%;
+	}
+}
 @media (max-width: 991.98px) {
 	.header__address, .header__phone {
 		display: none;
+	}
+	.houses__swiper {
+		left: 0;
+	}
+	.houses__button-prev {
+		left: 6.5%;
+	}
+	.houses__button-next {
+		right: 5.5%;
 	}
 }
 @media (max-width: 940px) {
@@ -1125,6 +1143,9 @@ li.facebook-icon img {
 	.information-left__stats {
 		max-width: 100%;
 		margin: 0 auto 35px;
+	}
+	.houses__button-prev, .houses__button-next {
+		display: none;
 	}
 }
 @media (max-width: 600px) {

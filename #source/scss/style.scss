@@ -347,6 +347,7 @@ body {
 		position: relative;
 		// overflow: hidden;
 		width: 100%;
+		left: -6%;
 	}
 
 	&__wrapper {
@@ -366,16 +367,16 @@ body {
 		position: absolute;
 		width: 30px;
 		height: 40px;
-		top: 50%;
-		left: 12%;
+		top: 44.9%;
+		left: 11.5%;
 	}
 
 	&__button-next {
 		position: absolute;
 		width: 30px;
 		height: 40px;
-		top: 50%;
-		right: 12%;
+		top: 44.9%;
+		right: 12.5%;
 	}
 }
 

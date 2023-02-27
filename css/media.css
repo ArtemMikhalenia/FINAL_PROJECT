@@ -1,6 +1,23 @@
+@media (max-width: 1202px) {
+	.houses__button-prev {
+		left: 6.5%;
+	}
+	.houses__button-next {
+		right: 5.5%;
+	}
+}
 @media (max-width: 991.98px) {
 	.header__address, .header__phone {
 		display: none;
+	}
+	.houses__swiper {
+		left: 0;
+	}
+	.houses__button-prev {
+		left: 6.5%;
+	}
+	.houses__button-next {
+		right: 5.5%;
 	}
 }
 @media (max-width: 940px) {
@@ -53,6 +70,9 @@
 	.information-left__stats {
 		max-width: 100%;
 		margin: 0 auto 35px;
+	}
+	.houses__button-prev, .houses__button-next {
+		display: none;
 	}
 }
 @media (max-width: 600px) {

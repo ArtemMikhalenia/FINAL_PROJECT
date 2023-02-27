@@ -201,26 +201,25 @@ const swiper = new Swiper('.houses__swiper', {
 		scale: 0.85,
 		slideShadows: false,
 	},
-	autoplay:{
+	autoplay: {
 		delay: 7000,
 		pauseOnMouseEnter: true,
 	},
-	// breakpoints: {
-	// 	320: {
-	// 		slidesPerView: 2,
-	// 		spaceBetween: 20
-	// 	},
-	// 	480: {
-	// 		slidesPerView: 3,
-	// 		spaceBetween: 30
-	// 	},
-	// 	640: {
-	// 		slidesPerView: 4,
-	// 		spaceBetween: 40
-	// 	}
-	// },
 	navigation: {
 		nextEl: '.houses__button-next',
 		prevEl: '.houses__button-prev',
+	},
+	breakpoints: {
+		// 320: {
+		// 	slidesPerView: 1,
+		// 	spaceBetween: 20
+		// },
+		// 480: {
+		// 	slidesPerView: 1,
+		// 	spaceBetween: 30
+		// },
+		767.98: {
+			// spaceBetween: 20
+		}
 	},
 });

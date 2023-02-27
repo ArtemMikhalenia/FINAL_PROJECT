@@ -8,7 +8,17 @@ $md3: 767.98;
 $md4: 479.98;
 //==================================
 
-@media (max-width: $md1+px) {}
+@media (max-width: $md1+px) {
+   .houses {
+      &__button-prev {
+         left: 6.5%;
+      }
+
+      &__button-next {
+         right: 5.5%;
+      }
+   }
+}
 
 @media (max-width: $md2+px) {
    .header {
@@ -16,6 +26,20 @@ $md4: 479.98;
       &__address,
       &__phone {
          display: none;
+      }
+   }
+
+   .houses {
+      &__swiper {
+         left: 0;
+      }
+
+      &__button-prev {
+         left: 6.5%;
+      }
+
+      &__button-next {
+         right: 5.5%;
       }
    }
 
@@ -90,6 +114,13 @@ $md4: 479.98;
       &__stats {
          max-width: 100%;
          margin: 0 auto 35px;
+      }
+   }
+
+   .houses {
+      &__button-prev,
+      &__button-next {
+         display: none;
       }
    }
 }
