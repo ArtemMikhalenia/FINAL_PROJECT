@@ -45,6 +45,7 @@ body {
 	width: 100%;
 	min-height: 100%;
 	position: relative;
+	overflow: hidden;
 
 	&.loaded {}
 }
@@ -343,6 +344,7 @@ body {
 	}
 
 	&__swiper {
+		position: relative;
 		// overflow: hidden;
 		width: 100%;
 	}
@@ -354,14 +356,27 @@ body {
 	}
 
 	&__slide {
+		position: relative;
 		flex-shrink: 0;
 		max-width: 708px;
 		width: 100%;
 	}
 
-	&__swiper-button-prev {}
+	&__button-prev {
+		position: absolute;
+		width: 30px;
+		height: 40px;
+		top: 50%;
+		left: 12%;
+	}
 
-	&__swiper-button-next {}
+	&__button-next {
+		position: absolute;
+		width: 30px;
+		height: 40px;
+		top: 50%;
+		right: 12%;
+	}
 }
 
 .slide-houses {

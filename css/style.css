@@ -110,6 +110,7 @@ body.lock {
 	width: 100%;
 	min-height: 100%;
 	position: relative;
+	overflow: hidden;
 }
 .container {
 	max-width: 1190px;
@@ -941,6 +942,7 @@ li.facebook-icon img {
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 .houses__swiper {
+	position: relative;
 	width: 100%;
 }
 .houses__wrapper {
@@ -951,11 +953,27 @@ li.facebook-icon img {
 	height: 100%;
 }
 .houses__slide {
+	position: relative;
 	-ms-flex-negative: 0;
 	    flex-shrink: 0;
 	max-width: 708px;
 	width: 100%;
 }
+.houses__button-prev {
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	top: 50%;
+	left: 12%;
+}
+.houses__button-next {
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	top: 50%;
+	right: 12%;
+}
+
 .slide-houses {
 	position: relative;
 }

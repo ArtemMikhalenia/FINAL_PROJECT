@@ -185,18 +185,40 @@ document.addEventListener('keydown', function (e) {
 //<SWIPER>
 
 const swiper = new Swiper('.houses__swiper', {
-	// Optional parameters
-	direction: 'horizontal',
 	slideClass: 'houses__slide',
 	wrapperClass: 'houses__wrapper',
-	loop: true,
-	grabCursor: true,
-	slidesPerView: 1,
-	spaceBetween: 200,
+	slidesPerView: 'auto',
 	autoHeight: true,
-	// slidePrevClass:'houses__button-prev',
-	// slideNextClass:'houses__button-next',
-	// Navigation arrows
+	spaceBetween: 100,
+	centeredSlides: true,
+	initialSlide: 1,
+	grabCursor: true,
+	loop: true,
+	speed: 300,
+	effect: 'coverflow',
+	coverflowEffect: {
+		rotate: 0,
+		scale: 0.85,
+		slideShadows: false,
+	},
+	autoplay:{
+		delay: 7000,
+		pauseOnMouseEnter: true,
+	},
+	// breakpoints: {
+	// 	320: {
+	// 		slidesPerView: 2,
+	// 		spaceBetween: 20
+	// 	},
+	// 	480: {
+	// 		slidesPerView: 3,
+	// 		spaceBetween: 30
+	// 	},
+	// 	640: {
+	// 		slidesPerView: 4,
+	// 		spaceBetween: 40
+	// 	}
+	// },
 	navigation: {
 		nextEl: '.houses__button-next',
 		prevEl: '.houses__button-prev',
