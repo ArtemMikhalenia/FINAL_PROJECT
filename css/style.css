@@ -1012,12 +1012,13 @@ li.facebook-icon img {
 	        flex-direction: column;
 }
 .slide-houses__location {
+	max-width: 180px;
 	display: inline-block;
-	padding: 53px 0px 309px 0px;
 	font-size: 20px;
 	font-weight: 400;
 	line-height: 24px;
-	margin: 0px 0px 0px 54px;
+	margin: 53px 0px 309px 54px;
+	z-index: 3;
 }
 .slide-houses__location::before {
 	content: url("../img/houses/location_icon.svg");
