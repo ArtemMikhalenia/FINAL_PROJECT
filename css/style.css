@@ -1021,9 +1021,16 @@ li.facebook-icon img {
 	z-index: 3;
 }
 .slide-houses__location::before {
-	content: url("../img/houses/location_icon.svg");
+	content: "";
+	display: inline-block;
+	background-image: url("../img/houses/location_icon.svg");
+	background-position: 0;
+	background-size: 100%;
+	background-repeat: no-repeat;
 	margin: 0px 11px 0px 0px;
-	vertical-align: middle;
+	vertical-align: -3px;
+	width: 14px;
+	height: 20px;
 }
 .slide-houses__label {
 	max-width: 82px;
@@ -1068,7 +1075,7 @@ li.facebook-icon img {
 .slide-houses3 {
 	background-image: url("../img/houses/slide3.jpg");
 	background-repeat: no-repeat;
-	background-size: 100%;
+	background-size: cover;
 	background-position: 0% 95%;
 }
 
@@ -1087,11 +1094,8 @@ li.facebook-icon img {
 	.houses__swiper {
 		left: 0;
 	}
-	.houses__button-prev {
-		left: 6.5%;
-	}
-	.houses__button-next {
-		right: 5.5%;
+	.houses__button-prev, .houses__button-next {
+		display: none;
 	}
 }
 @media (max-width: 940px) {
@@ -1145,8 +1149,8 @@ li.facebook-icon img {
 		max-width: 100%;
 		margin: 0 auto 35px;
 	}
-	.houses__button-prev, .houses__button-next {
-		display: none;
+	.houses__slide {
+		max-width: 500px;
 	}
 }
 @media (max-width: 600px) {
@@ -1251,6 +1255,42 @@ li.facebook-icon img {
 	.information-right__founder {
 		bottom: 33px;
 		left: 25px;
+	}
+	.houses__slide {
+		max-width: 400px;
+	}
+	.slide-houses__location {
+		font-size: 12px;
+		line-height: 14px;
+		margin: 23px 0px 180px 20px;
+	}
+	.slide-houses__location::before {
+		content: "";
+		margin: 0px 7px 0px 0px;
+		width: 11px;
+		height: 16px;
+	}
+	.slide-houses__icon img {
+		width: 44px;
+	}
+	.slide-houses__label {
+		font-size: 12px;
+		line-height: 18px;
+		max-width: 73px;
+		line-height: 21px;
+		margin: 0px 0px 18px 18px;
+	}
+	.slide-houses__title {
+		max-width: 172px;
+		font-size: 15px;
+		line-height: 18px;
+		margin: 0px 0px 11px 18px;
+	}
+	.slide-houses__text {
+		max-width: 221px;
+		font-size: 12px;
+		line-height: 18px;
+		margin: 0px 0px 24px 18px;
 	}
 }
 @media (max-width: 500px) {

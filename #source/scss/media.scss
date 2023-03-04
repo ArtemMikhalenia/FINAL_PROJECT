@@ -34,12 +34,9 @@ $md4: 479.98;
          left: 0;
       }
 
-      &__button-prev {
-         left: 6.5%;
-      }
-
+      &__button-prev,
       &__button-next {
-         right: 5.5%;
+         display: none;
       }
    }
 
@@ -118,11 +115,11 @@ $md4: 479.98;
    }
 
    .houses {
-      &__button-prev,
-      &__button-next {
-         display: none;
+      &__slide {
+         max-width: 500px;
       }
    }
+
 }
 
 @media (max-width: 600px) {
@@ -261,7 +258,54 @@ $md4: 479.98;
       }
    }
 
+   .houses {
+      &__slide {
+         max-width: 400px;
+      }
+   }
 
+   .slide-houses {
+      &__location {
+         font-size: 12px;
+         line-height: 14px;
+         margin: 23px 0px 180px 20px;
+
+         &::before {
+            content: '';
+            margin: 0px 7px 0px 0px;
+            width: 11px;
+            height: 16px;
+         }
+      }
+
+      &__icon {
+         & img {
+            width: 44px;
+         }
+      }
+
+      &__label {
+         font-size: 12px;
+         line-height: 18px;
+         max-width: 73px;
+         line-height: 21px;
+         margin: 0px 0px 18px 18px;
+      }
+
+      &__title {
+         max-width: 172px;
+         font-size: 15px;
+         line-height: 18px;
+         margin: 0px 0px 11px 18px;
+      }
+
+      &__text {
+         max-width: 221px;
+         font-size: 12px;
+         line-height: 18px;
+         margin: 0px 0px 24px 18px;
+      }
+   }
 }
 
 @media (max-width: 500px) {

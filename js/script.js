@@ -210,16 +210,15 @@ const swiper = new Swiper('.houses__swiper', {
 		prevEl: '.houses__button-prev',
 	},
 	breakpoints: {
-		// 320: {
-		// 	slidesPerView: 1,
-		// 	spaceBetween: 20
-		// },
-		// 480: {
-		// 	slidesPerView: 1,
-		// 	spaceBetween: 30
-		// },
-		767.98: {
-			// spaceBetween: 20
-		}
+		320: {
+			spaceBetween: 10
+		},
+		480: {
+			spaceBetween: 20
+		},
+
+		991.98: {
+			spaceBetween: 100
+		},
 	},
 });
