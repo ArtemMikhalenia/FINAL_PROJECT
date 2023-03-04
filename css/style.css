@@ -1083,7 +1083,6 @@ li.facebook-icon img {
 	position: relative;
 	background-color: rgb(21, 21, 21);
 	padding: 157px 0px 122px 0px;
-	z-index: -1;
 }
 .office__background {
 	position: absolute;
@@ -1091,7 +1090,6 @@ li.facebook-icon img {
 	height: 100%;
 	top: 0;
 	left: 0;
-	z-index: -1;
 }
 .office__background img {
 	max-width: 100%;
@@ -1101,13 +1099,14 @@ li.facebook-icon img {
 	   object-fit: cover;
 }
 .office__content {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	z-index: 5;
+	z-index: 2;
 }
 .office__right-column {
 	-webkit-box-flex: 0;
@@ -1121,26 +1120,51 @@ li.facebook-icon img {
 }
 
 .column-left__title {
-	margin: 0px 0px 93px 0px;
+	margin: 0px 0px 71px 0px;
 }
 .column-left__link {
-	display: inline-block;
-	margin: 0px 0px 50px 0px;
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 0px 0px 28px -17px;
 }
 .column-left__text {
+	max-width: 435px;
 	margin: 0px 0px 157px 0px;
 }
 .column-left__button {
+	display: inline-block;
 	border-radius: 7px;
 	background-color: rgba(255, 255, 255, 0.07);
 	padding: 16px 26px;
 }
 
+.office-icon {
+	display: inline-block;
+	width: 68px;
+	height: 68px;
+}
+.office-icon svg {
+	position: absolute;
+}
+.office-icon svg.arrow {
+	position: absolute;
+	top: 27px;
+	left: 27px;
+}
+
 .column-right img {
 	max-width: 100%;
 	width: 100%;
-	-o-object-fit: cover;
-	   object-fit: cover;
+	height: 100%;
+	-o-object-fit: none;
+	   object-fit: none;
+	-o-object-position: 45% 85%;
+	   object-position: 45% 85%;
 }
 
 .mobile-link {
