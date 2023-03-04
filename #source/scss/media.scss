@@ -34,6 +34,16 @@ $md4: 479.98;
          left: 0;
       }
 
+      &__title {
+         max-width: 525px;
+
+         & sup {
+            top: -105px;
+            right: -75px;
+         }
+      }
+
+
       &__button-prev,
       &__button-next {
          display: none;
@@ -118,6 +128,16 @@ $md4: 479.98;
       &__slide {
          max-width: 500px;
       }
+
+      &__title {
+         font-size: 65px;
+         line-height: 70px;
+
+         & sup {
+            top: -100px;
+            right: -70px;
+         }
+      }
    }
 
 }
@@ -195,6 +215,7 @@ $md4: 479.98;
    }
 
    .information {
+      padding: 44px 0px 0px;
 
       &__background {
 
@@ -258,9 +279,29 @@ $md4: 479.98;
       }
    }
 
+   .title {
+      max-width: 312px;
+      font-size: 48px;
+      line-height: 43px;
+   }
+
    .houses {
+      padding: 60px 0px 149px 0px;
+
+
       &__slide {
          max-width: 400px;
+      }
+
+      &__title {
+         margin: 0px 0px 50px 0px;
+
+         & sup {
+            font-size: 10px;
+            line-height: 16px;
+            top: -60px;
+            right: -40px;
+         }
       }
    }
 
@@ -293,15 +334,15 @@ $md4: 479.98;
       }
 
       &__title {
-         max-width: 172px;
-         font-size: 15px;
-         line-height: 18px;
+         max-width: 250px;
+         font-size: 20px;
+         line-height: 20px;
          margin: 0px 0px 11px 18px;
       }
 
       &__text {
-         max-width: 221px;
-         font-size: 12px;
+         max-width: 320px;
+         font-size: 14px;
          line-height: 18px;
          margin: 0px 0px 24px 18px;
       }
@@ -480,12 +521,6 @@ $md4: 479.98;
 
    .information-left {
 
-      &__title {
-         & sup {
-            top: 0;
-         }
-      }
-
       &__button,
       &__stats {
          display: none;
@@ -503,6 +538,28 @@ $md4: 479.98;
       &__position {
          font-size: 12px;
          line-height: 19px;
+      }
+   }
+
+   .slide-houses {
+
+      &__icon {
+         right: 20px;
+
+         & img {
+            width: 44px;
+         }
+      }
+
+      &__title {
+         font-size: 15px;
+         line-height: 18px;
+         max-width: 250px;
+      }
+
+      &__text {
+         font-size: 12px;
+         max-width: 250px;
       }
    }
 }
@@ -533,6 +590,32 @@ $md4: 479.98;
 
       &__link {
          max-width: 187px;
+      }
+   }
+
+   .title {
+      max-width: 200px;
+      font-size: 45px;
+      line-height: 43px;
+   }
+
+   .information-left {
+      &__title {
+         max-width: 100%;
+      }
+   }
+
+   .houses {
+
+      &__slide {
+         max-width: 296px;
+      }
+
+      &__title {
+         & sup {
+            top: -50px;
+            right: -185px;
+         }
       }
    }
 }

@@ -211,7 +211,7 @@ const swiper = new Swiper('.houses__swiper', {
 	},
 	breakpoints: {
 		320: {
-			spaceBetween: 10
+			spaceBetween: 0
 		},
 		480: {
 			spaceBetween: 20
