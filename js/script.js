@@ -202,7 +202,7 @@ const swiper = new Swiper('.houses__swiper', {
 		slideShadows: false,
 	},
 	autoplay: {
-		delay: 7000,
+		delay: 4000,
 		pauseOnMouseEnter: true,
 	},
 	navigation: {
