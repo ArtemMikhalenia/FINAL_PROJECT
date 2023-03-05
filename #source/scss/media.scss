@@ -6,7 +6,16 @@ $md1: $mw + 12;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
+
 //==================================
+@media (max-width: 1300px) {
+   .column-left {
+
+      &__link {
+         margin: 0px 0px 28px 0px;
+      }
+   }
+}
 
 @media (max-width: $md1+px) {
    .houses {
@@ -16,6 +25,12 @@ $md4: 479.98;
 
       &__button-next {
          right: 5.5%;
+      }
+   }
+
+   .column-left {
+      &__title {
+         line-height: 90px;
       }
    }
 }
@@ -49,6 +64,36 @@ $md4: 479.98;
          display: none;
       }
    }
+
+   .office {
+      padding: 80px 0px 60px 0px;
+
+      &__content {
+         flex-direction: column;
+      }
+
+      &__right-column {
+         height: 100%;
+         flex: 0 1 100%;
+      }
+
+      &__left-column {
+         flex: 0 1 100%;
+      }
+   }
+
+   .column-left {
+
+      &__title {
+         margin: 0px 0px 30px 0px;
+      }
+
+      &__text {
+         max-width: 90%;
+         margin: 0px 0px 80px 0px;
+      }
+   }
+
 
 }
 
@@ -347,6 +392,20 @@ $md4: 479.98;
          margin: 0px 0px 24px 18px;
       }
    }
+
+   .column-left {
+
+      &__title {
+         max-width: 100%;
+         margin: 0px 0px 30px 0px;
+      }
+
+      &__button {
+         padding: 16px 0px;
+         width: 100%;
+         text-align: center;
+      }
+   }
 }
 
 @media (max-width: 500px) {
@@ -421,6 +480,14 @@ $md4: 479.98;
          font-size: 12px;
          font-weight: 400;
          line-height: 19px;
+      }
+   }
+
+   .column-left {
+
+      &__link,
+      &__button {
+         display: none;
       }
    }
 }
