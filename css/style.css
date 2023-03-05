@@ -1084,6 +1084,11 @@ li.facebook-icon img {
 	background-color: rgb(21, 21, 21);
 	padding: 157px 0px 122px 0px;
 }
+.office__container {
+	max-width: 1240px;
+	width: 100%;
+	margin: 0 auto;
+}
 .office__background {
 	position: absolute;
 	width: 100%;
@@ -1103,6 +1108,7 @@ li.facebook-icon img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	margin: 0px 25px;
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
@@ -1466,10 +1472,16 @@ li.facebook-icon img {
 		max-width: 100%;
 		margin: 0px 0px 30px 0px;
 	}
+	.column-left__text {
+		font-size: 12px;
+		line-height: 19px;
+		margin: 0px 0px 46px 0px;
+	}
 	.column-left__button {
 		padding: 16px 0px;
 		width: 100%;
 		text-align: center;
+		margin: 0px 0px 46px 0px;
 	}
 }
 @media (max-width: 500px) {
@@ -1520,8 +1532,17 @@ li.facebook-icon img {
 		font-weight: 400;
 		line-height: 19px;
 	}
+	.column-left__title {
+		margin: 0px 0px 47px 0px;
+	}
 	.column-left__link, .column-left__button {
 		display: none;
+	}
+	.office {
+		padding: 35px 0px 0px 0px;
+	}
+	.office__right-column {
+		padding: 605px 0px 0px 0px;
 	}
 }
 @media (max-width: 479.98px) {

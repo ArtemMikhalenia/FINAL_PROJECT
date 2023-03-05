@@ -285,10 +285,16 @@
 		max-width: 100%;
 		margin: 0px 0px 30px 0px;
 	}
+	.column-left__text {
+		font-size: 12px;
+		line-height: 19px;
+		margin: 0px 0px 46px 0px;
+	}
 	.column-left__button {
 		padding: 16px 0px;
 		width: 100%;
 		text-align: center;
+		margin: 0px 0px 46px 0px;
 	}
 }
 @media (max-width: 500px) {
@@ -339,8 +345,17 @@
 		font-weight: 400;
 		line-height: 19px;
 	}
+	.column-left__title {
+		margin: 0px 0px 47px 0px;
+	}
 	.column-left__link, .column-left__button {
 		display: none;
+	}
+	.office {
+		padding: 35px 0px 0px 0px;
+	}
+	.office__right-column {
+		padding: 605px 0px 0px 0px;
 	}
 }
 @media (max-width: 479.98px) {

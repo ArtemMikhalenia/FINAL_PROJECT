@@ -492,6 +492,12 @@ body {
 	background-color: rgb(21, 21, 21);
 	padding: 157px 0px 122px 0px;
 
+	&__container {
+		max-width: 1240px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 	&__background {
 		position: absolute;
 		width: 100%;
@@ -509,7 +515,8 @@ body {
 
 	&__content {
 		position: relative;
-		display: flex;
+		@include flexbox();
+		margin: 0px 25px;
 		justify-content: space-between;
 		z-index: 2;
 	}

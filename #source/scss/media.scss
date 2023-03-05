@@ -400,10 +400,17 @@ $md4: 479.98;
          margin: 0px 0px 30px 0px;
       }
 
+      &__text {
+         font-size: 12px;
+         line-height: 19px;
+         margin: 0px 0px 46px 0px;
+      }
+
       &__button {
          padding: 16px 0px;
          width: 100%;
          text-align: center;
+         margin: 0px 0px 46px 0px;
       }
    }
 }
@@ -485,11 +492,25 @@ $md4: 479.98;
 
    .column-left {
 
+      &__title {
+         margin: 0px 0px 47px 0px;
+      }
+
       &__link,
       &__button {
          display: none;
       }
    }
+
+   .office {
+      padding: 35px 0px 0px 0px;
+
+      &__right-column{
+         padding: 605px 0px 0px 0px;
+      }
+   }
+
+
 }
 
 @media (max-width: $md4+px) {
