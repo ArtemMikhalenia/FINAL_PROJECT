@@ -1,5 +1,5 @@
 @media (max-width: 1300px) {
-	.column-left__link {
+	.office-left__link {
 		margin: 0px 0px 28px 0px;
 	}
 }
@@ -10,7 +10,7 @@
 	.houses__button-next {
 		right: 5.5%;
 	}
-	.column-left__title {
+	.office-left__title {
 		line-height: 90px;
 	}
 }
@@ -51,10 +51,10 @@
 		    -ms-flex: 0 1 100%;
 		        flex: 0 1 100%;
 	}
-	.column-left__title {
+	.office-left__title {
 		margin: 0px 0px 30px 0px;
 	}
-	.column-left__text {
+	.office-left__text {
 		max-width: 90%;
 		margin: 0px 0px 80px 0px;
 	}
@@ -281,16 +281,28 @@
 		line-height: 18px;
 		margin: 0px 0px 24px 18px;
 	}
-	.column-left__title {
+	.office {
+		overflow: hidden;
+	}
+	.office__content {
+		margin: 0px 0px 0px 0px;
+	}
+	.office__background {
+		height: 80%;
+	}
+	.office-left {
+		margin: 0px 25px;
+	}
+	.office-left__title {
 		max-width: 100%;
 		margin: 0px 0px 30px 0px;
 	}
-	.column-left__text {
+	.office-left__text {
 		font-size: 12px;
 		line-height: 19px;
 		margin: 0px 0px 46px 0px;
 	}
-	.column-left__button {
+	.office-left__button {
 		padding: 16px 0px;
 		width: 100%;
 		text-align: center;
@@ -345,11 +357,19 @@
 		font-weight: 400;
 		line-height: 19px;
 	}
-	.column-left__title {
+	.office-left__title {
 		margin: 0px 0px 47px 0px;
 	}
-	.column-left__link, .column-left__button {
+	.office-left__link, .office-left__button {
 		display: none;
+	}
+	.office-right__gradient {
+		display: block;
+	}
+	.office-right__link {
+		display: block;
+		text-align: center;
+		margin: -41px 0px 0px 0px;
 	}
 	.office {
 		padding: 35px 0px 0px 0px;
@@ -484,5 +504,11 @@
 	.houses__title sup {
 		top: -50px;
 		right: -185px;
+	}
+	.office__background {
+		-webkit-transform: rotate(-13deg);
+		    -ms-transform: rotate(-13deg);
+		        transform: rotate(-13deg);
+		top: -85px;
 	}
 }
