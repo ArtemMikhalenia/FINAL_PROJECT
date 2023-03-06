@@ -511,7 +511,7 @@ body {
 		}
 	}
 
-	&__gradient{
+	&__gradient {
 		position: absolute;
 		width: 100%;
 		height: 100%;
@@ -612,7 +612,99 @@ body {
 	}
 }
 
-
 //</OFFICE>================================================================================================
+//<MANAGEMENT>================================================================================================
+
+.management {
+	position: relative;
+	padding: 180px 0px 140px;
+
+	&__background {
+
+		& img {
+			position: absolute;
+			max-width: 865px;
+			top: 8%;
+			right: 12%;
+		}
+	}
+
+	&__container {}
+
+	&__content {
+		@include flexbox();
+	}
+
+	&__left-column {
+		flex: 0 1 55%;
+	}
+
+	&__right-column {
+		align-self: end;
+		flex: 0 1 45%;
+	}
+}
+
+.management-left {
+
+	&__title {
+		display: inline-block;
+		// margin: 0px 0px 58px 0px;
+
+		& sup {
+			position: relative;
+			top: -100px;
+			right: -670px;
+			font-family: Manrope;
+			font-size: 15px;
+			line-height: 24px;
+			letter-spacing: 0em;
+			border-bottom: 1px solid rgba(255, 255, 255, 1);
+			transition: all 0.5s ease 0s;
+			padding: 0px 0px 3px 0px;
+
+			&:hover {
+				border-bottom: 1px solid rgba(255, 255, 255, 0);
+			}
+		}
+	}
+
+	&__text {
+		max-width: 364px;
+		padding: 0px 0px 247px 0px;
+	}
+}
+
+.management-right {
+
+	&__title {
+		display: inline-block;
+		margin: 0px 0px 43px 0px;
+
+		& sup {
+			position: relative;
+			top: -110px;
+			right: -120px;
+			font-family: Manrope;
+			font-size: 15px;
+			line-height: 24px;
+			letter-spacing: 0em;
+			border-bottom: 1px solid rgba(255, 255, 255, 1);
+			transition: all 0.5s ease 0s;
+			padding: 0px 0px 3px 0px;
+
+			&:hover {
+				border-bottom: 1px solid rgba(255, 255, 255, 0);
+			}
+		}
+	}
+
+	&__text {
+		max-width: 393px;
+	}
+}
+
+
+//</MANAGEMENT>================================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";

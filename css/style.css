@@ -1206,6 +1206,85 @@ li.facebook-icon img {
 	line-height: 16px;
 }
 
+.management {
+	position: relative;
+	padding: 180px 0px 140px;
+}
+.management__background img {
+	position: absolute;
+	max-width: 865px;
+	top: 8%;
+	right: 12%;
+}
+.management__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.management__left-column {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 55%;
+	        flex: 0 1 55%;
+}
+.management__right-column {
+	-ms-flex-item-align: end;
+	    -ms-grid-row-align: end;
+	    align-self: end;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 45%;
+	        flex: 0 1 45%;
+}
+
+.management-left__title {
+	display: inline-block;
+}
+.management-left__title sup {
+	position: relative;
+	top: -100px;
+	right: -670px;
+	font-family: Manrope;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0em;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	padding: 0px 0px 3px 0px;
+}
+.management-left__title sup:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.management-left__text {
+	max-width: 364px;
+	padding: 0px 0px 247px 0px;
+}
+
+.management-right__title {
+	display: inline-block;
+	margin: 0px 0px 43px 0px;
+}
+.management-right__title sup {
+	position: relative;
+	top: -110px;
+	right: -120px;
+	font-family: Manrope;
+	font-size: 15px;
+	line-height: 24px;
+	letter-spacing: 0em;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	padding: 0px 0px 3px 0px;
+}
+.management-right__title sup:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.management-right__text {
+	max-width: 393px;
+}
+
 @media (max-width: 1300px) {
 	.office-left__link {
 		margin: 0px 0px 28px 0px;
