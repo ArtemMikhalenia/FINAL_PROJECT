@@ -704,7 +704,67 @@ body {
 	}
 }
 
-
 //</MANAGEMENT>================================================================================================
+//<WHY>================================================================================================
+
+.why {
+	background-color: rgb(21, 21, 21);
+	padding: 78px 0px 114px;
+
+	&__background {}
+
+	&__content {}
+
+	&__items {
+		@include flexbox();
+	}
+
+	&__item {
+		flex: 0 1 33.333%;
+
+	}
+}
+
+.why-left {
+
+	&__title {
+		max-width: 736px;
+		margin: 0px 0px 65px 0px;
+	}
+}
+
+.item-why {
+
+	&__content {
+		@include flexbox();
+		flex-direction: column;
+	}
+
+	&__number {
+		font-family: 'Playfair Display';
+		font-size: 178px;
+		line-height: 160px;
+		letter-spacing: -0.02em;
+		margin: 0px 0px 31px 0px;
+		flex: 1 1 auto;
+	}
+
+	&__label {
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		margin: 0px 0px 70px 0px;
+		flex: 1 1 100%;
+	}
+
+	&__text {
+		font-size: 20px;
+		line-height: 24px;
+		text-align: center;
+		margin: 0px 30px 64px;
+	}
+}
+
+//</WHY>================================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";
