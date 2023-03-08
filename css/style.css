@@ -1210,12 +1210,6 @@ li.facebook-icon img {
 	position: relative;
 	padding: 180px 0px 140px;
 }
-.management__background img {
-	position: absolute;
-	max-width: 865px;
-	top: 8%;
-	right: 12%;
-}
 .management__container {
 	max-width: 1240px;
 	width: 100%;
@@ -1227,27 +1221,21 @@ li.facebook-icon img {
 	display: flex;
 	margin: 0px 25px;
 }
-.management__left-column {
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 1 55%;
-	        flex: 0 1 55%;
-}
 .management__right-column {
+	position: relative;
 	-ms-flex-item-align: end;
 	    -ms-grid-row-align: end;
 	    align-self: end;
-	-webkit-box-flex: 0;
-	    -ms-flex: 0 1 45%;
-	        flex: 0 1 45%;
 }
 
 .management-left__title {
 	display: inline-block;
+	font-size: calc(48px + 37 * (100vw - 320px) / 1120);
+	margin: 0px 0px 58px 0px;
 }
 .management-left__title sup {
 	position: relative;
-	top: -100px;
-	right: -670px;
+	top: -30px;
 	font-family: Manrope;
 	font-size: 15px;
 	line-height: 24px;
@@ -1268,12 +1256,13 @@ li.facebook-icon img {
 
 .management-right__title {
 	display: inline-block;
+	font-size: calc(48px + 37 * (100vw - 320px) / 1120);
 	margin: 0px 0px 43px 0px;
 }
 .management-right__title sup {
 	position: relative;
-	top: -110px;
-	right: -120px;
+	top: -120px;
+	right: -140px;
 	font-family: Manrope;
 	font-size: 15px;
 	line-height: 24px;
@@ -1386,6 +1375,9 @@ li.facebook-icon img {
 	.office-left__title {
 		line-height: 90px;
 	}
+	.management__right-column {
+		left: -100px;
+	}
 }
 @media (max-width: 991.98px) {
 	.header__address, .header__phone {
@@ -1430,6 +1422,37 @@ li.facebook-icon img {
 	.office-left__text {
 		max-width: 90%;
 		margin: 0px 0px 80px 0px;
+	}
+	.management__content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.management__right-column {
+		left: 0;
+		-ms-flex-item-align: end;
+		    align-self: flex-end;
+	}
+	.management-left__title {
+		font-size: 65px;
+	}
+	.management-left__text {
+		padding: 0px 0px 107px 0px;
+	}
+	.management-right {
+		text-align: right;
+	}
+	.management-right__title {
+		position: relative;
+		max-width: 400px;
+		font-size: 65px;
+	}
+	.management-right__title sup {
+		position: absolute;
+		width: 20%;
+		top: 0;
+		left: -30px;
 	}
 }
 @media (max-width: 940px) {
@@ -1681,6 +1704,39 @@ li.facebook-icon img {
 		text-align: center;
 		margin: 0px 0px 46px 0px;
 	}
+	.management {
+		padding: 55px 0px 77px;
+	}
+	.management-left__title {
+		margin: 0px 0px 41px 0px;
+	}
+	.management-left__title sup {
+		top: -50px;
+		left: -95px;
+	}
+	.management-left__title sup a {
+		font-size: 10px;
+		line-height: 16px;
+	}
+	.management-left__text {
+		font-size: 12px;
+		line-height: 19px;
+		padding: 0px 0px 100px 0px;
+	}
+	.management-right__title sup {
+		position: absolute;
+		width: 18%;
+		top: -10px;
+		left: 0;
+	}
+	.management-right__title sup a {
+		font-size: 10px;
+		line-height: 16px;
+	}
+	.management-right__text {
+		font-size: 12px;
+		line-height: 19px;
+	}
 }
 @media (max-width: 500px) {
 	.popup__title {
@@ -1845,6 +1901,24 @@ li.facebook-icon img {
 		font-size: 12px;
 		max-width: 250px;
 	}
+	.management-left__title {
+		font-size: 44px;
+	}
+	.management-left__title sup {
+		left: -90px;
+	}
+	.management-left__text {
+		max-width: 271px;
+	}
+	.management-right__title {
+		font-size: 44px;
+	}
+	.management-right__title sup {
+		left: 20px;
+	}
+	.management-right__text {
+		padding: 0px 0px 0px 60px;
+	}
 }
 @media (max-width: 375px) {
 	.mainblock__title {
@@ -1883,5 +1957,18 @@ li.facebook-icon img {
 		    -ms-transform: rotate(-13deg);
 		        transform: rotate(-13deg);
 		top: -85px;
+	}
+	.management-left__title {
+		font-size: 36px;
+	}
+	.management-left__title sup {
+		left: -70px;
+	}
+	.management-right__title {
+		font-size: 36px;
+	}
+	.management-right__title sup {
+		width: 27%;
+		left: -45px;
 	}
 }

@@ -33,6 +33,12 @@ $md4: 479.98;
          line-height: 90px;
       }
    }
+
+   .management {
+      &__right-column {
+         left: -100px;
+      }
+   }
 }
 
 @media (max-width: $md2+px) {
@@ -94,6 +100,44 @@ $md4: 479.98;
       }
    }
 
+   .management {
+      &__content {
+         flex-direction: column;
+      }
+
+      &__right-column {
+         left: 0;
+         align-self: flex-end;
+      }
+   }
+
+   .management-left {
+
+      &__title {
+         font-size: 65px;
+      }
+
+      &__text {
+         padding: 0px 0px 107px 0px;
+      }
+   }
+
+   .management-right {
+      text-align: right;
+
+      &__title {
+         position: relative;
+         max-width: 400px;
+         font-size: 65px;
+
+         & sup {
+            position: absolute;
+            width: 20%;
+            top: 0;
+            left: -30px;
+         }
+      }
+   }
 
 }
 
@@ -426,6 +470,56 @@ $md4: 479.98;
          margin: 0px 0px 46px 0px;
       }
    }
+
+   .management {
+      padding: 55px 0px 77px;
+   }
+
+   .management-left {
+
+      &__title {
+         margin: 0px 0px 41px 0px;
+
+         & sup {
+            top: -50px;
+            left: -95px;
+
+            & a {
+               font-size: 10px;
+               line-height: 16px;
+            }
+         }
+      }
+
+      &__text {
+         font-size: 12px;
+         line-height: 19px;
+         padding: 0px 0px 100px 0px;
+      }
+   }
+
+   .management-right {
+
+      &__title {
+
+         & sup {
+            position: absolute;
+            width: 18%;
+            top: -10px;
+            left: 0;
+
+            & a {
+               font-size: 10px;
+               line-height: 16px;
+            }
+         }
+      }
+
+      &__text {
+         font-size: 12px;
+         line-height: 19px;
+      }
+   }
 }
 
 @media (max-width: 500px) {
@@ -674,6 +768,36 @@ $md4: 479.98;
          max-width: 250px;
       }
    }
+
+   .management-left {
+
+      &__title {
+         font-size: 44px;
+
+         & sup {
+            left: -90px;
+         }
+      }
+
+      &__text {
+         max-width: 271px;
+      }
+   }
+
+   .management-right {
+
+      &__title {
+         font-size: 44px;
+
+         & sup {
+            left: 20px;
+         }
+      }
+
+      &__text {
+         padding: 0px 0px 0px 60px;
+      }
+   }
 }
 
 @media (max-width: 375px) {
@@ -736,6 +860,29 @@ $md4: 479.98;
       &__background {
          transform: rotate(-13deg);
          top: -85px;
+      }
+   }
+
+   .management-left {
+
+      &__title {
+         font-size: 36px;
+
+         & sup {
+            left: -70px;
+         }
+      }
+   }
+
+   .management-right {
+
+      &__title {
+         font-size: 36px;
+
+         & sup {
+            width: 27%;
+            left: -45px;
+         }
       }
    }
 }
