@@ -345,6 +345,9 @@
 	.management {
 		padding: 55px 0px 77px;
 	}
+	.management__background {
+		background-size: 700px;
+	}
 	.management-left__title {
 		margin: 0px 0px 41px 0px;
 	}
@@ -538,6 +541,10 @@
 	.slide-houses__text {
 		font-size: 12px;
 		max-width: 250px;
+	}
+	.management__background {
+		background-size: 860px;
+		background-position: 80% 50%;
 	}
 	.management-left__title {
 		font-size: 44px;

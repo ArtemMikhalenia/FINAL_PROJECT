@@ -473,6 +473,10 @@ $md4: 479.98;
 
    .management {
       padding: 55px 0px 77px;
+
+      &__background {
+         background-size: 700px;
+      }
    }
 
    .management-left {
@@ -769,6 +773,13 @@ $md4: 479.98;
       }
    }
 
+   .management {
+      &__background {
+         background-size: 860px;
+         background-position: 80% 50%;
+      }
+   }
+
    .management-left {
 
       &__title {
@@ -798,6 +809,8 @@ $md4: 479.98;
          padding: 0px 0px 0px 60px;
       }
    }
+
+
 }
 
 @media (max-width: 375px) {

@@ -1210,6 +1210,17 @@ li.facebook-icon img {
 	position: relative;
 	padding: 180px 0px 140px;
 }
+.management__background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url("../img/management/background.png");
+	background-size: 865px;
+	background-repeat: no-repeat;
+	background-position: 60% 50%;
+}
 .management__container {
 	max-width: 1240px;
 	width: 100%;
@@ -1707,6 +1718,9 @@ li.facebook-icon img {
 	.management {
 		padding: 55px 0px 77px;
 	}
+	.management__background {
+		background-size: 700px;
+	}
 	.management-left__title {
 		margin: 0px 0px 41px 0px;
 	}
@@ -1900,6 +1914,10 @@ li.facebook-icon img {
 	.slide-houses__text {
 		font-size: 12px;
 		max-width: 250px;
+	}
+	.management__background {
+		background-size: 860px;
+		background-position: 80% 50%;
 	}
 	.management-left__title {
 		font-size: 44px;
