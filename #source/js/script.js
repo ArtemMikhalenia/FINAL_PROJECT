@@ -184,9 +184,9 @@ document.addEventListener('keydown', function (e) {
 
 //<SWIPER>
 
-const swiper = new Swiper('.houses__swiper', {
-	slideClass: 'houses__slide',
-	wrapperClass: 'houses__wrapper',
+const swiper = new Swiper('.main-swiper', {
+	slideClass: 'main-swiper__slide',
+	wrapperClass: 'main-swiper__wrapper',
 	slidesPerView: 'auto',
 	autoHeight: true,
 	spaceBetween: 100,
@@ -206,8 +206,8 @@ const swiper = new Swiper('.houses__swiper', {
 		pauseOnMouseEnter: true,
 	},
 	navigation: {
-		nextEl: '.houses__button-next',
-		prevEl: '.houses__button-prev',
+		nextEl: '.main-button__next',
+		prevEl: '.main-button__prev',
 	},
 	breakpoints: {
 		320: {

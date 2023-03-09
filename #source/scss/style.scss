@@ -322,7 +322,7 @@ body {
 	padding: 118px 0px 149px 0px;
 
 	&__title {
-		margin: 0px 0px 63px 0px;
+		margin: 0px 0px 63px 25px;
 
 		& sup {
 			position: relative;
@@ -344,10 +344,13 @@ body {
 	}
 
 	&__swiper {
-		position: relative;
-		width: 100%;
 		left: -6%;
 	}
+}
+
+.main-swiper {
+	position: relative;
+	width: 100%;
 
 	&__wrapper {
 		display: flex;
@@ -361,25 +364,27 @@ body {
 		max-width: 708px;
 		width: 100%;
 	}
-
-	&__button-prev {
-		position: absolute;
-		width: 30px;
-		height: 40px;
-		top: 44.9%;
-		left: 11.5%;
-	}
-
-	&__button-next {
-		position: absolute;
-		width: 30px;
-		height: 40px;
-		top: 44.9%;
-		right: 12.5%;
-	}
 }
 
-.slide-houses {
+.main-button__prev {
+	cursor: pointer;
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	top: 44.9%;
+	left: 11.5%;
+}
+
+.main-button__next {
+	cursor: pointer;
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	top: 44.9%;
+	right: 12.5%;
+}
+
+.slide {
 	position: relative;
 
 	&__horizontal-gradient {
@@ -462,21 +467,24 @@ body {
 	}
 }
 
-.slide-houses1 {
+.slide-houses1,
+.slide-blog1 {
 	background-image: url('../img/houses/slide1.jpg');
 	background-repeat: no-repeat;
 	background-size: 152%;
 	background-position: 0% 55%;
 }
 
-.slide-houses2 {
+.slide-houses2,
+.slide-blog2 {
 	background-image: url('../img/houses/slide2.jpg');
 	background-repeat: no-repeat;
 	background-size: 130%;
 	background-position: 91% 38%;
 }
 
-.slide-houses3 {
+.slide-houses3,
+.slide-blog3 {
 	background-image: url('../img/houses/slide3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -723,11 +731,19 @@ body {
 		left: 0;
 		background-image: url('../img/why/background.svg');
 		background-position: center 90%;
-		background-size: 27%;
+		background-size: 400px;
 		background-repeat: no-repeat;
 	}
 
-	&__content {}
+	&__container {
+		max-width: 1240px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	&__content {
+		margin: 0px 25px;
+	}
 
 	&__items {
 		@include flexbox();
@@ -749,6 +765,8 @@ body {
 }
 
 .item-why {
+	@include flexbox();
+
 
 	&__content {
 		@include flexbox();
@@ -772,10 +790,9 @@ body {
 	&__number {
 		font-family: 'Playfair Display';
 		font-size: 178px;
-		line-height: 160px;
-		letter-spacing: -0.02em;
-		margin: 100px 0px 31px 0px;
-		flex: 1 1 auto;
+		line-height: 50px;
+		letter-spacing: -0.05em;
+		margin: 152px 0px 31px 0px;
 		z-index: 1;
 
 		& span,
@@ -785,11 +802,12 @@ body {
 	}
 
 	&__label {
+		max-width: 270px;
 		font-size: 20px;
 		line-height: 24px;
 		text-align: center;
-		margin: 0px 0px 70px 0px;
-		flex: 1 1 100%;
+		margin: 0px 30px 70px;
+		flex: 0 1 100%;
 		z-index: 1;
 	}
 
@@ -827,8 +845,64 @@ body {
 	backdrop-filter: blur(10.5px);
 }
 
-
-
 //</WHY>================================================================================================
+//<BLOG>================================================================================================
+
+.blog {
+	padding: 105px 0px 155px 0px;
+
+	&__title {
+		position: relative;
+		display: inline-block;
+		margin: 0px 0px 80px 25px;
+
+		& sup {
+			position: absolute;
+			height: 100%;
+			top: -28px;
+			right: -60px;
+		}
+	}
+
+	&__swiper {
+		left: -2%;
+	}
+}
+
+.slide-blog {
+
+	&__top {
+		@include flexbox();
+		justify-content: space-between;
+		align-items: center;
+		margin: 39px 48px 414px;
+		z-index: 2;
+	}
+
+	&__label {
+		margin: 0px 0px 0px 0px;
+	}
+
+	&__link {
+		border-bottom: 1px solid rgba(255, 255, 255, 0);
+		transition: all 0.5s ease 0s;
+		padding: 0px 0px 3px 0px;
+
+		&:hover {
+			border-bottom: 1px solid rgba(255, 255, 255, 1);
+		}
+	}
+
+	&__location {
+		margin: 39px 0px 414px 48px;
+	}
+
+	&__text {
+		margin: 0px 0px 41px 48px;
+	}
+}
+
+
+//</BLOG>================================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";
