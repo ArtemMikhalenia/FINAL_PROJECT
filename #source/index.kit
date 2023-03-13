@@ -97,7 +97,7 @@
 				</h2>
 				<div class="main-swiper houses__swiper">
 					<div class="main-swiper__wrapper houses__wrapper">
-						<div class="main-swiper__slide slide houses__slide slide-houses slide-houses1">
+						<div class="main-swiper__slide slide-houses slide-houses1">
 							<div class="slide__horizontal-gradient"></div>
 							<div class="slide__vertical-gradient"></div>
 							<div class="slide__icon slide-houses__icon">
@@ -116,7 +116,7 @@
 									на знаменитой Английской набережной.</p>
 							</div>
 						</div>
-						<div class="main-swiper__slide slide houses__slide slide-houses slide-houses2">
+						<div class="main-swiper__slide slide-houses slide-houses2">
 							<div class="slide__horizontal-gradient"></div>
 							<div class="slide__vertical-gradient"></div>
 							<div class="slide__icon slide-houses__icon">
@@ -135,7 +135,7 @@
 									на знаменитой Английской набережной.</p>
 							</div>
 						</div>
-						<div class="main-swiper__slide slide houses__slide slide-houses slide-houses3">
+						<div class="main-swiper__slide slide-houses slide-houses3">
 							<div class="slide__horizontal-gradient"></div>
 							<div class="slide__icon slide-houses__icon">
 								<img src="./img/houses/icon.svg" alt="icon">
@@ -401,9 +401,8 @@
 				</h2>
 				<div class="main-swiper blog__swiper">
 					<div class="main-swiper__wrapper blog__wrapper">
-						<div class="main-swiper__slide slide blog__slide slide-blog slide-blog1">
+						<div class="main-swiper__slide slide-blog slide-blog1">
 							<div class="slide__horizontal-gradient"></div>
-							<div class="slide__vertical-gradient"></div>
 							<div class="slide__content slide-blog__content">
 								<a href="https://goo.gl/maps/7g3kZESvmWGBG48w8"
 									class="slide__location slide-blog__location">Ницца,
@@ -416,7 +415,7 @@
 									на знаменитой Английской набережной.</p>
 							</div>
 						</div>
-						<div class="main-swiper__slide slide blog__slide slide-blog slide-blog2">
+						<div class="main-swiper__slide slide-blog slide-blog2">
 							<div class="slide__horizontal-gradient"></div>
 							<div class="slide__vertical-gradient"></div>
 							<div class="slide__content slide-blog__content">
@@ -434,7 +433,7 @@
 									на знаменитой Английской набережной.</p>
 							</div>
 						</div>
-						<div class="main-swiper__slide slide blog__slide slide-blog slide-blog3">
+						<div class="main-swiper__slide slide-blog slide-blog3">
 							<div class="slide__horizontal-gradient"></div>
 							<div class="slide__content slide-blog__content">
 								<div class="slide-blog__top">
@@ -462,19 +461,23 @@
 			</div>
 		</section>
 		<section class="contact">
+			<div class="contact__background"></div>
 			<div class="container">
 				<div class="contact__content">
 					<h2 class="contact__title title">Получите информацию первыми</h2>
-					<form action="#" class="contact__form contact-form">
-						<input type='email' autocomplete='off' placeholder="Введите свой email" name='email'
-							class='contact-form__email'>
-						<input name="submit" type="submit" class="contact-form__submit" value="Отправить">
+					<form action="#" id="contact" class="contact__form contact-form">
+							<input type='email' autocomplete='off' placeholder="Введите свой email" name='email'
+								class='contact-form__email'>
+							<input name="submit" type="submit" class="contact-form__submit" value="Отправить">
 						<div class="contact-form__checkbox">
-							<input type="checkbox" id="checkbox" name="checkbox" class="contact-form__checkbox" value="">
-							<label for="checkbox" class="contact-form__label">Оставляя свой email, я принимаю <a
+							<input type="checkbox" id="checkbox1" name="checkbox1" class="contact-form__check" value="">
+							<label for="checkbox1" class="contact-form__label">Оставляя свой email, я принимаю <a
 									href="#">политику конфиденциальности.</a></label>
 						</div>
 					</form>
+					<div class="contact__link">
+						<a href="#">О нас</a>
+					</div>
 				</div>
 			</div>
 		</section>

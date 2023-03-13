@@ -16,6 +16,7 @@ if (iconMenu) {
 //PLACEHOLDER
 
 const popupForm = document.forms.popup;
+const contactForm = document.forms.contact;
 
 const inputAll = document.querySelectorAll('input');
 const placeholder = document.querySelectorAll('[placeholder]');
@@ -28,6 +29,8 @@ const emailInputPopup = popupForm.email;
 const emailPlaceholderPopup = emailInputPopup.placeholder;
 const textInputPopup = popupForm.textarea;
 const textPlaceholderPopup = textInputPopup.placeholder;
+const emailInputContact = contactForm.email;
+const emailPlaceholderContact = emailInputContact.placeholder;
 
 placeholder.forEach(el =>
 	el.addEventListener("focus", function (element) {
@@ -40,6 +43,7 @@ placeholder.forEach(el =>
 		phoneInputPopup.placeholder = placeholder.value = "Телефон";
 		emailInputPopup.placeholder = placeholder.value = "Email";
 		textInputPopup.placeholder = placeholder.value = "Текст сообщения";
+		emailInputContact.placeholder = placeholder.value = "Введите свой email";
 	}));
 
 //<IBG>

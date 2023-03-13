@@ -331,7 +331,44 @@ $md4: 479.98;
       display: none;
    }
 
+   .contact {
+      background: url('../img/contact/background.jpg') 50% 65% no-repeat;
+      background-size: 200%;
 
+      &__content {
+         padding: 175px 0px 90px 0px;
+      }
+
+      &__form {
+         max-width: 624px;
+         width: 100%;
+      }
+   }
+
+   .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 55px 1fr;
+      column-gap: 19px;
+      row-gap: 17px;
+      align-items: start;
+
+      &__email {
+         grid-column: 1 / 3;
+         max-width: 100%;
+      }
+
+      &__submit {
+         grid-column: 2 / 3;
+         grid-row: 2 / 3;
+         padding: 11px 0px;
+      }
+
+      &__checkbox {
+         margin: 20px 0px 202px -19px;
+         grid-column: 1 / 2;
+      }
+   }
 }
 
 @media (max-width: 600px) {
@@ -541,6 +578,46 @@ $md4: 479.98;
       }
    }
 
+   .blog {
+      padding: 65px 0px 152px 0px;
+
+      &__title {
+         margin: 0px 0px 65px 0px;
+
+         & sup {
+            top: -15px;
+            right: -30px;
+
+            & svg {
+               width: 50px;
+               height: 50px;
+            }
+         }
+      }
+   }
+
+   .slide-blog {
+      &__top {
+         margin: 23px 0px 274px 18px;
+      }
+
+      &__label {
+         margin: 0px 0px 0px 0px;
+      }
+
+      &__link {
+         display: none;
+      }
+
+      &__location {
+         margin: 23px 0px 290px 18px;
+      }
+
+      &__text {
+         margin: 0px 0px 19px 18px;
+      }
+   }
+
    .office {
       overflow: hidden;
 
@@ -659,6 +736,45 @@ $md4: 479.98;
       &__text {
          font-size: 12px;
          line-height: 19px;
+      }
+   }
+
+   .contact {
+      background: url('../img/contact/background.jpg') 50% 65% no-repeat;
+      background-size: 200%;
+
+      &__content {
+         padding: 378px 0px 226px 0px;
+      }
+
+      &__form {
+         max-width: 450px;
+         width: 100%;
+      }
+   }
+
+   .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 55px 1fr;
+      column-gap: 19px;
+      row-gap: 17px;
+      align-items: start;
+
+      &__email {
+         grid-column: 1 / 3;
+         max-width: 100%;
+      }
+
+      &__submit {
+         grid-column: 2 / 3;
+         grid-row: 2 / 3;
+         padding: 11px 0px;
+      }
+
+      &__checkbox {
+         margin: 20px 0px 202px -19px;
+         grid-column: 1 / 2;
       }
    }
 }
@@ -916,6 +1032,11 @@ $md4: 479.98;
       }
    }
 
+   .slide-houses2,
+   .slide-blog2 {
+      background-position: 0% 25%;
+   }
+
    .management {
       &__background {
          background-size: 860px;
@@ -1015,8 +1136,6 @@ $md4: 479.98;
          }
       }
    }
-
-
 
    .office {
 
