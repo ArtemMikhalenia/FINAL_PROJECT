@@ -1024,6 +1024,9 @@ body {
 	}
 
 	&__checkbox {
+		@include flexbox();
+		align-items: start;
+		justify-content: center;
 		margin: 20px 0px 302px -19px;
 		grid-column: 1 / 3;
 		text-align: center;
