@@ -1,3 +1,6 @@
+@import "mixins.scss";
+@import "ui.scss";
+
 //====================================================================================================
 .footer {
    position: relative;
@@ -33,7 +36,9 @@
       grid-template-rows: 1fr 128px;
    }
 
-   &__form-block {}
+   &__form-block {
+      max-width: 401px;
+   }
 
    &__form {
       @include flexbox();
@@ -55,9 +60,8 @@
    }
 }
 
-.container {}
-
 .form-title {
+   font-weight: 500;
    margin: 0px 0px 24px 0px;
 }
 
@@ -89,14 +93,26 @@
       }
    }
 
-   &__link {}
+   &__link {
+      font-weight: 300;
+   }
 }
 
 .footer-regions {
 
-   &__title {}
+   &__title {
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 24px;
+      color: rgba(188, 188, 188, 1);
+      margin: 0px 0px 22px 0px;
+   }
 
-   &__menu {}
+   &__menu {
+      & li {
+         margin: 0px 0px 25px 0px;
+      }
+   }
 
    &__link {}
 }
@@ -111,22 +127,36 @@
 }
 
 .phone-footer {
+   @include flexbox();
+   align-items: center;
+   margin: 0px 0px 16px 0px;
 
-   &__image {}
+   &__image {
+      margin: 0px 13px 0px 0px;
+   }
 
    &__number {}
 }
 
 .mail-footer {
+   @include flexbox();
+   align-items: center;
+   margin: 0px 0px 16px 0px;
 
-   &__image {}
+   &__image {
+      margin: 0px 13px 0px 0px;
+   }
 
    &__link {}
 }
 
 .address-footer {
+   @include flexbox();
+   align-items: center;
 
-   &__image {}
+   &__image {
+      margin: 0px 13px 0px 0px;
+   }
 
    &__text {}
 }

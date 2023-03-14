@@ -63,7 +63,6 @@
 		align-items: center;
 		flex: 0 1 62%;
 		justify-content: space-between;
-
 	}
 
 	&__language {
@@ -152,6 +151,7 @@ li.facebook-icon img {
 		padding: 184px 0px 0px 71px;
 
 		&.active {
+
 			right: 0;
 			padding: 184px 0px 0px 71px;
 		}

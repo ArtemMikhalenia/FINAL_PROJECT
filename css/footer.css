@@ -1,3 +1,66 @@
+.text-style {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+a.bottom-link {
+	font-size: 15px;
+}
+
+.link1 {
+	float: left;
+	padding: 0px 52px 0px 0px;
+}
+
+.form-style {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 24px;
+	background: transparent;
+	color: rgb(255, 255, 255);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	margin: 0px 0px 29px 0px;
+	-webkit-transition: border-bottom 0.5s ease 0s;
+	-o-transition: border-bottom 0.5s ease 0s;
+	transition: border-bottom 0.5s ease 0s;
+}
+.form-style:focus {
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.title {
+	font-family: "Playfair Display";
+	font-size: 85px;
+	font-weight: 400;
+	line-height: 76px;
+	letter-spacing: -0.02em;
+}
+
+.ibg {
+	position: relative;
+}
+.ibg img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+
+body.ie .ibg {
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+body.ie .ibg img {
+	width: 0;
+	height: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+
 .footer {
 	position: relative;
 }
@@ -58,6 +121,18 @@
 	-ms-grid-row: 2;
 	-ms-grid-column: 3;
 }
+.footer__form-block {
+	max-width: 401px;
+}
+.footer__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
 .footer__navigation {
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 1;
@@ -76,6 +151,7 @@
 }
 
 .form-title {
+	font-weight: 500;
 	margin: 0px 0px 24px 0px;
 }
 
@@ -85,4 +161,53 @@
 }
 .footer-nav__menu li {
 	margin: 0px 0px 22px 0px;
+}
+.footer-nav__link {
+	font-weight: 300;
+}
+
+.footer-regions__title {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 24px;
+	color: rgb(188, 188, 188);
+	margin: 0px 0px 22px 0px;
+}
+.footer-regions__menu li {
+	margin: 0px 0px 25px 0px;
+}
+.phone-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 0px 0px 16px 0px;
+}
+.phone-footer__image {
+	margin: 0px 13px 0px 0px;
+}
+.mail-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	margin: 0px 0px 16px 0px;
+}
+.mail-footer__image {
+	margin: 0px 13px 0px 0px;
+}
+.address-footer {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.address-footer__image {
+	margin: 0px 13px 0px 0px;
 }
