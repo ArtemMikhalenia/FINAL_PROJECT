@@ -34,7 +34,6 @@ body {
 
 	&.lock {
 		overflow: hidden;
-		padding-right: 17px;
 	}
 }
 
@@ -48,6 +47,10 @@ body {
 	overflow: hidden;
 
 	&.loaded {}
+}
+
+::-webkit-scrollbar {
+	display: none;
 }
 
 //</ОБОЛОЧКА>===========================================================================================================

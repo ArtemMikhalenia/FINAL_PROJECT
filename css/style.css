@@ -103,7 +103,6 @@ body {
 }
 body.lock {
 	overflow: hidden;
-	padding-right: 17px;
 }
 
 .wrapper {
@@ -112,6 +111,10 @@ body.lock {
 	position: relative;
 	overflow: hidden;
 }
+::-webkit-scrollbar {
+	display: none;
+}
+
 .container {
 	max-width: 1190px;
 	margin: 0 auto;
