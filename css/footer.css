@@ -29,8 +29,8 @@
 	padding: 128px 0px 188px 0px;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
+	-ms-grid-columns: minmax(auto, 450px) 1fr 1fr;
+	grid-template-columns: minmax(auto, 450px) 1fr 1fr;
 	-ms-grid-rows: 1fr 128px;
 	grid-template-rows: 1fr 128px;
 }
@@ -73,4 +73,16 @@
 	-ms-grid-row: 2;
 	-ms-grid-row-span: 1;
 	grid-row: 2/3;
+}
+
+.form-title {
+	margin: 0px 0px 24px 0px;
+}
+
+.footer-nav__title {
+	font-weight: 500;
+	margin: 0px 0px 22px 0px;
+}
+.footer-nav__menu li {
+	margin: 0px 0px 22px 0px;
 }

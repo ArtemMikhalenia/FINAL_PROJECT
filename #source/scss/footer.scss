@@ -29,13 +29,16 @@
       position: relative;
       padding: 128px 0px 188px 0px;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: minmax(auto, 450px) 1fr 1fr;
       grid-template-rows: 1fr 128px;
    }
 
    &__form-block {}
 
-   &__form {}
+   &__form {
+      @include flexbox();
+      flex-direction: column;
+   }
 
    &__navigation {
       grid-column: 2 / 3;
@@ -54,7 +57,9 @@
 
 .container {}
 
-.form-title {}
+.form-title {
+   margin: 0px 0px 24px 0px;
+}
 
 .footer-form {
 
@@ -73,9 +78,16 @@
 
 .footer-nav {
 
-   &__title {}
+   &__title {
+      font-weight: 500;
+      margin: 0px 0px 22px 0px;
+   }
 
-   &__menu {}
+   &__menu {
+      li {
+         margin: 0px 0px 22px 0px;
+      }
+   }
 
    &__link {}
 }

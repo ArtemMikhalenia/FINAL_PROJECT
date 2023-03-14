@@ -725,8 +725,8 @@ li.facebook-icon img {
 	padding: 128px 0px 188px 0px;
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 1fr 1fr 1fr;
-	grid-template-columns: 1fr 1fr 1fr;
+	-ms-grid-columns: minmax(auto, 450px) 1fr 1fr;
+	grid-template-columns: minmax(auto, 450px) 1fr 1fr;
 	-ms-grid-rows: 1fr 128px;
 	grid-template-rows: 1fr 128px;
 }
@@ -754,6 +754,15 @@ li.facebook-icon img {
 	-ms-grid-row: 2;
 	-ms-grid-column: 3;
 }
+.footer__form {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
 .footer__navigation {
 	-ms-grid-column: 2;
 	-ms-grid-column-span: 1;
@@ -771,6 +780,17 @@ li.facebook-icon img {
 	grid-row: 2/3;
 }
 
+.form-title {
+	margin: 0px 0px 24px 0px;
+}
+
+.footer-nav__title {
+	font-weight: 500;
+	margin: 0px 0px 22px 0px;
+}
+.footer-nav__menu li {
+	margin: 0px 0px 22px 0px;
+}
 .mainblock {
 	padding: 0px 0px 240px 0px;
 	background: url("../img/mainblock/background.png") 50% 62.5% no-repeat;
