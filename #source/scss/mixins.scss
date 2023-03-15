@@ -29,51 +29,10 @@
 	transform: scale($num);
 }
 
-@mixin skew($num) {
-	-webkit-transform: skewX($num);
-	-moz-transform: skewX($num);
-	-ms-transform: skewX($num);
-	-o-transform: skewX($num);
-	transform: skewX($num);
-}
-
-@mixin cnt($h) {
-	display: flex;
-	flex-direction: column;
-	height: $h;
-	text-align: center;
-	align-items: stretch;
-	justify-content: center;
-}
-
-@mixin tr($x, $y, $z) {
-	transform: translate3d($x, $y, $z);
-	-webkit-transform: translate3d($x, $y, $z);
-	-ms-transform: translate3d($x, $y, $z);
-	-o-transform: translate3d($x, $y, $z);
-	-moz-transform: translate3d($x, $y, $z);
-}
-
 @mixin flexbox() {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
 	display: flex;
-}
-
-@mixin flexboxinline() {
-	display: -webkit-inline-flex;
-	display: -moz-inline-flex;
-	display: -ms-inline-flex;
-	display: -o-inline-flex;
-	display: inline-flex;
-}
-
-@mixin flexorder($val) {
-	-webkit-box-ordinal-group: $val;
-	-moz-box-ordinal-group: $val;
-	-ms-flex-order: $val;
-	-webkit-order: $val;
-	order: $val;
 }

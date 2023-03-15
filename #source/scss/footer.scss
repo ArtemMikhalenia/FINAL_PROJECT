@@ -103,7 +103,7 @@
       cursor: pointer;
 
       &:checked+.footer-form__label::after {
-         transform: scale(1);
+         @include scale(1);
       }
    }
 
@@ -136,8 +136,8 @@
          top: 8px;
          left: -31px;
          background-color: rgba(255, 255, 255, 1);
-         transform: scale(0);
-         transition: all 0.5s ease 0s;
+         @include scale(0);
+         @include anim (0.5s, 0s);
       }
 
       a {
@@ -177,7 +177,7 @@
             }
 
             &:hover::before {
-               transition: all 0.5s ease 0s;
+               @include anim (0.5s, 0s);
                left: 0%;
             }
          }
@@ -224,7 +224,7 @@
             }
 
             &:hover::before {
-               transition: all 0.5s ease 0s;
+               @include anim (0.5s, 0s);
                left: 0%;
             }
          }
@@ -249,10 +249,10 @@
       justify-content: space-between;
 
       a {
-         transition: all 0.5s ease 0s;
+         @include anim (0.5s, 0s);
 
          &:hover {
-            transform: scale(1.1);
+            @include scale(1.1);
          }
       }
    }

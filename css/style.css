@@ -299,9 +299,9 @@ a.bottom-link {
 	background: url("../img/mainblock/popup/close.svg") center center no-repeat;
 }
 .header-popup__close:hover {
+	-ms-transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
-	    -ms-transform: rotate(180deg);
-	        transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 .popup-form__checkbox {
@@ -314,9 +314,9 @@ a.bottom-link {
 	border-radius: 6px;
 }
 .popup-form__checkbox:checked + .popup-form__label::after {
+	-ms-transform: scale(1);
 	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 }
 .popup-form__label {
 	position: relative;
@@ -347,9 +347,9 @@ a.bottom-link {
 	top: 0;
 	left: -29px;
 	background-color: rgb(255, 255, 255);
+	-ms-transform: scale(0);
 	-webkit-transform: scale(0);
-	    -ms-transform: scale(0);
-	        transform: scale(0);
+	transform: scale(0);
 	-webkit-transition: all 0.5s ease 0s;
 	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
@@ -892,9 +892,9 @@ a.bottom-link {
 	cursor: pointer;
 }
 .footer-form__checkbox:checked + .footer-form__label::after {
+	-ms-transform: scale(1);
 	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 }
 .footer-form__label {
 	position: relative;
@@ -924,9 +924,9 @@ a.bottom-link {
 	top: 8px;
 	left: -31px;
 	background-color: rgb(255, 255, 255);
+	-ms-transform: scale(0);
 	-webkit-transform: scale(0);
-	    -ms-transform: scale(0);
-	        transform: scale(0);
+	transform: scale(0);
 	-webkit-transition: all 0.5s ease 0s;
 	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
@@ -1030,9 +1030,9 @@ a.bottom-link {
 	transition: all 0.5s ease 0s;
 }
 .contacts-footer__links a:hover {
+	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);
-	    -ms-transform: scale(1.1);
-	        transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .phone-footer {
