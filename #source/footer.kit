@@ -5,6 +5,7 @@
 	<div class="footer__gradient"></div>
 	<div class='container'>
 		<div class="footer__content">
+			<h4 class="footer__mob-title">Azur Life</h4>
 			<div class="footer__form-block">
 				<h5 class="form-title text-style">Перезвоните мне</h5>
 				<form action="#" id="footer" class="footer__form footer-form">
@@ -14,7 +15,18 @@
 						class='footer-form__phone form-style'>
 					<input type='email' autocomplete='off' placeholder="Email" name='email'
 						class='footer-form__email form-style'>
-					<input name="submit" type="submit" class="footer-form__submit text-style submit-btn" value="Отправить запрос">
+					<div class="footer-form__bottom footer-bottom">
+						<div class="footer-bottom__checkbox">
+							<input type="checkbox" id="checkbox2" name="checkbox" class="footer-form__checkbox" value="">
+							<label for="checkbox2" class="footer-form__label">Оставляя свой email, я принимаю <a
+									href="#">политику
+									конфиденциальности.</a></label>
+						</div>
+						<div class="footer-bottom__submit">
+							<input name="submit" type="submit" class="footer-form__submit text-style submit-btn"
+								value="Отправить запрос">
+						</div>
+					</div>
 				</form>
 			</div>
 			<div class="footer__navigation footer-nav">
@@ -106,7 +118,8 @@
 					<div class="address-footer__image">
 						<img src="./img/footer/location.svg" alt="Location">
 					</div>
-					<a href="https://goo.gl/maps/NJyibDTmGcGSr5486" target="_blank" class="address-footer__text text-style">
+					<a href="https://goo.gl/maps/NJyibDTmGcGSr5486" target="_blank"
+						class="address-footer__street text-style">
 						Франция, бульвар Леклерк, 46, 06310, Болье-сюр-Мер
 					</a>
 				</div>
