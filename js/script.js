@@ -17,6 +17,7 @@ if (iconMenu) {
 
 const popupForm = document.forms.popup;
 const contactForm = document.forms.contact;
+const footerForm = document.forms.footer;
 
 const inputAll = document.querySelectorAll('input');
 const placeholder = document.querySelectorAll('[placeholder]');
@@ -29,8 +30,17 @@ const emailInputPopup = popupForm.email;
 const emailPlaceholderPopup = emailInputPopup.placeholder;
 const textInputPopup = popupForm.textarea;
 const textPlaceholderPopup = textInputPopup.placeholder;
+
 const emailInputContact = contactForm.email;
 const emailPlaceholderContact = emailInputContact.placeholder;
+
+const nameInputFooter = footerForm.names;
+const namePlaceholderFooter = nameInputFooter.placeholder;
+const phoneInputFooter = footerForm.phone;
+const phonePlaceholderFooter = phoneInputFooter.placeholder;
+const emailInputFooter = footerForm.email;
+const emailPlaceholderFooter = emailInputFooter.placeholder;
+
 
 placeholder.forEach(el =>
 	el.addEventListener("focus", function (element) {
@@ -44,6 +54,9 @@ placeholder.forEach(el =>
 		emailInputPopup.placeholder = placeholder.value = "Email";
 		textInputPopup.placeholder = placeholder.value = "Текст сообщения";
 		emailInputContact.placeholder = placeholder.value = "Введите свой email";
+		nameInputFooter.placeholder = placeholder.value = "Имя";
+		phoneInputFooter.placeholder = placeholder.value = "Телефон";
+		emailInputFooter.placeholder = placeholder.value = "Email";
 	}));
 
 

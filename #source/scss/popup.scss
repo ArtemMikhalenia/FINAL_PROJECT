@@ -166,22 +166,6 @@
 		resize: none;
 		margin: 0px 0px 35px 0px;
 	}
-
-	&__submit {
-		width: 132px;
-		font-weight: 500;
-		align-self: flex-end;
-		background: none;
-		color: rgba(255, 255, 255, 1);
-		border-bottom: 1px solid rgba(255, 255, 255, 1);
-		padding: 0px 0px 2px 0px;
-		cursor: pointer;
-		transition: border-bottom 0.5s ease 0s;
-
-		&:hover {
-			border-bottom: 1px solid rgba(255, 255, 255, 0);
-		}
-	}
 }
 
 .checkbox {

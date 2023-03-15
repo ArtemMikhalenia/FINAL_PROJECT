@@ -151,7 +151,6 @@ li.facebook-icon img {
 		padding: 184px 0px 0px 71px;
 
 		&.active {
-
 			right: 0;
 			padding: 184px 0px 0px 71px;
 		}
@@ -190,7 +189,7 @@ li.facebook-icon img {
 		font-size: 20px;
 		line-height: 24px;
 		color: rgba(101, 101, 101, 1);
-		transition: all 0.5s ease 0s;
+		@include anim(0.5s, 0s);
 
 		&._active {
 			color: rgba(255, 255, 255, 1);
@@ -232,7 +231,7 @@ li.facebook-icon img {
 	z-index: 5;
 
 	span {
-		@include anim(0.3s, 0s);
+		@include anim(0.5s, 0s);
 		top: 6.5px;
 		left: 0px;
 		position: absolute;
@@ -259,12 +258,12 @@ li.facebook-icon img {
 			@include scale(0);
 
 			&:first-child {
-				@include rotate(-45deg);
+				@include rotate(-135deg);
 				top: 6.5px;
 			}
 
 			&:last-child {
-				@include rotate(45deg);
+				@include rotate(135deg);
 				bottom: 14.5px;
 			}
 		}

@@ -167,23 +167,6 @@
 	resize: none;
 	margin: 0px 0px 35px 0px;
 }
-.popup-form__submit {
-	width: 132px;
-	font-weight: 500;
-	-ms-flex-item-align: end;
-	    align-self: flex-end;
-	background: none;
-	color: rgb(255, 255, 255);
-	border-bottom: 1px solid rgb(255, 255, 255);
-	padding: 0px 0px 2px 0px;
-	cursor: pointer;
-	-webkit-transition: border-bottom 0.5s ease 0s;
-	-o-transition: border-bottom 0.5s ease 0s;
-	transition: border-bottom 0.5s ease 0s;
-}
-.popup-form__submit:hover {
-	border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
 
 .checkbox__block {
 	display: -webkit-box;
