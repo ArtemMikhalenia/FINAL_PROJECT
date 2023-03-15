@@ -1075,7 +1075,7 @@ a.bottom-link {
 
 .mainblock {
 	padding: 0px 0px 240px 0px;
-	background: url("../img/mainblock/background.png") 50% 62.5% no-repeat;
+	background: url("../img/mainblock/background.jpg") 50% 62.5% no-repeat;
 	background-size: cover;
 }
 .mainblock__shadow {
@@ -1232,9 +1232,9 @@ a.bottom-link {
 	padding: 16px 31px;
 	border-radius: 7px;
 	background-color: rgba(255, 255, 255, 0.07);
-	-webkit-transition: all 0.8s ease 0s;
-	-o-transition: all 0.8s ease 0s;
-	transition: all 0.8s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
 }
 .information-left__button:hover {
 	color: rgb(21, 21, 21);
@@ -1546,9 +1546,9 @@ a.bottom-link {
 	background-color: rgba(255, 255, 255, 0.07);
 	padding: 16px 26px;
 	margin: 0px 0px 83px 0px;
-	-webkit-transition: all 0.8s ease 0s;
-	-o-transition: all 0.8s ease 0s;
-	transition: all 0.8s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
 }
 .office-left__button:hover {
 	color: rgb(21, 21, 21);
@@ -1791,9 +1791,9 @@ a.bottom-link {
 	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 	cursor: pointer;
+	-ms-transform: scale(0.9);
 	-webkit-transform: scale(0.9);
-	    -ms-transform: scale(0.9);
-	        transform: scale(0.9);
+	transform: scale(0.9);
 }
 
 .item-why1 .item-why__blur,
@@ -1805,9 +1805,9 @@ a.bottom-link {
 
 .item-why1:hover,
 .item-why3:hover {
+	-ms-transform: scale(1);
 	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 	background: rgba(255, 255, 255, 0.03);
 }
 
@@ -2009,9 +2009,9 @@ a.bottom-link {
 	cursor: pointer;
 }
 .contact-form__check:checked + .contact-form__label::after {
+	-ms-transform: scale(1);
 	-webkit-transform: scale(1);
-	    -ms-transform: scale(1);
-	        transform: scale(1);
+	transform: scale(1);
 }
 .contact-form__checkbox {
 	display: -webkit-box;
@@ -2057,9 +2057,9 @@ a.bottom-link {
 	top: -2px;
 	left: -33px;
 	background-color: rgb(255, 255, 255);
+	-ms-transform: scale(0);
 	-webkit-transform: scale(0);
-	    -ms-transform: scale(0);
-	        transform: scale(0);
+	transform: scale(0);
 	-webkit-transition: all 0.5s ease 0s;
 	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
