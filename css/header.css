@@ -55,6 +55,7 @@ a.bottom-link {
 }
 
 .header__body {
+	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -64,7 +65,7 @@ a.bottom-link {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	padding: 43px 0px 230.5px 0px;
+	padding: 43px 0px 0px 0px;
 	z-index: 10;
 }
 .header__rightside {
@@ -142,6 +143,7 @@ a.bottom-link {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	z-index: 2;
 }
 .header__language {
 	padding: 6px 0px 7px 0px;
@@ -272,7 +274,7 @@ li.facebook-icon img {
 	width: 16px;
 	height: 14px;
 	cursor: pointer;
-	z-index: 5;
+	z-index: 6;
 }
 .icon-menu span {
 	-webkit-transition: all 0.5s ease 0s;

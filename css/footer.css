@@ -348,6 +348,7 @@ a.bottom-link {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+	z-index: 2;
 }
 .contacts-footer__links a {
 	-webkit-transition: all 0.5s ease 0s;

@@ -77,7 +77,7 @@
 	right: 0;
 	z-index: -1;
 	overflow: hidden;
-	background: url("../img/mainblock/popup/background.png") 101% 0% no-repeat;
+	background: url("../img/mainpage/mainblock/popup/background.png") 101% 0% no-repeat;
 }
 
 .header-popup {
@@ -101,7 +101,7 @@
 	-o-transition: transform 0.5s ease 0s;
 	transition: transform 0.5s ease 0s;
 	transition: transform 0.5s ease 0s, -webkit-transform 0.5s ease 0s;
-	background: url("../img/mainblock/popup/close.svg") center center no-repeat;
+	background: url("../img/mainpage/mainblock/popup/close.svg") center center no-repeat;
 }
 .header-popup__close:hover {
 	-ms-transform: rotate(180deg);

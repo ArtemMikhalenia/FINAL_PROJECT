@@ -99,7 +99,7 @@ body {
 //<MAINBLOCK>====================================================================================================
 .mainblock {
 	padding: 0px 0px 240px 0px;
-	background: url('../img/mainblock/background.jpg') 50% 62.5% no-repeat;
+	background: url('../img/mainpage/mainblock/background.jpg') 50% 62.5% no-repeat;
 	background-size: cover;
 
 	&__shadow {
@@ -135,6 +135,10 @@ body {
 		margin: 0px 0px 27px 0px;
 		animation-duration: 2s;
 		animation-delay: 0.1s;
+	}
+
+	&__content {
+		padding: 230.5px 0px 0px 0px;
 	}
 }
 
@@ -441,7 +445,7 @@ body {
 		&::before {
 			content: '';
 			display: inline-block;
-			background-image: url('../img/houses/location_icon.svg');
+			background-image: url('../img/mainpage/houses/location_icon.svg');
 			background-position: 0;
 			background-size: 100%;
 			background-repeat: no-repeat;
@@ -483,7 +487,7 @@ body {
 
 .slide-houses1,
 .slide-blog1 {
-	background-image: url('../img/houses/slide1.jpg');
+	background-image: url('../img/mainpage/houses/slide1.jpg');
 	background-repeat: no-repeat;
 	background-size: 152%;
 	background-position: 0% 55%;
@@ -491,7 +495,7 @@ body {
 
 .slide-houses2,
 .slide-blog2 {
-	background-image: url('../img/houses/slide2.jpg');
+	background-image: url('../img/mainpage/houses/slide2.jpg');
 	background-repeat: no-repeat;
 	background-size: 130%;
 	background-position: 91% 38%;
@@ -499,7 +503,7 @@ body {
 
 .slide-houses3,
 .slide-blog3 {
-	background-image: url('../img/houses/slide3.jpg');
+	background-image: url('../img/mainpage/houses/slide3.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0% 95%;
@@ -611,7 +615,7 @@ body {
 
 .office-right {
 	position: relative;
-	background-image: url('../img/office/office.jpg');
+	background-image: url('../img/mainpage/office/office.jpg');
 	background-repeat: no-repeat;
 	background-position: 51% 80%;
 	background-size: 140%;
@@ -646,7 +650,7 @@ body {
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-image: url('../img/management/background.png');
+		background-image: url('../img/mainpage/management/background.png');
 		background-size: 865px;
 		background-repeat: no-repeat;
 		background-position: 60% 50%;
@@ -743,7 +747,7 @@ body {
 		height: 100%;
 		top: 0;
 		left: 0;
-		background-image: url('../img/why/background.svg');
+		background-image: url('../img/mainpage/why/background.svg');
 		background-position: center 90%;
 		background-size: 400px;
 		background-repeat: no-repeat;
@@ -920,7 +924,7 @@ body {
 
 .contact {
 	position: relative;
-	background: url('../img/contact/background.jpg') 50% 58% no-repeat;
+	background: url('../img/mainpage/contact/background.jpg') 50% 58% no-repeat;
 	background-size: 140%;
 
 	&__background {
@@ -972,7 +976,7 @@ body {
 				height: 15px;
 				top: calc(50% - 5px);
 				margin: 0px 0px 0px 12px;
-				background: url('../img/contact/arrow.svg') no-repeat;
+				background: url('../img/mainpage/contact/arrow.svg') no-repeat;
 			}
 
 			&:hover {
@@ -1085,5 +1089,85 @@ body {
 }
 
 //</CONTACT>===============================================================================================
+//<ABOUT MAINBLOCK>========================================================================================
+.about-mainblock {
+	position: relative;
+	background: url('../img/aboutpage/mainblock/background.jpg') 35% 40% no-repeat;
+	background-size: 140%;
+
+	&__gradient1 {
+		position: absolute;
+		width: 705px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+		z-index: 0;
+	}
+
+	&__gradient2 {
+		position: absolute;
+		width: 240px;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0) 100%);
+		transform: rotate(-180deg);
+	}
+
+	&__gradient3 {
+		position: absolute;
+		width: 100%;
+		height: 200px;
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+		transform: rotate(-180deg);
+	}
+
+	&__content {
+		padding: 35px 0px 0px 0px;
+	}
+
+	&__title {
+		max-width: 1000px;
+		margin: 0px 0px 40px 0px;
+		font-size: 85px;
+		line-height: 76px;
+		letter-spacing: -0.02em;
+	}
+
+	&__text {
+		max-width: 473px;
+		margin: 0px 0px 25px 0px;
+	}
+
+	&__btn {
+		padding: 16px 24px;
+	}
+}
+
+.breadcrumbs {
+	position: relative;
+	margin: 0px 0px 69px 0px;
+
+	&__list {
+		max-width: 152px;
+		@include flexbox();
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.breadcrumbs-link {
+	font-size: 12px;
+	line-height: 19px;
+	color: rgba(255, 255, 255, 0.6);
+
+	&.active {
+		color: rgba(255, 255, 255, 1);
+	}
+}
+
+
+//</ABOUT MAINBLOCK>=======================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";

@@ -150,6 +150,10 @@
 		font-size: 15px;
 		line-height: 18px;
 	}
+	.about-mainblock__title {
+		font-size: 71px;
+		line-height: 64px;
+	}
 }
 @media (max-width: 940px) {
 	.information__background img {
@@ -197,7 +201,10 @@
 }
 @media (max-width: 767.98px) {
 	.header__body {
-		padding: 27px 0px 220px 0px;
+		padding: 27px 0px 0px 0px;
+	}
+	.mainblock__content {
+		padding: 220px 0px 0px 0px;
 	}
 	.menu__body {
 		padding: 96px 0px 0px 71px;
@@ -241,7 +248,7 @@
 		display: none;
 	}
 	.contact {
-		background: url("../img/contact/background.jpg") 50% 65% no-repeat;
+		background: url("../img/mainpage/contact/background.jpg") 50% 65% no-repeat;
 		background-size: 200%;
 	}
 	.contact__content {
@@ -399,6 +406,9 @@
 		grid-row: 4/5;
 		-ms-grid-column-align: end;
 		    justify-self: end;
+	}
+	.about-mainblock__content {
+		padding: 35px 0px 0px 0px;
 	}
 }
 @media (max-width: 600px) {
@@ -676,7 +686,7 @@
 		line-height: 19px;
 	}
 	.contact {
-		background: url("../img/contact/background.jpg") 50% 80% no-repeat;
+		background: url("../img/mainpage/contact/background.jpg") 50% 80% no-repeat;
 		background-size: 1200px;
 	}
 	.contact__content {
@@ -797,7 +807,7 @@
 		line-height: 19px;
 	}
 	.popup-background {
-		background: url("../img/mainblock/popup/background_mobile.png") 101% 0% no-repeat;
+		background: url("../img/mainpage/mainblock/popup/background_mobile.png") 101% 0% no-repeat;
 		background-size: cover;
 	}
 	.header-popup__logo {
@@ -806,7 +816,7 @@
 	}
 	.header-popup__close {
 		top: 20px;
-		background: url("../img/mainblock/popup/close_adapt.svg") center center no-repeat;
+		background: url("../img/mainpage/mainblock/popup/close_adapt.svg") center center no-repeat;
 	}
 	.popup-form__submit {
 		font-size: 14px;
@@ -920,9 +930,6 @@
 		font-size: 38px;
 		line-height: 43px;
 	}
-	.header__body {
-		padding: 27px 0px 220px 0px;
-	}
 	.menu__body {
 		padding: 96px 10px 0px 34px;
 	}
@@ -976,6 +983,10 @@
 	}
 	.footer-bottom__checkbox {
 		margin: 0px 10px 0px 0px;
+	}
+	.about-mainblock {
+		background: url("../img/aboutpage/mainblock/background.jpg") 35% 40% no-repeat;
+		background-size: cover;
 	}
 }
 @media (max-width: 425px) {
@@ -1083,8 +1094,8 @@
 	.mainblock__title {
 		font-size: 36px;
 	}
-	.header__body {
-		padding: 27px 0px 218px 0px;
+	.mainblock__content {
+		padding: 218px 0px 0px 0px;
 	}
 	.menu__body {
 		padding: 96px 10px 0px 34px;
@@ -1135,5 +1146,8 @@
 	}
 	.contact-form {
 		max-width: 295px;
+	}
+	.about-mainblock__content {
+		padding: 35px 0px 0px 0px;
 	}
 }

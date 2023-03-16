@@ -247,6 +247,7 @@
       width: 100%;
       @include flexbox();
       justify-content: space-between;
+      z-index: 2;
 
       a {
          @include anim (0.5s, 0s);

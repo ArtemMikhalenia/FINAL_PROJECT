@@ -230,6 +230,13 @@ $md4: 479.98;
          line-height: 18px;
       }
    }
+
+   .about-mainblock {
+      &__title {
+         font-size: 71px;
+         line-height: 64px;
+      }
+   }
 }
 
 @media (max-width: 940px) {
@@ -292,7 +299,13 @@ $md4: 479.98;
 @media (max-width: $md3+px) {
    .header {
       &__body {
-         padding: 27px 0px 220px 0px;
+         padding: 27px 0px 0px 0px;
+      }
+   }
+
+   .mainblock {
+      &__content {
+         padding: 220px 0px 0px 0px;
       }
    }
 
@@ -358,7 +371,7 @@ $md4: 479.98;
    }
 
    .contact {
-      background: url('../img/contact/background.jpg') 50% 65% no-repeat;
+      background: url('../img/mainpage/contact/background.jpg') 50% 65% no-repeat;
       background-size: 200%;
 
       &__content {
@@ -450,6 +463,12 @@ $md4: 479.98;
          grid-column: 2 / 3;
          grid-row: 4 / 5;
          justify-self: end;
+      }
+   }
+
+   .about-mainblock {
+      &__content {
+         padding: 35px 0px 0px 0px;
       }
    }
 }
@@ -823,7 +842,7 @@ $md4: 479.98;
    }
 
    .contact {
-      background: url('../img/contact/background.jpg') 50% 80% no-repeat;
+      background: url('../img/mainpage/contact/background.jpg') 50% 80% no-repeat;
       background-size: 1200px;
 
       &__content {
@@ -946,7 +965,7 @@ $md4: 479.98;
    }
 
    .popup-background {
-      background: url('../img/mainblock/popup/background_mobile.png') 101% 0% no-repeat;
+      background: url('../img/mainpage/mainblock/popup/background_mobile.png') 101% 0% no-repeat;
       background-size: cover;
    }
 
@@ -958,7 +977,7 @@ $md4: 479.98;
 
       &__close {
          top: 20px;
-         background: url('../img/mainblock/popup/close_adapt.svg') center center no-repeat;
+         background: url('../img/mainpage/mainblock/popup/close_adapt.svg') center center no-repeat;
       }
    }
 
@@ -1125,12 +1144,6 @@ $md4: 479.98;
       }
    }
 
-   .header {
-      &__body {
-         padding: 27px 0px 220px 0px;
-      }
-   }
-
    .menu {
       &__body {
          padding: 96px 10px 0px 34px;
@@ -1205,6 +1218,11 @@ $md4: 479.98;
       &__checkbox {
          margin: 0px 10px 0px 0px;
       }
+   }
+
+   .about-mainblock {
+      background: url('../img/aboutpage/mainblock/background.jpg') 35% 40% no-repeat;
+      background-size: cover;
    }
 }
 
@@ -1364,11 +1382,9 @@ $md4: 479.98;
       &__title {
          font-size: 36px;
       }
-   }
 
-   .header {
-      &__body {
-         padding: 27px 0px 218px 0px;
+      &__content {
+         padding: 218px 0px 0px 0px;
       }
    }
 
@@ -1453,5 +1469,11 @@ $md4: 479.98;
 
    .contact-form {
       max-width: 295px;
+   }
+
+   .about-mainblock {
+      &__content {
+         padding: 35px 0px 0px 0px;
+      }
    }
 }
