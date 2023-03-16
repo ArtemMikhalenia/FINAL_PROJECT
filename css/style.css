@@ -635,6 +635,7 @@ li.facebook-icon img {
 .menu__body.active {
 	right: 0;
 	padding: 184px 0px 0px 71px;
+	z-index: 1;
 }
 .menu__list li:nth-child(-n+8) {
 	margin: 0px 0px 25px 0px;
@@ -1154,7 +1155,7 @@ a.bottom-link {
 }
 .mainblock__shadow.active {
 	background: rgba(16, 16, 16, 0.5);
-	z-index: 0;
+	z-index: 1;
 }
 .mainblock__title {
 	max-width: 900px;
@@ -1165,10 +1166,18 @@ a.bottom-link {
 	vertical-align: top;
 	text-align: left;
 	letter-spacing: -0.02em;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-animation-delay: 0s;
+	        animation-delay: 0s;
 }
 .mainblock__text {
 	max-width: 511px;
 	margin: 0px 0px 27px 0px;
+	-webkit-animation-duration: 2s;
+	        animation-duration: 2s;
+	-webkit-animation-delay: 0.1s;
+	        animation-delay: 0.1s;
 }
 
 .button-block {

@@ -227,3 +227,14 @@ const swiper = new Swiper('.main-swiper', {
 		},
 	},
 });
+
+//<WOW>
+
+const wow = new WOW({
+	boxClass: 'wow',
+	animateClass: 'animate__animated',
+	offset: 50,
+	mobile: true,
+	live: true,
+})
+wow.init();
