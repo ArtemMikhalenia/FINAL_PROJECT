@@ -1072,6 +1072,9 @@
 		        align-items: start;
 		margin: 0px 5px 0px 0px;
 	}
+	.footer-form__checkbox {
+		top: 3px;
+	}
 	.footer-form__label::before, .footer-form__label::after {
 		top: 0;
 	}

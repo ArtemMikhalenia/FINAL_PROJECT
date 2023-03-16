@@ -1,3 +1,6 @@
+@import "mixins.scss";
+@import "ui.scss";
+
 //====================================================================================================
 .header {
 
@@ -258,12 +261,12 @@ li.facebook-icon img {
 			@include scale(0);
 
 			&:first-child {
-				@include rotate(-135deg);
+				@include rotate(-45deg);
 				top: 6.5px;
 			}
 
 			&:last-child {
-				@include rotate(135deg);
+				@include rotate(45deg);
 				bottom: 14.5px;
 			}
 		}

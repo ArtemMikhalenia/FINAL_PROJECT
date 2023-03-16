@@ -213,7 +213,7 @@ a.bottom-link {
 .footer-form__checkbox {
 	margin: 0px 12px 0px 0px;
 	position: relative;
-	width: 20px;
+	width: 15px;
 	cursor: pointer;
 }
 .footer-form__checkbox:checked + .footer-form__label::after {

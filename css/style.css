@@ -413,6 +413,62 @@ a.bottom-link {
 	margin: 0px 13px 0px 0px;
 }
 
+.text-style {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+a.bottom-link {
+	font-size: 15px;
+}
+
+.link1 {
+	float: left;
+	padding: 0px 52px 0px 0px;
+}
+
+.form-style {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 24px;
+	background: transparent;
+	color: rgb(255, 255, 255);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	margin: 0px 0px 29px 0px;
+	-webkit-transition: border-bottom 0.5s ease 0s;
+	-o-transition: border-bottom 0.5s ease 0s;
+	transition: border-bottom 0.5s ease 0s;
+}
+.form-style:focus {
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.title {
+	font-family: "Playfair Display";
+	font-size: 85px;
+	font-weight: 400;
+	line-height: 76px;
+	letter-spacing: -0.02em;
+}
+
+.submit-btn {
+	width: 132px;
+	font-weight: 500;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	background: none;
+	color: rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(255, 255, 255);
+	padding: 0px 0px 2px 0px;
+	cursor: pointer;
+	-webkit-transition: border-bottom 0.5s ease 0s;
+	-o-transition: border-bottom 0.5s ease 0s;
+	transition: border-bottom 0.5s ease 0s;
+}
+.submit-btn:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
 .header__body {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -661,15 +717,15 @@ li.facebook-icon img {
 	transform: scale(0);
 }
 .icon-menu.active span:first-child {
-	-ms-transform: rotate(-135deg);
-	-webkit-transform: rotate(-135deg);
-	transform: rotate(-135deg);
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
 	top: 6.5px;
 }
 .icon-menu.active span:last-child {
-	-ms-transform: rotate(135deg);
-	-webkit-transform: rotate(135deg);
-	transform: rotate(135deg);
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
 	bottom: 14.5px;
 }
 
@@ -888,7 +944,7 @@ a.bottom-link {
 .footer-form__checkbox {
 	margin: 0px 12px 0px 0px;
 	position: relative;
-	width: 20px;
+	width: 15px;
 	cursor: pointer;
 }
 .footer-form__checkbox:checked + .footer-form__label::after {
@@ -3141,6 +3197,9 @@ a.bottom-link {
 		    -ms-flex-align: start;
 		        align-items: start;
 		margin: 0px 5px 0px 0px;
+	}
+	.footer-form__checkbox {
+		top: 3px;
 	}
 	.footer-form__label::before, .footer-form__label::after {
 		top: 0;

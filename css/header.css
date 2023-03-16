@@ -1,0 +1,315 @@
+.text-style {
+	font-size: 15px;
+	line-height: 24px;
+}
+
+a.bottom-link {
+	font-size: 15px;
+}
+
+.link1 {
+	float: left;
+	padding: 0px 52px 0px 0px;
+}
+
+.form-style {
+	font-size: 15px;
+	font-weight: 300;
+	line-height: 24px;
+	background: transparent;
+	color: rgb(255, 255, 255);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+	margin: 0px 0px 29px 0px;
+	-webkit-transition: border-bottom 0.5s ease 0s;
+	-o-transition: border-bottom 0.5s ease 0s;
+	transition: border-bottom 0.5s ease 0s;
+}
+.form-style:focus {
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.title {
+	font-family: "Playfair Display";
+	font-size: 85px;
+	font-weight: 400;
+	line-height: 76px;
+	letter-spacing: -0.02em;
+}
+
+.submit-btn {
+	width: 132px;
+	font-weight: 500;
+	-ms-flex-item-align: end;
+	    align-self: flex-end;
+	background: none;
+	color: rgb(255, 255, 255);
+	border-bottom: 1px solid rgb(255, 255, 255);
+	padding: 0px 0px 2px 0px;
+	cursor: pointer;
+	-webkit-transition: border-bottom 0.5s ease 0s;
+	-o-transition: border-bottom 0.5s ease 0s;
+	transition: border-bottom 0.5s ease 0s;
+}
+.submit-btn:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.header__body {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 43px 0px 230.5px 0px;
+	z-index: 10;
+}
+.header__rightside {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 702.65px;
+	width: 100%;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.header__logo {
+	max-width: 99px;
+	width: 100%;
+}
+.header__address {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	max-width: 442.5px;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.header__address::before {
+	content: "";
+	width: 1px;
+	margin: 0px 16px 0px 3px;
+	height: 31.5px;
+	background: rgba(255, 255, 255, 0.5);
+}
+.header__address::after {
+	content: "";
+	width: 1px;
+	margin: 0px 0px 0px 7px;
+	height: 31.5px;
+	background: rgba(255, 255, 255, 0.5);
+}
+.header__phone {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.header__leftside {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	max-width: 132px;
+	width: 100%;
+}
+.header__languages {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 62%;
+	        flex: 0 1 62%;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.header__language {
+	padding: 6px 0px 7px 0px;
+	font-size: 12px;
+	line-height: 100%;
+	z-index: 1;
+}
+.header__language._active {
+	padding: 6px 0px 6px 0px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+.header__menu {
+	display: inline-block;
+}
+
+.logo-header__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.logo-header__image {
+	margin: 0px 8px 0px 0px;
+}
+.logo-header__text {
+	font-size: 15px;
+	line-height: 160%;
+}
+
+.address-header__image {
+	margin: 0px 12px 0px 0px;
+}
+.address-header__text {
+	font-size: 15px;
+	line-height: 160%;
+}
+.address-header__text:hover {
+	text-decoration: underline;
+}
+
+.phone-header__image {
+	margin: 0px 3.75px 0px 0px;
+}
+.phone-header__number {
+	font-size: 15px;
+	line-height: 160%;
+}
+.phone-header__number:hover {
+	text-decoration: underline;
+}
+
+li.instagram-icon img,
+li.facebook-icon img {
+	display: none;
+}
+
+.menu__body {
+	position: fixed;
+	top: 0%;
+	right: -200%;
+	width: 525px;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(26, 26, 26);
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-o-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
+	padding: 184px 0px 0px 71px;
+}
+.menu__body.active {
+	right: 0;
+	padding: 184px 0px 0px 71px;
+}
+.menu__list li:nth-child(-n+8) {
+	margin: 0px 0px 25px 0px;
+}
+.menu__list li:nth-child(9) {
+	margin: 0px 0px 58px 0px;
+}
+.menu__list li:nth-child(10) {
+	margin: 0px 0px 10px 0px;
+}
+.menu__list li:nth-child(11) {
+	margin: 0px 0px 102px 0px;
+}
+.menu__list li:nth-child(12) {
+	margin: 0px 0px 79px 0px;
+}
+.menu__list li a.bottom-link {
+	margin: 0px 0px 89px 0px;
+}
+.menu__link {
+	display: inline-block;
+	position: relative;
+	font-family: Manrope;
+	font-size: 20px;
+	line-height: 24px;
+	color: rgb(101, 101, 101);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.menu__link._active {
+	color: rgb(255, 255, 255);
+}
+.menu__link._active::before {
+	content: "";
+	position: absolute;
+	top: 40%;
+	left: -35%;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: rgb(255, 255, 255);
+}
+.menu__link:hover {
+	color: rgb(255, 255, 255);
+}
+.menu__link.instagram-icon, .menu__link.facebook-icon {
+	display: none;
+}
+
+.icon-menu {
+	display: block;
+	position: absolute;
+	top: 25%;
+	right: 0px;
+	width: 16px;
+	height: 14px;
+	cursor: pointer;
+	z-index: 5;
+}
+.icon-menu span {
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	top: 6.5px;
+	left: 0px;
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	background-color: rgb(255, 255, 255);
+}
+.icon-menu span:first-child {
+	top: 0px;
+}
+.icon-menu span:last-child {
+	top: auto;
+	bottom: 0px;
+}
+.icon-menu.active {
+	width: 22px;
+	height: 22px;
+}
+.icon-menu.active span {
+	background-color: rgb(101, 101, 101);
+	-ms-transform: scale(0);
+	-webkit-transform: scale(0);
+	transform: scale(0);
+}
+.icon-menu.active span:first-child {
+	-ms-transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	top: 6.5px;
+}
+.icon-menu.active span:last-child {
+	-ms-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+	bottom: 14.5px;
+}
