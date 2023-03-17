@@ -2268,8 +2268,8 @@ a.bottom-link {
 
 .about-mainblock {
 	position: relative;
-	background: url("../img/aboutpage/mainblock/background.jpg") 35% 40% no-repeat;
-	background-size: 140%;
+	background: url("../img/aboutpage/mainblock/background.jpg") 15% 40% no-repeat;
+	background-size: 130%;
 }
 .about-mainblock__gradient1 {
 	position: absolute;
@@ -2350,6 +2350,91 @@ a.bottom-link {
 	color: rgb(255, 255, 255);
 }
 
+.quote {
+	position: relative;
+}
+.quote__backgrounds {
+	position: absolute;
+	width: 100%;
+	height: 526px;
+	top: 0;
+	left: 0;
+}
+.quote__content {
+	position: relative;
+	top: -93px;
+	padding: 295px 0px 233px 0px;
+	background-color: rgb(255, 251, 242);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+.quote__text {
+	position: relative;
+	font-family: "Playfair Display";
+	font-size: 62px;
+	line-height: 56px;
+	letter-spacing: -0.02em;
+	color: rgb(16, 16, 16);
+	text-align: center;
+	margin: 0px 0px 38px 0px;
+}
+.quote__text sup {
+	position: absolute;
+	height: 100%;
+	top: -30px;
+	right: -25px;
+}
+.quote__subtext {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+	color: rgb(29, 23, 23);
+}
+
+.quote-content__background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background-image: url("../img/aboutpage/quote/A.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.quote-background__left {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-image: url("../img/aboutpage/quote/background_left.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.quote-background__right {
+	position: absolute;
+	width: 50%;
+	height: 100%;
+	top: 0px;
+	right: 0px;
+	background-image: url("../img/aboutpage/quote/background_right.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
 @media (max-width: 1300px) {
 	.office-left__link {
 		margin: 0px 0px 28px 0px;
@@ -2402,6 +2487,22 @@ a.bottom-link {
 	}
 	.contacts-footer__links {
 		right: 0;
+	}
+	.quote__backgrounds {
+		height: 400px;
+	}
+	.quote__content {
+		top: -73px;
+		padding: 195px 0px 133px 0px;
+	}
+	.quote__text {
+		font-size: 48px;
+		line-height: 56px;
+		margin: 0px 0px 30px 0px;
+	}
+	.quote__subtext {
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
 @media (max-width: 1024px) {
@@ -2505,6 +2606,33 @@ a.bottom-link {
 	.about-mainblock__title {
 		font-size: 71px;
 		line-height: 64px;
+	}
+	.quote__backgrounds {
+		height: 380px;
+	}
+	.quote__text {
+		font-size: 38px;
+		line-height: 50px;
+		margin: 0px 0px 20px 0px;
+	}
+	.quote__text sup {
+		position: absolute;
+		height: 100%;
+		top: -30px;
+		right: -30px;
+	}
+	.quote__text sup svg {
+		width: 70%;
+	}
+	.quote__subtext {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.quote-content__background {
+		background-image: url("../img/aboutpage/quote/A.png");
+		background-size: 700px;
+		background-repeat: no-repeat;
+		background-position: top right;
 	}
 }
 @media (max-width: 940px) {
@@ -2761,6 +2889,27 @@ a.bottom-link {
 	}
 	.about-mainblock__content {
 		padding: 35px 0px 0px 0px;
+	}
+	.quote__content {
+		top: -53px;
+		width: 90%;
+		margin: 0 auto;
+		padding: 175px 0px 120px 0px;
+	}
+	.quote__backgrounds {
+		height: 350px;
+	}
+	.quote__text {
+		max-width: 96%;
+		font-size: 28px;
+		line-height: 38px;
+	}
+	.quote__text sup {
+		top: -35px;
+		right: -37px;
+	}
+	.quote__text sup svg {
+		width: 45%;
 	}
 }
 @media (max-width: 600px) {
@@ -3136,6 +3285,34 @@ a.bottom-link {
 		display: -ms-flexbox;
 		display: flex;
 	}
+	.quote__backgrounds {
+		height: 250px;
+	}
+	.quote__content {
+		padding: 125px 0px 80px 0px;
+	}
+	.quote__text {
+		max-width: 85%;
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0px 0px 20px 0px;
+	}
+	.quote__text sup {
+		top: -40px;
+		right: -47px;
+	}
+	.quote__text sup svg {
+		width: 30%;
+	}
+	.quote__subtext {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+@media (max-width: 528.98px) {
+	.quote sup {
+		display: none;
+	}
 }
 @media (max-width: 500px) {
 	.popup__title {
@@ -3275,6 +3452,12 @@ a.bottom-link {
 	.address-footer__street {
 		font-size: 12px;
 		line-height: 19px;
+	}
+	.quote-content__background {
+		background-image: url("../img/aboutpage/quote/A.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top right;
 	}
 }
 @media (max-width: 479.98px) {

@@ -1092,8 +1092,8 @@ body {
 //<ABOUT MAINBLOCK>========================================================================================
 .about-mainblock {
 	position: relative;
-	background: url('../img/aboutpage/mainblock/background.jpg') 35% 40% no-repeat;
-	background-size: 140%;
+	background: url('../img/aboutpage/mainblock/background.jpg') 15% 40% no-repeat;
+	background-size: 130%;
 
 	&__gradient1 {
 		position: absolute;
@@ -1167,7 +1167,97 @@ body {
 	}
 }
 
-
 //</ABOUT MAINBLOCK>=======================================================================================
+//<ABOUT QUOTE>=======================================================================================
+
+.quote {
+	position: relative;
+
+	&__backgrounds {
+		position: absolute;
+		width: 100%;
+		height: 526px;
+		top: 0;
+		left: 0;
+	}
+
+	&__content {
+		position: relative;
+		top: -93px;
+		padding: 295px 0px 233px 0px;
+		background-color: rgba(255, 251, 242, 1);
+		@include flexbox();
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__text {
+		position: relative;
+		font-family: 'Playfair Display';
+		font-size: 62px;
+		line-height: 56px;
+		letter-spacing: -0.02em;
+		color: rgba(16, 16, 16, 1);
+		text-align: center;
+		margin: 0px 0px 38px 0px;
+
+		& sup {
+			position: absolute;
+			height: 100%;
+			top: -30px;
+			right: -25px;
+		}
+	}
+
+	&__subtext {
+		font-size: 20px;
+		font-weight: 600;
+		line-height: 24px;
+		color: rgba(29, 23, 23, 1);
+	}
+}
+
+.quote-content {
+	&__background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-image: url('../img/aboutpage/quote/A.png');
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position: top right;
+	}
+}
+
+.quote-background {
+
+	&__left {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		background-image: url('../img/aboutpage/quote/background_left.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+
+	&__right {
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		top: 0px;
+		right: 0px;
+		background-image: url('../img/aboutpage/quote/background_right.png');
+		background-size: 100%;
+		background-repeat: no-repeat;
+	}
+}
+
+
+//</ABOUT QUOTE>=======================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";

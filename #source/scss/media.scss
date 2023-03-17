@@ -95,6 +95,29 @@ $md4: 479.98;
          right: 0;
       }
    }
+
+   .quote {
+
+      &__backgrounds {
+         height: 400px;
+      }
+
+      &__content {
+         top: -73px;
+         padding: 195px 0px 133px 0px;
+      }
+
+      &__text {
+         font-size: 48px;
+         line-height: 56px;
+         margin: 0px 0px 30px 0px;
+      }
+
+      &__subtext {
+         font-size: 16px;
+         line-height: 20px;
+      }
+   }
 }
 
 @media (max-width: 1024px) {
@@ -235,6 +258,44 @@ $md4: 479.98;
       &__title {
          font-size: 71px;
          line-height: 64px;
+      }
+   }
+
+   .quote {
+
+      &__backgrounds {
+         height: 380px;
+      }
+
+      &__text {
+         font-size: 38px;
+         line-height: 50px;
+         margin: 0px 0px 20px 0px;
+
+         & sup {
+            position: absolute;
+            height: 100%;
+            top: -30px;
+            right: -30px;
+
+            svg {
+               width: 70%;
+            }
+         }
+      }
+
+      &__subtext {
+         font-size: 14px;
+         line-height: 20px;
+      }
+   }
+
+   .quote-content {
+      &__background {
+         background-image: url('../img/aboutpage/quote/A.png');
+         background-size: 700px;
+         background-repeat: no-repeat;
+         background-position: top right;
       }
    }
 }
@@ -469,6 +530,35 @@ $md4: 479.98;
    .about-mainblock {
       &__content {
          padding: 35px 0px 0px 0px;
+      }
+   }
+
+   .quote {
+
+      &__content {
+         top: -53px;
+         width: 90%;
+         margin: 0 auto;
+         padding: 175px 0px 120px 0px;
+      }
+
+      &__backgrounds {
+         height: 350px;
+      }
+
+      &__text {
+         max-width: 96%;
+         font-size: 28px;
+         line-height: 38px;
+
+         & sup {
+            top: -35px;
+            right: -37px;
+
+            svg {
+               width: 45%;
+            }
+         }
       }
    }
 }
@@ -934,6 +1024,46 @@ $md4: 479.98;
          @include flexbox();
       }
    }
+
+   .quote {
+
+      &__backgrounds {
+         height: 250px;
+      }
+
+      &__content {
+         padding: 125px 0px 80px 0px;
+      }
+
+      &__text {
+         max-width: 85%;
+         font-size: 24px;
+         line-height: 30px;
+         margin: 0px 0px 20px 0px;
+
+         & sup {
+            top: -40px;
+            right: -47px;
+
+            svg {
+               width: 30%;
+            }
+         }
+      }
+
+      &__subtext {
+         font-size: 12px;
+         line-height: 16px;
+      }
+   }
+}
+
+@media (max-width: 528.98px) {
+   .quote {
+      & sup {
+         display: none;
+      }
+   }
 }
 
 @media (max-width: 500px) {
@@ -1132,6 +1262,15 @@ $md4: 479.98;
       &__street {
          font-size: 12px;
          line-height: 19px;
+      }
+   }
+
+   .quote-content {
+      &__background {
+         background-image: url('../img/aboutpage/quote/A.png');
+         background-size: cover;
+         background-repeat: no-repeat;
+         background-position: top right;
       }
    }
 }

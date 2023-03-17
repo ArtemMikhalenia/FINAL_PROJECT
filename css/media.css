@@ -51,6 +51,22 @@
 	.contacts-footer__links {
 		right: 0;
 	}
+	.quote__backgrounds {
+		height: 400px;
+	}
+	.quote__content {
+		top: -73px;
+		padding: 195px 0px 133px 0px;
+	}
+	.quote__text {
+		font-size: 48px;
+		line-height: 56px;
+		margin: 0px 0px 30px 0px;
+	}
+	.quote__subtext {
+		font-size: 16px;
+		line-height: 20px;
+	}
 }
 @media (max-width: 1024px) {
 	.footer__background img {
@@ -153,6 +169,33 @@
 	.about-mainblock__title {
 		font-size: 71px;
 		line-height: 64px;
+	}
+	.quote__backgrounds {
+		height: 380px;
+	}
+	.quote__text {
+		font-size: 38px;
+		line-height: 50px;
+		margin: 0px 0px 20px 0px;
+	}
+	.quote__text sup {
+		position: absolute;
+		height: 100%;
+		top: -30px;
+		right: -30px;
+	}
+	.quote__text sup svg {
+		width: 70%;
+	}
+	.quote__subtext {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.quote-content__background {
+		background-image: url("../img/aboutpage/quote/A.png");
+		background-size: 700px;
+		background-repeat: no-repeat;
+		background-position: top right;
 	}
 }
 @media (max-width: 940px) {
@@ -409,6 +452,27 @@
 	}
 	.about-mainblock__content {
 		padding: 35px 0px 0px 0px;
+	}
+	.quote__content {
+		top: -53px;
+		width: 90%;
+		margin: 0 auto;
+		padding: 175px 0px 120px 0px;
+	}
+	.quote__backgrounds {
+		height: 350px;
+	}
+	.quote__text {
+		max-width: 96%;
+		font-size: 28px;
+		line-height: 38px;
+	}
+	.quote__text sup {
+		top: -35px;
+		right: -37px;
+	}
+	.quote__text sup svg {
+		width: 45%;
 	}
 }
 @media (max-width: 600px) {
@@ -784,6 +848,34 @@
 		display: -ms-flexbox;
 		display: flex;
 	}
+	.quote__backgrounds {
+		height: 250px;
+	}
+	.quote__content {
+		padding: 125px 0px 80px 0px;
+	}
+	.quote__text {
+		max-width: 85%;
+		font-size: 24px;
+		line-height: 30px;
+		margin: 0px 0px 20px 0px;
+	}
+	.quote__text sup {
+		top: -40px;
+		right: -47px;
+	}
+	.quote__text sup svg {
+		width: 30%;
+	}
+	.quote__subtext {
+		font-size: 12px;
+		line-height: 16px;
+	}
+}
+@media (max-width: 528.98px) {
+	.quote sup {
+		display: none;
+	}
 }
 @media (max-width: 500px) {
 	.popup__title {
@@ -923,6 +1015,12 @@
 	.address-footer__street {
 		font-size: 12px;
 		line-height: 19px;
+	}
+	.quote-content__background {
+		background-image: url("../img/aboutpage/quote/A.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: top right;
 	}
 }
 @media (max-width: 479.98px) {
