@@ -12,52 +12,6 @@ if (iconMenu) {
 	});
 }
 
-
-//PLACEHOLDER
-
-const popupForm = document.forms.popup;
-const contactForm = document.forms.contact;
-const footerForm = document.forms.footer;
-
-const inputAll = document.querySelectorAll('input');
-const placeholder = document.querySelectorAll('[placeholder]');
-
-const nameInputPopup = popupForm.names;
-const namePlaceholderPopup = nameInputPopup.placeholder;
-const phoneInputPopup = popupForm.phone;
-const phonePlaceholderPopup = phoneInputPopup.placeholder;
-const emailInputPopup = popupForm.email;
-const emailPlaceholderPopup = emailInputPopup.placeholder;
-const textInputPopup = popupForm.textarea;
-const textPlaceholderPopup = textInputPopup.placeholder;
-
-const emailInputContact = contactForm.email;
-const emailPlaceholderContact = emailInputContact.placeholder;
-
-const nameInputFooter = footerForm.names;
-const namePlaceholderFooter = nameInputFooter.placeholder;
-const phoneInputFooter = footerForm.phone;
-const phonePlaceholderFooter = phoneInputFooter.placeholder;
-const emailInputFooter = footerForm.email;
-const emailPlaceholderFooter = emailInputFooter.placeholder;
-
-placeholder.forEach(el =>
-	el.addEventListener("focus", function (element) {
-		el.placeholder = "";
-	})
-);
-placeholder.forEach(el =>
-	el.addEventListener("blur", function (element) {
-		nameInputPopup.placeholder = placeholder.value = "Имя";
-		phoneInputPopup.placeholder = placeholder.value = "Телефон";
-		emailInputPopup.placeholder = placeholder.value = "Email";
-		textInputPopup.placeholder = placeholder.value = "Текст сообщения";
-		emailInputContact.placeholder = placeholder.value = "Введите свой email";
-		nameInputFooter.placeholder = placeholder.value = "Имя";
-		phoneInputFooter.placeholder = placeholder.value = "Телефон";
-		emailInputFooter.placeholder = placeholder.value = "Email";
-	}));
-
 //POPUP
 const popupLinks = document.querySelectorAll('.popup-link');
 const bodyScroll = document.querySelector('body');
