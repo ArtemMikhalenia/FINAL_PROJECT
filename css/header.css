@@ -322,13 +322,21 @@ li.facebook-icon img {
 	width: 100%;
 	height: 1px;
 	background-color: rgb(255, 255, 255);
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	-webkit-transition: all 0.25s ease 0s;
+	-o-transition: all 0.25s ease 0s;
+	transition: all 0.25s ease 0s;
 }
-.icon-menu span:first-child {
+.icon-menu span:nth-child(1) {
 	top: 0px;
 }
-.icon-menu span:last-child {
-	top: auto;
-	bottom: 0px;
+.icon-menu span:nth-child(2) {
+	top: 6px;
+}
+.icon-menu span:nth-child(3) {
+	top: 12px;
 }
 .icon-menu.active {
 	width: 22px;
@@ -340,15 +348,19 @@ li.facebook-icon img {
 	-webkit-transform: scale(0);
 	transform: scale(0);
 }
-.icon-menu.active span:first-child {
-	-ms-transform: rotate(-45deg);
-	-webkit-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-	top: 6.5px;
+.icon-menu.active span:nth-child(1) {
+	top: 6px;
+	-webkit-transform: rotate(135deg);
+	    -ms-transform: rotate(135deg);
+	        transform: rotate(135deg);
 }
-.icon-menu.active span:last-child {
-	-ms-transform: rotate(45deg);
-	-webkit-transform: rotate(45deg);
-	transform: rotate(45deg);
-	bottom: 14.5px;
+.icon-menu.active span:nth-child(2) {
+	opacity: 0;
+	left: -60px;
+}
+.icon-menu.active span:nth-child(3) {
+	top: 6px;
+	-webkit-transform: rotate(-135deg);
+	    -ms-transform: rotate(-135deg);
+	        transform: rotate(-135deg);
 }
