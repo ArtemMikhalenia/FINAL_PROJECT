@@ -5,7 +5,6 @@
 .header {
 
 	&__body {
-		position: relative;
 		@include flexbox();
 		align-items: center;
 		justify-content: space-between;
@@ -22,6 +21,7 @@
 	}
 
 	&__logo {
+		position: relative;
 		max-width: 99px;
 		width: 100%;
 	}

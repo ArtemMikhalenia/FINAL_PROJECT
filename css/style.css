@@ -549,7 +549,6 @@ a.bottom-link {
 }
 
 .header__body {
-	position: relative;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -576,6 +575,7 @@ a.bottom-link {
 	        justify-content: space-between;
 }
 .header__logo {
+	position: relative;
 	max-width: 99px;
 	width: 100%;
 }
@@ -1278,6 +1278,8 @@ a.bottom-link {
 }
 .mainblock__shadow.active {
 	background: rgba(16, 16, 16, 0.5);
+	width: 100%;
+	height: 100vh;
 	z-index: 1;
 }
 .mainblock__title {
