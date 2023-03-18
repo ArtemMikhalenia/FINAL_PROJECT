@@ -113,6 +113,17 @@ document.addEventListener('keydown', function (e) {
 	}
 });
 
+//<WOW>
+
+const wow = new WOW({
+	boxClass: 'wow',
+	animateClass: 'animate__animated',
+	offset: 50,
+	mobile: true,
+	live: true,
+})
+wow.init();
+
 //<SWIPER>
 
 const swiper = new Swiper('.main-swiper', {
@@ -153,14 +164,3 @@ const swiper = new Swiper('.main-swiper', {
 		},
 	},
 });
-
-//<WOW>
-
-const wow = new WOW({
-	boxClass: 'wow',
-	animateClass: 'animate__animated',
-	offset: 50,
-	mobile: true,
-	live: true,
-})
-wow.init();

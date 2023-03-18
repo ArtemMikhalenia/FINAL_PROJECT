@@ -1138,7 +1138,7 @@ body {
 	}
 
 	&__text {
-		max-width: 473px;
+		max-width: 447px;
 		margin: 0px 0px 25px 0px;
 	}
 
@@ -1265,9 +1265,9 @@ body {
 .specialists {
 	padding: 45px 0px 0px 0px;
 	background-image: url('../img/aboutpage/specialists/background.png');
-	background-position: 60% 50%;
+	background-position: 60% 40%;
 	background-repeat: no-repeat;
-	background-size: 980px;
+	background-size: 960px;
 
 	&__title {
 		position: relative;
@@ -1276,7 +1276,7 @@ body {
 	}
 
 	&__columns {
-		padding: 485px 0px 200px 0px;
+		padding: 485px 0px 285px 0px;
 		@include flexbox();
 		justify-content: space-between;
 	}
@@ -1337,7 +1337,131 @@ body {
 	}
 }
 
-
 //</ABOUT SPECIALISTS>=======================================================================================
+//<ABOUT EXPERTISE>=======================================================================================
+
+.expertise {
+	background-color: rgba(21, 21, 21, 1);
+	padding: 0px 0px 47px 0px;
+
+	&__container {
+		max-width: 1240px;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	&__content {
+		@include flexbox();
+		align-items: center;
+		justify-content: space-between;
+		margin: 0px 25px 81px;
+	}
+
+	&__left-column {
+		max-width: 460px;
+		flex: 0 1 59%;
+		margin: 0px 20px 0px 0px;
+	}
+
+	&__right-column {
+		flex: 0 1 41%;
+	}
+
+	&__links {
+		max-width: 1190px;
+		margin: 0 auto;
+		@include flexbox();
+		align-items: center;
+		justify-content: space-between;
+		font-size: 20px;
+		line-height: 24px;
+
+		a {
+			position: relative;
+			padding: 0px 0px 8px 0px;
+			@include anim (0.5s, 0s);
+		}
+
+		a.expertise__link1 {
+			margin: 0px 0px 0px 25px;
+			border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+			&::before {
+				content: '';
+				position: absolute;
+				width: 8px;
+				height: 15px;
+				top: calc(50% - 10px);
+				left: -25px;
+				background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+			}
+
+			&:hover {
+				border-bottom: 1px solid rgba(255, 255, 255, 0);
+			}
+		}
+
+		a.expertise__link2 {
+			margin: 0px 25px 0px 0px;
+			border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 8px;
+				height: 15px;
+				top: calc(50% - 10px);
+				@include rotate(180deg);
+				margin: 0px 0px 0px 17px;
+				background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+			}
+
+			&:hover {
+				border-bottom: 1px solid rgba(255, 255, 255, 1);
+			}
+		}
+	}
+}
+
+.expertise-left {
+
+	&__title {
+		margin: 0px 0px 30px 0px;
+	}
+
+	&__text {
+		max-width: 419px;
+		margin: 0px 0px 46px 0px;
+	}
+
+	&__stats {
+		margin: 0px 0px 46px 0px;
+	}
+
+	&__button {
+		display: inline-block;
+		padding: 16px 31px;
+		border-radius: 7px;
+		background-color: rgba(255, 255, 255, 0.07);
+		@include anim (0.5s, 0s);
+
+		&:hover {
+			color: rgba(21, 21, 21, 1);
+			background-color: rgba(255, 255, 255, 1);
+			box-shadow: 0 0 10px 2.5px rgba(255, 255, 255, 1);
+		}
+	}
+}
+
+.expertise-right {
+
+	&__photo {
+		position: relative;
+		top: -85px;
+	}
+}
+
+
+//</ABOUT EXPERTISE>=======================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";
