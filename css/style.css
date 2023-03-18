@@ -2724,12 +2724,6 @@ a.bottom-link {
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
-		-webkit-box-align: none;
-		    -ms-flex-align: none;
-		        align-items: none;
 	}
 	.specialist__left-column, .specialist__right-column {
 		-webkit-box-flex: 0;
@@ -2744,18 +2738,23 @@ a.bottom-link {
 	}
 	.specialist-left__photo {
 		max-width: 389px;
-		width: 100%;
 		left: 40px;
+	}
+	.specialist-left__photo img {
+		max-width: 100%;
+		width: 100%;
 	}
 	.specialist-right__content {
 		text-align: right;
 	}
 	.specialist-right__photo {
 		max-width: 480px;
-		width: 100%;
 		top: -540px;
-		right: 0;
-		z-index: -1;
+		left: 200px;
+	}
+	.specialist-right__photo img {
+		max-width: 100%;
+		width: 100%;
 	}
 }
 @media (max-width: 940px) {
@@ -3033,6 +3032,9 @@ a.bottom-link {
 	}
 	.quote__text sup svg {
 		width: 45%;
+	}
+	.specialist-right__photo {
+		left: 90px;
 	}
 }
 @media (max-width: 600px) {
@@ -3431,6 +3433,32 @@ a.bottom-link {
 		font-size: 12px;
 		line-height: 16px;
 	}
+	.specialists__columns {
+		padding: 0px 0px 100px 0px;
+	}
+	.specialist-left {
+		padding: 400px 0px 100px 10px;
+		margin: 40px 0px 40px 0px;
+	}
+	.specialist-left__photo {
+		max-width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+	.specialist-profession {
+		margin: 0px 0px 29px 0px;
+	}
+	.specialist-right {
+		padding: 450px 10px 100px 0px;
+		margin: 0px 0px 50px 0px;
+	}
+	.specialist-right__photo {
+		max-width: 100%;
+		top: 0;
+		left: 0;
+		z-index: 2;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -3582,6 +3610,15 @@ a.bottom-link {
 		background-repeat: no-repeat;
 		background-position: top right;
 	}
+	.specialist-name {
+		font-size: 19px;
+		line-height: 20px;
+	}
+	.specialist-text,
+.specialist-profession {
+		font-size: 12px;
+		line-height: 19px;
+	}
 }
 @media (max-width: 479.98px) {
 	.mainblock__title {
@@ -3645,6 +3682,16 @@ a.bottom-link {
 	.about-mainblock {
 		background: url("../img/aboutpage/mainblock/background.jpg") 35% 40% no-repeat;
 		background-size: cover;
+	}
+	.specialist-left {
+		padding: 300px 0px 50px 10px;
+	}
+	.specialist-right {
+		padding: 390px 10px 100px 0px;
+		margin: 0px 0px 0px 0px;
+	}
+	.specialist-profession {
+		margin: 0px 0px 15px 0px;
 	}
 }
 @media (max-width: 425px) {
@@ -3730,6 +3777,14 @@ a.bottom-link {
 		line-height: 19px;
 		text-align: left;
 	}
+	.specialist-left {
+		padding: 250px 0px 0px 10px;
+		margin: 40px 0px 0px 0px;
+	}
+	.specialist-right {
+		padding: 340px 10px 0px 0px;
+		margin: 100px 0px 0px 0px;
+	}
 }
 @media (max-width: 392.98px) {
 	.footer-bottom__checkbox {
@@ -3807,5 +3862,9 @@ a.bottom-link {
 	}
 	.about-mainblock__content {
 		padding: 35px 0px 0px 0px;
+	}
+	.specialist-right {
+		padding: 290px 10px 20px 0px;
+		margin: 60px 0px 0px 0px;
 	}
 }

@@ -319,8 +319,6 @@ $md4: 479.98;
          padding: 400px 0px 200px 0px;
          @include flexbox();
          flex-direction: column;
-         justify-content: space-between;
-         align-items: none;
       }
    }
 
@@ -341,8 +339,12 @@ $md4: 479.98;
 
       &__photo {
          max-width: 389px;
-         width: 100%;
          left: 40px;
+
+         img {
+            max-width: 100%;
+            width: 100%;
+         }
       }
    }
 
@@ -354,10 +356,13 @@ $md4: 479.98;
 
       &__photo {
          max-width: 480px;
-         width: 100%;
          top: -540px;
-         right: 0;
-         z-index: -1;
+         left: 200px;
+
+         img {
+            max-width: 100%;
+            width: 100%;
+         }
       }
    }
 }
@@ -621,6 +626,13 @@ $md4: 479.98;
                width: 45%;
             }
          }
+      }
+   }
+
+   .specialist-right {
+
+      &__photo {
+         left: 90px;
       }
    }
 }
@@ -1118,6 +1130,41 @@ $md4: 479.98;
          line-height: 16px;
       }
    }
+
+   .specialists {
+
+      &__columns {
+         padding: 0px 0px 100px 0px;
+      }
+   }
+
+   .specialist-left {
+      padding: 400px 0px 100px 10px;
+      margin: 40px 0px 40px 0px;
+
+      &__photo {
+         max-width: 100%;
+         top: 0;
+         left: 0;
+         z-index: 1;
+      }
+   }
+
+   .specialist-profession {
+      margin: 0px 0px 29px 0px;
+   }
+
+   .specialist-right {
+      padding: 450px 10px 100px 0px;
+      margin: 0px 0px 50px 0px;
+
+      &__photo {
+         max-width: 100%;
+         top: 0;
+         left: 0;
+         z-index: 2;
+      }
+   }
 }
 
 @media (max-width: 528.98px) {
@@ -1335,6 +1382,17 @@ $md4: 479.98;
          background-position: top right;
       }
    }
+
+   .specialist-name {
+      font-size: 19px;
+      line-height: 20px;
+   }
+
+   .specialist-text,
+   .specialist-profession {
+      font-size: 12px;
+      line-height: 19px;
+   }
 }
 
 @media (max-width: $md4+px) {
@@ -1424,6 +1482,19 @@ $md4: 479.98;
    .about-mainblock {
       background: url('../img/aboutpage/mainblock/background.jpg') 35% 40% no-repeat;
       background-size: cover;
+   }
+
+   .specialist-left {
+      padding: 300px 0px 50px 10px;
+   }
+
+   .specialist-right {
+      padding: 390px 10px 100px 0px;
+      margin: 0px 0px 0px 0px;
+   }
+
+   .specialist-profession {
+      margin: 0px 0px 15px 0px;
    }
 }
 
@@ -1551,6 +1622,16 @@ $md4: 479.98;
          text-align: left;
       }
    }
+
+   .specialist-left {
+      padding: 250px 0px 0px 10px;
+      margin: 40px 0px 0px 0px;
+   }
+
+   .specialist-right {
+      padding: 340px 10px 0px 0px;
+      margin: 100px 0px 0px 0px;
+   }
 }
 
 @media (max-width: 392.98px) {
@@ -1676,5 +1757,10 @@ $md4: 479.98;
       &__content {
          padding: 35px 0px 0px 0px;
       }
+   }
+
+   .specialist-right {
+      padding: 290px 10px 20px 0px;
+      margin: 60px 0px 0px 0px;
    }
 }
