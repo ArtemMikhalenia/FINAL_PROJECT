@@ -2444,7 +2444,7 @@ a.bottom-link {
 	background-image: url("../img/aboutpage/specialists/background.png");
 	background-position: 60% 50%;
 	background-repeat: no-repeat;
-	background-size: 1000px;
+	background-size: 980px;
 }
 .specialists__title {
 	position: relative;
@@ -3688,7 +3688,7 @@ a.bottom-link {
 	}
 	.specialist-right {
 		padding: 390px 10px 100px 0px;
-		margin: 0px 0px 0px 0px;
+		margin: 70px 0px 0px 0px;
 	}
 	.specialist-profession {
 		margin: 0px 0px 15px 0px;
@@ -3783,7 +3783,7 @@ a.bottom-link {
 	}
 	.specialist-right {
 		padding: 340px 10px 0px 0px;
-		margin: 100px 0px 0px 0px;
+		margin: 100px 0px 20px 0px;
 	}
 }
 @media (max-width: 392.98px) {
@@ -3864,7 +3864,7 @@ a.bottom-link {
 		padding: 35px 0px 0px 0px;
 	}
 	.specialist-right {
-		padding: 290px 10px 20px 0px;
+		padding: 280px 10px 20px 0px;
 		margin: 60px 0px 0px 0px;
 	}
 }
