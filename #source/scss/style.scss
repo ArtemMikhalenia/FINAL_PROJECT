@@ -1259,7 +1259,85 @@ body {
 	}
 }
 
-
 //</ABOUT QUOTE>=======================================================================================
+//<ABOUT SPECIALISTS>=======================================================================================
+
+.specialists {
+	padding: 45px 0px 0px 0px;
+	background-image: url('../img/aboutpage/specialists/background.png');
+	background-position: 60% 50%;
+	background-repeat: no-repeat;
+	background-size: 1000px;
+
+	&__title {
+		position: relative;
+		max-width: 538px;
+		z-index: 5;
+	}
+
+	&__columns {
+		padding: 485px 0px 200px 0px;
+		@include flexbox();
+		justify-content: space-between;
+	}
+}
+
+.specialist {
+
+	&__left-column,
+	&__right-column {
+		flex: 0 1 390px;
+	}
+}
+
+.specialist-left {
+	position: relative;
+
+	&__photo {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -350px;
+		left: 224px;
+		z-index: 2;
+	}
+
+	&__content {
+		position: relative;
+		text-align: right;
+		z-index: 2;
+	}
+}
+
+.specialist-name {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 24px;
+}
+
+.specialist-profession {
+	margin: 0px 0px 29px 0px;
+}
+
+.specialist-right {
+	position: relative;
+
+	&__photo {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: -590px;
+		left: -210px;
+		z-index: 1;
+	}
+
+	&__content {
+		position: relative;
+		z-index: 2;
+	}
+}
+
+
+//</ABOUT SPECIALISTS>=======================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";

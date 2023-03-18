@@ -27,6 +27,7 @@
 	}
 
 	&__address {
+		position: relative;
 		@include flexbox();
 		max-width: 442.5px;
 		align-items: center;
@@ -49,6 +50,7 @@
 	}
 
 	&__phone {
+		position: relative;
 		@include flexbox();
 		align-items: center;
 	}
