@@ -73,6 +73,12 @@
 	.specialist-right__photo {
 		left: -170px;
 	}
+	.expertise__content {
+		padding: 15px 0px 100px 0px;
+	}
+	.expertise__links {
+		margin: 0px 25px;
+	}
 }
 @media (max-width: 1024px) {
 	.footer__background img {
@@ -243,6 +249,32 @@
 	.specialist-right__photo img {
 		max-width: 100%;
 		width: 100%;
+	}
+	.expertise {
+		padding: 60px 0px 47px 0px;
+	}
+	.expertise__content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.expertise__left-column {
+		max-width: 100%;
+		margin: 0px 0px 20px 0px;
+	}
+	.expertise-right__photo {
+		top: 0px;
+	}
+	.expertise-left__text {
+		max-width: 100%;
+	}
+	.expertise-left__stats {
+		max-width: 80%;
+		margin: 0px auto 46px;
 	}
 }
 @media (max-width: 940px) {
@@ -523,6 +555,10 @@
 	}
 	.specialist-right__photo {
 		left: 90px;
+	}
+	.expertise-left__stats {
+		max-width: 100%;
+		margin: 0px auto 46px;
 	}
 }
 @media (max-width: 600px) {
@@ -947,6 +983,28 @@
 		left: 0;
 		z-index: 2;
 	}
+	.expertise-left__button {
+		width: 100%;
+		text-align: center;
+		padding: 16px 0px;
+	}
+	.expertise-left__text {
+		font-size: 12px;
+		line-height: 19px;
+	}
+	.expertise__content {
+		margin: 0px 0px 0px 0px;
+	}
+	.expertise__links {
+		font-size: 16px;
+		line-height: 19px;
+	}
+	.expertise__left-column {
+		margin: 0px 25px 20px;
+	}
+	.expertise-right__photo {
+		max-width: 100%;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -1113,6 +1171,9 @@
 		font-size: 38px;
 		line-height: 43px;
 	}
+	.information-left__button, .information-left__stats {
+		display: none;
+	}
 	.menu__body {
 		padding: 96px 10px 0px 34px;
 	}
@@ -1181,6 +1242,18 @@
 	.specialist-profession {
 		margin: 0px 0px 15px 0px;
 	}
+	.expertise__links {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.expertise__links a.expertise__link1 {
+		margin: 0px 0px 20px 10px;
+	}
+	.expertise-left__stats, .expertise-left__button {
+		display: none;
+	}
 }
 @media (max-width: 425px) {
 	.mainblock {
@@ -1188,9 +1261,6 @@
 	}
 	.information__left-column {
 		margin: 0px 0px 0px;
-	}
-	.information-left__button, .information-left__stats {
-		display: none;
 	}
 	.founder-info__name {
 		font-weight: 600;
