@@ -2637,6 +2637,28 @@ a.bottom-link {
 	width: 100%;
 }
 
+.objects-mainblock {
+	position: relative;
+	background: url("../img/objectspage/mainblock/background.jpg") 50% 0% no-repeat;
+	background-size: cover;
+	padding: 0px 0px 475px 0px;
+}
+.objects-mainblock__content {
+	padding: 37px 0px 0px 0px;
+}
+.objects-mainblock__title {
+	max-width: 200px;
+}
+.objects-mainblock__text {
+	max-width: 473px;
+	margin: 0px 0px 0px 0px;
+}
+
+.objects-breadcrumbs__list {
+	max-width: 191px;
+	margin: 0px 0px 161px 0px;
+}
+
 @media (max-width: 1300px) {
 	.office-left__link {
 		margin: 0px 0px 28px 0px;
