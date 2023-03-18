@@ -14,8 +14,8 @@ if (iconMenu) {
 
 //POPUP
 const popupLinks = document.querySelectorAll('.popup-link');
-const bodyScroll = document.querySelector('body');
-const lockPadding = document.querySelectorAll(".lock-padding");
+//const bodyScroll = document.querySelector('body');
+//const lockPadding = document.querySelectorAll(".lock-padding");
 
 let unlock = true;
 
@@ -50,7 +50,7 @@ function popupOpen(currentPopup) {
 		if (popupActive) {
 			popupClose(popupActive, false);
 		} else {
-			bodyLock();
+			//bodyLock();
 		}
 		currentPopup.classList.add('open');
 		currentPopup.addEventListener("click", function (e) {
@@ -65,46 +65,46 @@ function popupClose(popupActive, doUnlock = true) {
 	if (unlock) {
 		popupActive.classList.remove('open');
 		if (doUnlock) {
-			bodyUnLock();
+			//bodyUnLock();
 		}
 	}
 }
 
-function bodyLock() {
-	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
+// function bodyLock() {
+// 	const lockPaddingValue = window.innerWidth - document.querySelector('.wrapper').offsetWidth + 'px';
 
-	if (lockPadding.length > 0) {
-		for (let index = 0; index < lockPadding.length; index++) {
-			const el = lockPadding[index];
-			el.style.paddingRight = lockPaddingValue;
-		}
-	}
-	bodyScroll.style.paddingRight = lockPaddingValue;
-	bodyScroll.classList.add('lock');
+// 	if (lockPadding.length > 0) {
+// 		for (let index = 0; index < lockPadding.length; index++) {
+// 			const el = lockPadding[index];
+// 			el.style.paddingRight = lockPaddingValue;
+// 		}
+// 	}
+// 	bodyScroll.style.paddingRight = lockPaddingValue;
+// 	bodyScroll.classList.add('lock');
 
-	unlock = false;
-	setTimeout(function () {
-		unlock = true;
-	}, timeout);
-}
+// 	unlock = false;
+// 	setTimeout(function () {
+// 		unlock = true;
+// 	}, timeout);
+// }
 
-function bodyUnLock() {
-	setTimeout(function () {
-		if (lockPadding.length > 0) {
-			for (let index = 0; index < lockPadding.length; index++) {
-				const el = lockPadding[index];
-				el.style.paddingRight = '0px';
-			}
-		}
-		bodyScroll.style.paddingRight = '0px';
-		bodyScroll.classList.remove('lock');
-	}, timeout);
+// function bodyUnLock() {
+// 	setTimeout(function () {
+// 		if (lockPadding.length > 0) {
+// 			for (let index = 0; index < lockPadding.length; index++) {
+// 				const el = lockPadding[index];
+// 				el.style.paddingRight = '0px';
+// 			}
+// 		}
+// 		bodyScroll.style.paddingRight = '0px';
+// 		bodyScroll.classList.remove('lock');
+// 	}, timeout);
 
-	unlock = false;
-	setTimeout(function () {
-		unlock = true;
-	}, timeout);
-}
+// 	unlock = false;
+// 	setTimeout(function () {
+// 		unlock = true;
+// 	}, timeout);
+// }
 
 document.addEventListener('keydown', function (e) {
 	if (e.which === 27) {
