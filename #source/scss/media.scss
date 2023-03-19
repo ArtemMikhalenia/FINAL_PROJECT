@@ -720,6 +720,15 @@ $md4: 479.98;
          }
       }
    }
+
+   .rent {
+      &__title {
+         & sup {
+            font-size: 12px;
+            line-height: 19px;
+         }
+      }
+   }
 }
 
 @media (max-width: 600px) {
@@ -1306,8 +1315,6 @@ $md4: 479.98;
          & sup {
             top: -17px;
             right: 10px;
-            font-size: 10px;
-            line-height: 15px;
          }
       }
    }
@@ -1318,22 +1325,12 @@ $md4: 479.98;
       &__title {
          max-width: 100%;
          margin: 0px 0px 70px 0px;
-
-         & sup {
-            font-size: 10px;
-            line-height: 15px;
-         }
       }
 
       &__links {
-         max-width: 1190px;
-         margin: 0px 0px 0px;
-         @include flexbox();
          flex-direction: column;
-         justify-content: space-between;
          font-size: 16px;
          line-height: 19px;
-         text-align: center;
 
          a {
             padding: 0px 0px 4px 0px;
@@ -1723,10 +1720,10 @@ $md4: 479.98;
          margin: 0px 0px 70px 0px;
 
          & sup {
+            display: inline-block;
+            max-width: 117px;
             top: -17px;
             right: 10px;
-            font-size: 7px;
-            line-height: 12px;
          }
       }
    }
@@ -1736,8 +1733,6 @@ $md4: 479.98;
          & sup {
             top: -17px;
             right: 0px;
-            font-size: 7px;
-            line-height: 12px;
          }
       }
    }
@@ -1870,7 +1865,23 @@ $md4: 479.98;
       margin: 100px 0px 20px 0px;
    }
 
+   .selling {
+      &__title {
+         & sup {
+            display: inline-block;
+            max-width: 117px;
+         }
+      }
+   }
+
    .rent {
+      &__title {
+         & sup {
+            display: inline-block;
+            max-width: 101px;
+         }
+      }
+
       &__links {
          font-size: 13px;
 

@@ -3561,6 +3561,10 @@ a.bottom-link {
 		font-size: 12px;
 		line-height: 19px;
 	}
+	.rent__title sup {
+		font-size: 12px;
+		line-height: 19px;
+	}
 }
 @media (max-width: 600px) {
 	.mainblock__text {
@@ -4024,8 +4028,6 @@ a.bottom-link {
 	.selling__title sup {
 		top: -17px;
 		right: 10px;
-		font-size: 10px;
-		line-height: 15px;
 	}
 	.rent {
 		padding: 60px 0px 47px 0px;
@@ -4034,26 +4036,13 @@ a.bottom-link {
 		max-width: 100%;
 		margin: 0px 0px 70px 0px;
 	}
-	.rent__title sup {
-		font-size: 10px;
-		line-height: 15px;
-	}
 	.rent__links {
-		max-width: 1190px;
-		margin: 0px 0px 0px;
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: flex;
 		-webkit-box-orient: vertical;
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
-		-webkit-box-pack: justify;
-		    -ms-flex-pack: justify;
-		        justify-content: space-between;
 		font-size: 16px;
 		line-height: 19px;
-		text-align: center;
 	}
 	.rent__links a {
 		padding: 0px 0px 4px 0px;
@@ -4326,16 +4315,14 @@ a.bottom-link {
 		margin: 0px 0px 70px 0px;
 	}
 	.selling__title sup {
+		display: inline-block;
+		max-width: 117px;
 		top: -17px;
 		right: 10px;
-		font-size: 7px;
-		line-height: 12px;
 	}
 	.rent__title sup {
 		top: -17px;
 		right: 0px;
-		font-size: 7px;
-		line-height: 12px;
 	}
 }
 @media (max-width: 425px) {
@@ -4425,6 +4412,14 @@ a.bottom-link {
 	.specialist-right {
 		padding: 340px 10px 0px 0px;
 		margin: 100px 0px 20px 0px;
+	}
+	.selling__title sup {
+		display: inline-block;
+		max-width: 117px;
+	}
+	.rent__title sup {
+		display: inline-block;
+		max-width: 101px;
 	}
 	.rent__links {
 		font-size: 13px;
