@@ -177,7 +177,7 @@ let swiper = new Swiper('.rent-swiper', {
 	wrapperClass: 'rent-swiper__wrapper',
 	slidesPerView: 'auto',
 	autoHeight: true,
-	spaceBetween: 200,
+	spaceBetween: 220,
 	centeredSlides: true,
 	initialSlide: 1,
 	grabCursor: true,
@@ -186,7 +186,7 @@ let swiper = new Swiper('.rent-swiper', {
 	effect: 'coverflow',
 	coverflowEffect: {
 		rotate: 0,
-		scale: 1.08,
+		scale: 1.16,
 		slideShadows: false,
 	},
 	// autoplay: {
@@ -197,16 +197,16 @@ let swiper = new Swiper('.rent-swiper', {
 		nextEl: '.main-button__next',
 		prevEl: '.main-button__prev',
 	},
-	// breakpoints: {
-	// 	320: {
-	// 		spaceBetween: 0
-	// 	},
-	// 	480: {
-	// 		spaceBetween: 20
-	// 	},
+	breakpoints: {
+		320: {
+			spaceBetween: 0
+		},
+		480: {
+			spaceBetween: 20
+		},
 
-	// 	991.98: {
-	// 		spaceBetween: 100
-	// 	},
-	// },
+		991.98: {
+			spaceBetween: 220
+		},
+	},
 });

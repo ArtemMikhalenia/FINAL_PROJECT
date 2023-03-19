@@ -2765,13 +2765,17 @@ a.bottom-link {
 	background-position: 0% 55%;
 }
 
+.rent {
+	padding: 89px 0px 47px 0px;
+	background-color: rgb(21, 21, 21);
+}
 .rent__title {
-	margin: 0px 0px 91px 0px;
+	margin: 0px 0px 164px 0px;
 }
 .rent__title sup {
 	position: relative;
-	top: -37px;
-	right: 24px;
+	top: -27px;
+	right: 0;
 	font-family: Manrope;
 	font-size: 15px;
 	line-height: 20.49px;
@@ -2785,10 +2789,68 @@ a.bottom-link {
 .rent__title sup:hover {
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
+.rent__links {
+	max-width: 1190px;
+	margin: 0px 0px 0px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	font-size: 20px;
+	line-height: 24px;
+}
+.rent__links a {
+	position: relative;
+	padding: 0px 0px 8px 0px;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.rent__links a.rent__link1 {
+	margin: 0px 0px 0px 25px;
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
+.rent__links a.rent__link1::before {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 15px;
+	top: calc(50% - 10px);
+	left: -25px;
+	background: url("../img/aboutpage/expertise/arrow.svg") no-repeat;
+}
+.rent__links a.rent__link1:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.rent__links a.rent__link2 {
+	margin: 0px 25px 0px 0px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+.rent__links a.rent__link2::after {
+	content: "";
+	position: absolute;
+	width: 8px;
+	height: 15px;
+	top: calc(50% - 10px);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	margin: 0px 0px 0px 17px;
+	background: url("../img/aboutpage/expertise/arrow.svg") no-repeat;
+}
+.rent__links a.rent__link2:hover {
+	border-bottom: 1px solid rgb(255, 255, 255);
+}
 
 .rent-swiper {
 	position: relative;
 	width: 100%;
+	margin: 0px 0px 149px 0px;
 }
 .rent-swiper__wrapper {
 	display: -webkit-box;
@@ -2805,22 +2867,110 @@ a.bottom-link {
 	width: 100%;
 }
 
+.slide-rent__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	height: 100%;
+}
+.slide-rent__bottom {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: end;
+	    -ms-flex-pack: end;
+	        justify-content: end;
+	height: 100%;
+}
+.slide-rent__location {
+	margin: 41px 0px 199.5px 42px;
+}
+.slide-rent__title {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0px 0px 36px 42px;
+}
+.slide-rent__text {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0px 0px 89px 42px;
+}
+.slide-rent__label {
+	margin: 0px 0px 21px 42px;
+}
+
+.rent-slide {
+	position: relative;
+}
+.rent-slide__bottom-gradient {
+	position: absolute;
+	width: 100%;
+	height: 40%;
+	bottom: 0;
+	left: 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.63)));
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.63) 100%);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.63) 100%);
+}
+.rent-slide__top-gradient {
+	position: absolute;
+	width: 100%;
+	height: 60%;
+	top: 0;
+	left: 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.19)));
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+	-webkit-transform: rotate(-180deg);
+	    -ms-transform: rotate(-180deg);
+	        transform: rotate(-180deg);
+}
+
+.main-button__prev.rent__button-prev {
+	cursor: pointer;
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	top: 41%;
+	left: 18%;
+}
+
+.main-button__next.rent__button-next {
+	cursor: pointer;
+	position: absolute;
+	width: 30px;
+	height: 40px;
+	top: 41%;
+	right: 17.7%;
+}
+
 .slide-rent1 {
-	background-image: url("../img/mainpage/houses/slide2.jpg");
+	background-image: url("../img/objectspage/rent/slide1.jpg");
 	background-repeat: no-repeat;
 	background-size: 130%;
-	background-position: 91% 38%;
+	background-position: 91% 35%;
 }
 
 .slide-rent2 {
-	background-image: url("../img/objectspage/selling/slide1.jpg");
+	background-image: url("../img/objectspage/rent/slide2.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: 0% 55%;
+	background-position: 0% 95%;
 }
 
 .slide-rent3 {
-	background-image: url("../img/objectspage/selling/slide2.jpg");
+	background-image: url("../img/objectspage/rent/slide3.jpg");
 	background-repeat: no-repeat;
 	background-size: 130%;
 	background-position: 91% 62%;
