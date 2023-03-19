@@ -1607,5 +1607,112 @@ body {
 }
 
 //</OBJECTS SELLING>=======================================================================================
+//</OBJECTS RENT>=======================================================================================
+
+.rent {
+
+	&__title {
+		margin: 0px 0px 91px 0px;
+
+		& sup {
+			position: relative;
+			top: -37px;
+			right: 24px;
+			font-family: Manrope;
+			font-size: 15px;
+			line-height: 20.49px;
+			letter-spacing: 0em;
+			border-bottom: 1px solid rgba(255, 255, 255, 1);
+			@include anim (0.5s, 0s);
+			padding: 0px 0px 3px 0px;
+
+			&:hover {
+				border-bottom: 1px solid rgba(255, 255, 255, 0);
+			}
+		}
+	}
+}
+
+.rent-swiper {
+	position: relative;
+	width: 100%;
+
+	&__wrapper {
+		@include flexbox();
+		width: 100%;
+		height: 100%;
+	}
+
+	&__slide {
+		position: relative;
+		flex-shrink: 0;
+		max-width: 546px;
+		width: 100%;
+	}
+}
+
+.slide-rent {
+
+	&__content {}
+
+	&__location {}
+
+	&__title {}
+
+	&__text {}
+
+	&__top {}
+
+	&__label {}
+
+	&__link {}
+}
+
+.slide {
+
+	&__horizontal-gradient {}
+
+	&__content {}
+
+	&__location {}
+
+	&__title {}
+
+	&__text {}
+
+	&__vertical-gradient {}
+
+	&__label {}
+}
+
+.main-button {
+
+	&__prev {}
+
+	&__next {}
+}
+
+.slide-rent1 {
+	background-image: url('../img/mainpage/houses/slide2.jpg');
+	background-repeat: no-repeat;
+	background-size: 130%;
+	background-position: 91% 38%;
+}
+
+.slide-rent2 {
+	background-image: url('../img/objectspage/selling/slide1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 55%;
+}
+
+.slide-rent3 {
+	background-image: url('../img/objectspage/selling/slide2.jpg');
+	background-repeat: no-repeat;
+	background-size: 130%;
+	background-position: 91% 62%;
+}
+
+//</OBJECTS RENT>=======================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";

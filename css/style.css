@@ -2765,6 +2765,67 @@ a.bottom-link {
 	background-position: 0% 55%;
 }
 
+.rent__title {
+	margin: 0px 0px 91px 0px;
+}
+.rent__title sup {
+	position: relative;
+	top: -37px;
+	right: 24px;
+	font-family: Manrope;
+	font-size: 15px;
+	line-height: 20.49px;
+	letter-spacing: 0em;
+	border-bottom: 1px solid rgb(255, 255, 255);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	padding: 0px 0px 3px 0px;
+}
+.rent__title sup:hover {
+	border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+
+.rent-swiper {
+	position: relative;
+	width: 100%;
+}
+.rent-swiper__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.rent-swiper__slide {
+	position: relative;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	max-width: 546px;
+	width: 100%;
+}
+
+.slide-rent1 {
+	background-image: url("../img/mainpage/houses/slide2.jpg");
+	background-repeat: no-repeat;
+	background-size: 130%;
+	background-position: 91% 38%;
+}
+
+.slide-rent2 {
+	background-image: url("../img/objectspage/selling/slide1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 0% 55%;
+}
+
+.slide-rent3 {
+	background-image: url("../img/objectspage/selling/slide2.jpg");
+	background-repeat: no-repeat;
+	background-size: 130%;
+	background-position: 91% 62%;
+}
+
 @media (max-width: 1300px) {
 	.office-left__link {
 		margin: 0px 0px 28px 0px;
