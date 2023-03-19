@@ -276,6 +276,9 @@
 		max-width: 80%;
 		margin: 0px auto 46px;
 	}
+	.selling__swiper {
+		right: 0;
+	}
 }
 @media (max-width: 940px) {
 	.information__background img {
@@ -559,6 +562,20 @@
 	.expertise-left__stats {
 		max-width: 100%;
 		margin: 0px auto 46px;
+	}
+	.objects-mainblock {
+		padding: 0px 0px 275px 0px;
+	}
+	.selling__title {
+		font-size: 65px;
+		line-height: 65px;
+		margin: 0px 0px 112px 25px;
+	}
+	.selling__title sup {
+		top: -27px;
+		right: 20px;
+		font-size: 12px;
+		line-height: 19px;
 	}
 }
 @media (max-width: 600px) {
@@ -1005,6 +1022,27 @@
 	.expertise-right__photo {
 		max-width: 100%;
 	}
+	.objects-mainblock {
+		background: url("../img/objectspage/mainblock/background.jpg") 25% 26% no-repeat;
+		background-size: cover;
+		padding: 0px 0px 225px 0px;
+	}
+	.objects-mainblock__content {
+		padding: 17px 0px 0px 0px;
+	}
+	.selling {
+		padding: 50px 0px 60px 0px;
+	}
+	.selling__title {
+		max-width: 100%;
+		margin: 0px 0px 62px 0px;
+	}
+	.selling__title sup {
+		top: -17px;
+		right: 10px;
+		font-size: 10px;
+		line-height: 15px;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -1254,6 +1292,15 @@
 	.expertise-left__stats, .expertise-left__button {
 		display: none;
 	}
+	.selling__title {
+		margin: 0px 0px 70px 0px;
+	}
+	.selling__title sup {
+		top: -17px;
+		right: 10px;
+		font-size: 7px;
+		line-height: 12px;
+	}
 }
 @media (max-width: 425px) {
 	.mainblock {
@@ -1424,5 +1471,15 @@
 	.specialist-right {
 		padding: 280px 10px 20px 0px;
 		margin: 60px 0px 0px 0px;
+	}
+	.selling__title {
+		max-width: 100%;
+		font-size: 38px;
+		line-height: 33px;
+		margin: 0px 0px 50px 0px;
+	}
+	.selling__title sup {
+		font-size: 7px;
+		line-height: 12px;
 	}
 }
