@@ -142,6 +142,15 @@ $md4: 479.98;
          margin: 0px 25px;
       }
    }
+
+   .main-button__prev.rent__button-prev {
+      left: 12%;
+
+   }
+
+   .main-button__next.rent__button-next {
+      right: 11.7%;
+   }
 }
 
 @media (max-width: 1024px) {
@@ -1302,6 +1311,55 @@ $md4: 479.98;
          }
       }
    }
+
+   .rent {
+      padding: 60px 0px 47px 0px;
+
+      &__title {
+         max-width: 100%;
+         margin: 0px 0px 70px 0px;
+
+         & sup {
+            font-size: 10px;
+            line-height: 15px;
+         }
+      }
+
+      &__links {
+         max-width: 1190px;
+         margin: 0px 0px 0px;
+         @include flexbox();
+         flex-direction: column;
+         justify-content: space-between;
+         font-size: 16px;
+         line-height: 19px;
+         text-align: center;
+
+         a {
+            padding: 0px 0px 4px 0px;
+         }
+
+         a.rent__link1 {
+            margin: 0px 0px 20px 25px;
+
+            &::before {
+               top: calc(50% - 8px);
+            }
+         }
+
+         a.rent__link2 {
+            margin: 0px 0px 0px 0px;
+         }
+      }
+   }
+
+   .rent-swiper {
+      margin: 0px 0px 60px 0px;
+
+      &__slide {
+         max-width: 400px;
+      }
+   }
 }
 
 @media (max-width: 528.98px) {
@@ -1672,6 +1730,17 @@ $md4: 479.98;
          }
       }
    }
+
+   .rent {
+      &__title {
+         & sup {
+            top: -17px;
+            right: 0px;
+            font-size: 7px;
+            line-height: 12px;
+         }
+      }
+   }
 }
 
 @media (max-width: 425px) {
@@ -1799,6 +1868,18 @@ $md4: 479.98;
    .specialist-right {
       padding: 340px 10px 0px 0px;
       margin: 100px 0px 20px 0px;
+   }
+
+   .rent {
+      &__links {
+         font-size: 13px;
+
+         a.rent__link2 {
+            &::after {
+               margin: 0px 0px 0px 10px;
+            }
+         }
+      }
    }
 }
 
@@ -1938,11 +2019,20 @@ $md4: 479.98;
          font-size: 38px;
          line-height: 33px;
          margin: 0px 0px 50px 0px;
+      }
+   }
 
-         & sup {
-            font-size: 7px;
-            line-height: 12px;
-         }
+   .rent {
+      &__title {
+         max-width: 100%;
+         font-size: 38px;
+         line-height: 33px;
+      }
+   }
+
+   .rent-swiper {
+      &__slide {
+         max-width: 296px;
       }
    }
 }

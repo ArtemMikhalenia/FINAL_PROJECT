@@ -126,8 +126,8 @@ wow.init();
 
 //<SWIPER>
 
-let slider = document.querySelectorAll('.main-swiper');
-const rentSlider = document.querySelector('.rent-swiper');
+const slider = document.querySelectorAll('.main-swiper');
+const rentSlider = document.querySelectorAll('.rent-swiper');
 
 if (slider.length > 0) {
 	for (let index = 0; index < slider.length; index++) {
@@ -172,41 +172,46 @@ if (slider.length > 0) {
 	}
 }
 
-let swiper = new Swiper('.rent-swiper', {
-	slideClass: 'rent-swiper__slide',
-	wrapperClass: 'rent-swiper__wrapper',
-	slidesPerView: 'auto',
-	autoHeight: true,
-	spaceBetween: 220,
-	centeredSlides: true,
-	initialSlide: 1,
-	grabCursor: true,
-	loop: true,
-	speed: 300,
-	effect: 'coverflow',
-	coverflowEffect: {
-		rotate: 0,
-		scale: 1.16,
-		slideShadows: false,
-	},
-	// autoplay: {
-	// 	delay: 4000,
-	// 	pauseOnMouseEnter: true,
-	// },
-	navigation: {
-		nextEl: '.main-button__next',
-		prevEl: '.main-button__prev',
-	},
-	breakpoints: {
-		320: {
-			spaceBetween: 0
-		},
-		480: {
-			spaceBetween: 20
-		},
+if (rentSlider.length > 0) {
+	for (let index = 0; index < rentSlider.length; index++) {
+		const swiper = new Swiper('.rent-swiper', {
+			slideClass: 'rent-swiper__slide',
+			wrapperClass: 'rent-swiper__wrapper',
+			slidesPerView: 'auto',
+			autoHeight: true,
+			spaceBetween: 220,
+			centeredSlides: true,
+			initialSlide: 1,
+			grabCursor: true,
+			loop: true,
+			speed: 300,
+			effect: 'coverflow',
+			coverflowEffect: {
+				rotate: 0,
+				scale: 1.16,
+				slideShadows: false,
+			},
+			// autoplay: {
+			// 	delay: 4000,
+			// 	pauseOnMouseEnter: true,
+			// },
+			navigation: {
+				nextEl: '.main-button__next',
+				prevEl: '.main-button__prev',
+			},
+			breakpoints: {
+				320: {
+					spaceBetween: 50
+				},
+				480: {
+					spaceBetween: 100
+				},
 
-		991.98: {
-			spaceBetween: 220
-		},
-	},
-});
+				991.98: {
+					spaceBetween: 220
+				},
+			},
+		});
+	}
+}
+
