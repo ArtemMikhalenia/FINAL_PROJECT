@@ -148,10 +148,10 @@ if (slider.length > 0) {
 				scale: 0.85,
 				slideShadows: false,
 			},
-			// autoplay: {
-			// 	delay: 4000,
-			// 	pauseOnMouseEnter: true,
-			// },
+			autoplay: {
+				delay: 4000,
+				pauseOnMouseEnter: true,
+			},
 			navigation: {
 				nextEl: '.main-button__next',
 				prevEl: '.main-button__prev',
@@ -191,10 +191,10 @@ if (rentSlider.length > 0) {
 				scale: 1.16,
 				slideShadows: false,
 			},
-			// autoplay: {
-			// 	delay: 4000,
-			// 	pauseOnMouseEnter: true,
-			// },
+			autoplay: {
+				delay: 4000,
+				pauseOnMouseEnter: true,
+			},
 			navigation: {
 				nextEl: '.main-button__next',
 				prevEl: '.main-button__prev',
