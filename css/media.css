@@ -85,6 +85,14 @@
 	.main-button__next.rent__button-next {
 		right: 11.7%;
 	}
+	.sales-right3 {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 50%;
+		        flex: 0 1 50%;
+	}
+	.sales-right__size3 {
+		margin: 0px 0px 31px 0px;
+	}
 }
 @media (max-width: 1110px) {
 	.sales-bottom__left2 {
@@ -310,6 +318,9 @@
 	}
 	.sales-right {
 		margin: 26px 0px 28px 0px;
+	}
+	.sales-center__location {
+		font-size: 18px;
 	}
 }
 @media (max-width: 940px) {
@@ -621,6 +632,7 @@
 		-webkit-box-direction: normal;
 		    -ms-flex-direction: column;
 		        flex-direction: column;
+		margin: 0px 0px 0px 0px;
 	}
 	.sales-center__location {
 		font-size: 14px;
@@ -644,6 +656,9 @@
 	.sales-right__text2 {
 		margin: 0px 0px 75px 0px;
 	}
+	.sales-right__text3 {
+		margin: 0px 0px 44px 0px;
+	}
 	.sales-right__size {
 		margin: 0px 0px 37px 0px;
 	}
@@ -655,6 +670,9 @@
 	}
 	.sales-right__price2 {
 		margin: 0px 0px 12px 0px;
+	}
+	.sales-right__price3 {
+		margin: 0px 0px 6px 0px;
 	}
 	.sales-bottom__columns {
 		-webkit-box-orient: horizontal;

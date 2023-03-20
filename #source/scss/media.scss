@@ -151,6 +151,17 @@ $md4: 479.98;
    .main-button__next.rent__button-next {
       right: 11.7%;
    }
+
+   .sales-right3 {
+      flex: 0 1 50%;
+   }
+
+   .sales-right {
+      &__size3 {
+         margin: 0px 0px 31px 0px;
+      }
+
+   }
 }
 
 @media (max-width: 1110px) {
@@ -452,6 +463,11 @@ $md4: 479.98;
       margin: 26px 0px 28px 0px;
    }
 
+   .sales-center {
+      &__location {
+         font-size: 18px;
+      }
+   }
 }
 
 @media (max-width: 940px) {
@@ -766,6 +782,7 @@ $md4: 479.98;
    .sales-item {
       &__columns {
          flex-direction: column;
+         margin: 0px 0px 0px 0px;
       }
    }
 
@@ -798,6 +815,10 @@ $md4: 479.98;
          margin: 0px 0px 75px 0px;
       }
 
+      &__text3 {
+         margin: 0px 0px 44px 0px;
+      }
+
       &__size {
          margin: 0px 0px 37px 0px;
       }
@@ -812,6 +833,10 @@ $md4: 479.98;
 
       &__price2 {
          margin: 0px 0px 12px 0px;
+      }
+
+      &__price3 {
+         margin: 0px 0px 6px 0px;
       }
    }
 
