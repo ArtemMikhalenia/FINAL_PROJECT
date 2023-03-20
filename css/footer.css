@@ -54,6 +54,41 @@ a.bottom-link {
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
+.breadcrumbs {
+	position: relative;
+}
+.breadcrumbs__list {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+.breadcrumbs-link {
+	position: relative;
+	font-size: 12px;
+	line-height: 19px;
+	color: rgba(255, 255, 255, 0.6);
+}
+.breadcrumbs-link::after {
+	content: url("../img/aboutpage/mainblock/arrow.svg");
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: -10px;
+}
+.breadcrumbs-link.active {
+	color: rgb(255, 255, 255);
+}
+.breadcrumbs-link.active::after {
+	content: "";
+}
+
 *:focus::-webkit-input-placeholder {
 	opacity: 0;
 }

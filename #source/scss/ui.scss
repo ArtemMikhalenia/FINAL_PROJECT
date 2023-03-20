@@ -52,6 +52,39 @@ a.bottom-link {
 	}
 }
 
+.breadcrumbs {
+	position: relative;
+
+	&__list {
+		@include flexbox();
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.breadcrumbs-link {
+	position: relative;
+	font-size: 12px;
+	line-height: 19px;
+	color: rgba(255, 255, 255, 0.6);
+
+	&::after {
+		content: url('../img/aboutpage/mainblock/arrow.svg');
+		position: absolute;
+		height: 100%;
+		top: 0;
+		right: -10px;
+	}
+
+	&.active {
+		color: rgba(255, 255, 255, 1);
+
+		&::after {
+			content: '';
+		}
+	}
+}
+
 //<REMOVE PLACEHOLDER>
 
 *:focus::-webkit-input-placeholder {
