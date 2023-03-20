@@ -3030,6 +3030,7 @@ a.bottom-link {
 	display: -ms-flexbox;
 	display: flex;
 }
+
 .sales-left {
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 4%;
@@ -3084,6 +3085,9 @@ a.bottom-link {
 	width: 14px;
 	height: 20px;
 }
+.sales-center__location2 {
+	margin: 0px 0px 386px 0px;
+}
 .sales-center__title {
 	max-width: 296px;
 	font-size: 20px;
@@ -3094,6 +3098,11 @@ a.bottom-link {
 	max-width: 340px;
 	font-size: 12px;
 	line-height: 18px;
+}
+
+.sales-center2 {
+	background-image: url("../img/salespage/items/item3.jpg");
+	background-position: 20% 0%;
 }
 
 .sales-right {
@@ -3116,15 +3125,24 @@ a.bottom-link {
 	line-height: 18px;
 	margin: 0px 0px 26px 0px;
 }
+.sales-right__text2 {
+	margin: 0px 0px 275px 0px;
+}
 .sales-right__size {
 	font-size: 14px;
 	line-height: 21px;
 	margin: 0px 0px 107px 0px;
 }
+.sales-right__size2 {
+	margin: 0px 0px 0px 0px;
+}
 .sales-right__price {
 	font-size: 24px;
 	line-height: 29px;
 	margin: 0px 0px 103px 0px;
+}
+.sales-right__price2 {
+	margin: 0px 0px 12px 0px;
 }
 
 .sales-bottom__columns {
@@ -3148,6 +3166,15 @@ a.bottom-link {
 }
 .sales-bottom__left img {
 	margin: 0px 17px 0px 0px;
+}
+.sales-bottom__left2 {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: start;
 }
 .sales-bottom__text {
 	font-size: 14px;
@@ -3256,6 +3283,20 @@ a.bottom-link {
 	}
 	.main-button__next.rent__button-next {
 		right: 11.7%;
+	}
+}
+@media (max-width: 1110px) {
+	.sales-bottom__left2 {
+		margin: 0px 0px 30px 0px;
+	}
+	.sales-bottom__columns2 {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: start;
 	}
 }
 @media (max-width: 1024px) {
@@ -3465,6 +3506,9 @@ a.bottom-link {
 	}
 	.selling__swiper {
 		right: 0;
+	}
+	.sales-right {
+		margin: 26px 0px 28px 0px;
 	}
 }
 @media (max-width: 940px) {
@@ -3767,6 +3811,66 @@ a.bottom-link {
 	.rent__title sup {
 		font-size: 12px;
 		line-height: 19px;
+	}
+	.sales-left {
+		display: none;
+	}
+	.sales-item__columns {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.sales-center__location {
+		font-size: 14px;
+		line-height: 20px;
+		margin: 0px 0px 222px 0px;
+	}
+	.sales-center__location::before {
+		width: 10px;
+		height: 16px;
+	}
+	.sales-right {
+		margin: 0px 0px 78px 0px;
+		padding: 30px 49px 30px;
+	}
+	.sales-right__title {
+		max-width: 100%;
+	}
+	.sales-right__text {
+		max-width: 540px;
+	}
+	.sales-right__text2 {
+		margin: 0px 0px 75px 0px;
+	}
+	.sales-right__size {
+		margin: 0px 0px 37px 0px;
+	}
+	.sales-right__price {
+		margin: 0px 0px 53px 0px;
+	}
+	.sales-right__size2 {
+		margin: 0px 0px 0px 0px;
+	}
+	.sales-right__price2 {
+		margin: 0px 0px 12px 0px;
+	}
+	.sales-bottom__columns {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+	.sales-bottom__columns2 {
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.sales-bottom__left {
+		margin: 0px 0px 0px 0px;
 	}
 }
 @media (max-width: 600px) {
@@ -4656,6 +4760,30 @@ a.bottom-link {
 	}
 	.sales-mainblock__title sup svg {
 		max-width: 50px;
+	}
+	.sales-bottom__columns {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.sales-bottom__columns2 {
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: start;
+	}
+	.sales-bottom__left {
+		margin: 0px 0px 30px 0px;
+	}
+	.sales-bottom__right {
+		width: 100%;
+	}
+	.sales-bottom__button {
+		display: inline-block;
+		padding: 16px 0px;
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
 	}
 }
 @media (max-width: 392.98px) {

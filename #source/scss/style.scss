@@ -1878,8 +1878,6 @@ body {
 	&__columns {
 		@include flexbox();
 	}
-
-	&__column {}
 }
 
 .sales-left {
@@ -1933,7 +1931,10 @@ body {
 			width: 14px;
 			height: 20px;
 		}
+	}
 
+	&__location2 {
+		margin: 0px 0px 386px 0px;
 	}
 
 	&__title {
@@ -1948,6 +1949,11 @@ body {
 		font-size: 12px;
 		line-height: 18px;
 	}
+}
+
+.sales-center2 {
+	background-image: url('../img/salespage/items/item3.jpg');
+	background-position: 20% 0%;
 }
 
 .sales-right {
@@ -1970,16 +1976,28 @@ body {
 		margin: 0px 0px 26px 0px;
 	}
 
+	&__text2 {
+		margin: 0px 0px 275px 0px;
+	}
+
 	&__size {
 		font-size: 14px;
 		line-height: 21px;
 		margin: 0px 0px 107px 0px;
 	}
 
+	&__size2 {
+		margin: 0px 0px 0px 0px;
+	}
+
 	&__price {
 		font-size: 24px;
 		line-height: 29px;
 		margin: 0px 0px 103px 0px;
+	}
+
+	&__price2 {
+		margin: 0px 0px 12px 0px;
 	}
 }
 
@@ -1998,6 +2016,11 @@ body {
 		img {
 			margin: 0px 17px 0px 0px;
 		}
+	}
+
+	&__left2 {
+		flex-direction: column;
+		align-items: start;
 	}
 
 	&__text {

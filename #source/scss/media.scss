@@ -153,6 +153,19 @@ $md4: 479.98;
    }
 }
 
+@media (max-width: 1110px) {
+   .sales-bottom {
+      &__left2 {
+         margin: 0px 0px 30px 0px;
+      }
+
+      &__columns2 {
+         flex-direction: column;
+         align-items: start;
+      }
+   }
+}
+
 @media (max-width: 1024px) {
    .footer {
       &__background {
@@ -434,6 +447,11 @@ $md4: 479.98;
          right: 0;
       }
    }
+
+   .sales-right {
+      margin: 26px 0px 28px 0px;
+   }
+
 }
 
 @media (max-width: 940px) {
@@ -738,6 +756,78 @@ $md4: 479.98;
             font-size: 12px;
             line-height: 19px;
          }
+      }
+   }
+
+   .sales-left {
+      display: none;
+   }
+
+   .sales-item {
+      &__columns {
+         flex-direction: column;
+      }
+   }
+
+   .sales-center {
+      &__location {
+         font-size: 14px;
+         line-height: 20px;
+         margin: 0px 0px 222px 0px;
+
+         &::before {
+            width: 10px;
+            height: 16px;
+         }
+      }
+   }
+
+   .sales-right {
+      margin: 0px 0px 78px 0px;
+      padding: 30px 49px 30px;
+
+      &__title {
+         max-width: 100%;
+      }
+
+      &__text {
+         max-width: 540px;
+      }
+
+      &__text2 {
+         margin: 0px 0px 75px 0px;
+      }
+
+      &__size {
+         margin: 0px 0px 37px 0px;
+      }
+
+      &__price {
+         margin: 0px 0px 53px 0px;
+      }
+
+      &__size2 {
+         margin: 0px 0px 0px 0px;
+      }
+
+      &__price2 {
+         margin: 0px 0px 12px 0px;
+      }
+   }
+
+   .sales-bottom {
+
+      &__columns {
+         flex-direction: row;
+         justify-content: space-between;
+      }
+
+      &__columns2 {
+         align-items: center;
+      }
+
+      &__left {
+         margin: 0px 0px 0px 0px;
       }
    }
 }
@@ -1940,6 +2030,33 @@ $md4: 479.98;
                max-width: 50px;
             }
          }
+      }
+   }
+
+   .sales-bottom {
+
+      &__columns {
+         flex-direction: column;
+      }
+
+      &__columns2 {
+         align-items: start;
+      }
+
+      &__left {
+         margin: 0px 0px 30px 0px;
+      }
+
+      &__right {
+         width: 100%;
+      }
+
+      &__button {
+         display: inline-block;
+         padding: 16px 0px;
+         max-width: 100%;
+         width: 100%;
+         text-align: center;
       }
    }
 }
