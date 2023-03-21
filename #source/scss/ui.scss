@@ -85,6 +85,16 @@ a.bottom-link {
 	}
 }
 
+.btn-white {
+	@include anim (0.5s, 0s);
+
+	&:hover {
+		color: rgba(21, 21, 21, 1);
+		background-color: rgba(255, 255, 255, 1);
+		box-shadow: 0 0 10px 2.5px rgba(255, 255, 255, 1);
+	}
+}
+
 //<REMOVE PLACEHOLDER>
 
 *:focus::-webkit-input-placeholder {

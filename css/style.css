@@ -235,6 +235,18 @@ a.bottom-link {
 	content: "";
 }
 
+.btn-white {
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.btn-white:hover {
+	color: rgb(21, 21, 21);
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
+	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
+}
+
 *:focus::-webkit-input-placeholder {
 	opacity: 0;
 }
@@ -580,6 +592,18 @@ a.bottom-link {
 }
 .breadcrumbs-link.active::after {
 	content: "";
+}
+
+.btn-white {
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.btn-white:hover {
+	color: rgb(21, 21, 21);
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
+	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
 }
 
 *:focus::-webkit-input-placeholder {
@@ -984,6 +1008,18 @@ a.bottom-link {
 }
 .breadcrumbs-link.active::after {
 	content: "";
+}
+
+.btn-white {
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.btn-white:hover {
+	color: rgb(21, 21, 21);
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
+	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
 }
 
 *:focus::-webkit-input-placeholder {
@@ -1540,15 +1576,6 @@ a.bottom-link {
 	padding: 16px 31px;
 	border-radius: 7px;
 	background-color: rgba(255, 255, 255, 0.07);
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.information-left__button:hover {
-	color: rgb(21, 21, 21);
-	background-color: rgb(255, 255, 255);
-	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
-	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
 }
 
 .number-line {
@@ -1854,15 +1881,6 @@ a.bottom-link {
 	background-color: rgba(255, 255, 255, 0.07);
 	padding: 16px 26px;
 	margin: 0px 0px 83px 0px;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.office-left__button:hover {
-	color: rgb(21, 21, 21);
-	background-color: rgb(255, 255, 255);
-	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
-	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
 }
 
 .office-icon {
@@ -2701,15 +2719,6 @@ a.bottom-link {
 	padding: 16px 31px;
 	border-radius: 7px;
 	background-color: rgba(255, 255, 255, 0.07);
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.expertise-left__button:hover {
-	color: rgb(21, 21, 21);
-	background-color: rgb(255, 255, 255);
-	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
-	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
 }
 
 .expertise-right__photo {
@@ -3403,15 +3412,6 @@ a.bottom-link {
 	line-height: 24px;
 	background-color: rgba(255, 255, 255, 0.07);
 	border-radius: 7px;
-	-webkit-transition: all 0.5s ease 0s;
-	-o-transition: all 0.5s ease 0s;
-	transition: all 0.5s ease 0s;
-}
-.sales-bottom__button:hover {
-	color: rgb(21, 21, 21);
-	background-color: rgb(255, 255, 255);
-	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
-	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
 }
 
 .tabs {

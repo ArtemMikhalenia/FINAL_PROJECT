@@ -89,6 +89,18 @@ a.bottom-link {
 	content: "";
 }
 
+.btn-white {
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+}
+.btn-white:hover {
+	color: rgb(21, 21, 21);
+	background-color: rgb(255, 255, 255);
+	-webkit-box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
+	        box-shadow: 0 0 10px 2.5px rgb(255, 255, 255);
+}
+
 *:focus::-webkit-input-placeholder {
 	opacity: 0;
 }
