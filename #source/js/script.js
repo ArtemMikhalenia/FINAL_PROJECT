@@ -15,8 +15,6 @@ if (iconMenu) {
 //POPUP
 const popupLinks = document.querySelectorAll('.popup-link');
 
-let unlock = true;
-
 if (popupLinks.length > 0) {
 	for (let index = 0; index < popupLinks.length; index++) {
 		const popupLink = popupLinks[index];
@@ -41,7 +39,7 @@ if (popupCloseIcon.length > 0) {
 }
 
 function popupOpen(currentPopup) {
-	if (currentPopup && unlock) {
+	if (currentPopup) {
 		const popupActive = document.querySelector('.popup__contact.open');
 		if (popupActive) {
 			popupClose(popupActive, false);
@@ -56,9 +54,7 @@ function popupOpen(currentPopup) {
 }
 
 function popupClose(popupActive, doUnlock = true) {
-	if (unlock) {
 		popupActive.classList.remove('open');
-	}
 }
 
 document.addEventListener('keydown', function (e) {
