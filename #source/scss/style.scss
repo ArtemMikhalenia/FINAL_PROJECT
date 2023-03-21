@@ -1095,7 +1095,7 @@ body {
 //<ABOUT MAINBLOCK>========================================================================================
 .about-mainblock {
 	position: relative;
-	background: url('../img/aboutpage/mainblock/background.jpg') 15% 40% no-repeat;
+	background: url('../img/aboutpage/mainblock/background.webp') 15% 40% no-repeat;
 	background-size: 130%;
 
 	&__gradient1 {
@@ -1572,21 +1572,21 @@ body {
 }
 
 .slide-selling1 {
-	background-image: url('../img/objectspage/selling/slide1.jpg');
+	background-image: url('../img/objectspage/selling/slide1.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0% 55%;
 }
 
 .slide-selling2 {
-	background-image: url('../img/objectspage/selling/slide2.jpg');
+	background-image: url('../img/objectspage/selling/slide2.webp');
 	background-repeat: no-repeat;
 	background-size: 130%;
 	background-position: 91% 62%;
 }
 
 .slide-selling3 {
-	background-image: url('../img/objectspage/selling/slide3.jpg');
+	background-image: url('../img/objectspage/selling/slide3.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0% 55%;
@@ -1776,21 +1776,21 @@ body {
 
 
 .slide-rent1 {
-	background-image: url('../img/objectspage/rent/slide1.jpg');
+	background-image: url('../img/objectspage/rent/slide1.webp');
 	background-repeat: no-repeat;
 	background-size: 130%;
 	background-position: 91% 35%;
 }
 
 .slide-rent2 {
-	background-image: url('../img/objectspage/rent/slide2.jpg');
+	background-image: url('../img/objectspage/rent/slide2.webp');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0% 95%;
 }
 
 .slide-rent3 {
-	background-image: url('../img/objectspage/rent/slide3.jpg');
+	background-image: url('../img/objectspage/rent/slide3.webp');
 	background-repeat: no-repeat;
 	background-size: 130%;
 	background-position: 91% 62%;
@@ -2175,25 +2175,6 @@ body {
 			top: -2px;
 			right: -24px;
 		}
-	}
-}
-
-.tab-menu {
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 30px;
-	left: 3px;
-	display: none;
-	@include anim(0.2s, 0s);
-
-	// a {
-	// 	display: inline-block;
-	// 	margin: 0px 0px 2px 0px;
-	// }
-
-	&.opened {
-		display: block;
 	}
 }
 
