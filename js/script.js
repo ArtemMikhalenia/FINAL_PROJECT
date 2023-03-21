@@ -214,17 +214,3 @@ if (rentSlider.length > 0) {
 		});
 	}
 }
-
-//<TABS>======================================
-// const tabLinks = document.querySelectorAll('.tabs__link');
-// const tabMenuList = document.getElementById('tab-menu1');
-
-// if (tabLinks.length > 0) {
-// 	for (let index = 0; index < tabLinks.length; index++) {
-// 		const tabLink = tabLinks[index];
-
-// 		tabLink.addEventListener("click", function () {
-// 		tabMenuList.closest.classList.toggle("opened");
-// 		});
-// 	}
-// }

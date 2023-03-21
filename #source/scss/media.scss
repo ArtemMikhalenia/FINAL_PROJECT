@@ -1511,6 +1511,8 @@ $md4: 479.98;
    }
 
    .sales-items {
+      padding: 54px 0px 47px 0px;
+
       &__links {
          font-size: 16px;
          line-height: 19px;
@@ -1530,6 +1532,10 @@ $md4: 479.98;
          a.sales-items__link2 {
             margin: 0px 25px 0px 0px;
          }
+      }
+
+      &__tabs {
+         margin: 0px 0px 55px 0px;
       }
    }
 

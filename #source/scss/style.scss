@@ -2184,16 +2184,16 @@ body {
 	height: 100%;
 	top: 30px;
 	left: 3px;
-	@include scale(0);
+	display: none;
 	@include anim(0.2s, 0s);
 
-	a {
-		display: inline-block;
-		margin: 0px 0px 2px 0px;
-	}
+	// a {
+	// 	display: inline-block;
+	// 	margin: 0px 0px 2px 0px;
+	// }
 
 	&.opened {
-		@include scale(1);
+		display: block;
 	}
 }
 

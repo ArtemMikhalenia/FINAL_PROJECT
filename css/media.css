@@ -1209,6 +1209,9 @@
 		max-width: 80px;
 		width: 100%;
 	}
+	.sales-items {
+		padding: 54px 0px 47px 0px;
+	}
 	.sales-items__links {
 		font-size: 16px;
 		line-height: 19px;
@@ -1224,6 +1227,9 @@
 	}
 	.sales-items__links a.sales-items__link2 {
 		margin: 0px 25px 0px 0px;
+	}
+	.sales-items__tabs {
+		margin: 0px 0px 55px 0px;
 	}
 	.tabs__list {
 		-webkit-box-orient: vertical;
