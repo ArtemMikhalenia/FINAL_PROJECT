@@ -1834,6 +1834,23 @@ body {
 		margin: 0 auto;
 	}
 
+	&__top {
+		@include flexbox();
+		align-items: baseline;
+		justify-content: space-between;
+	}
+
+	&__title {
+		sup {
+			font-family: Manrope;
+			font-size: 15px;
+			line-height: 20px;
+			position: relative;
+			top: -30px;
+			right: -5px;
+		}
+	}
+
 	&__links {
 		margin: -20px 25px 0px;
 		@include flexbox();
@@ -2202,5 +2219,27 @@ body {
 }
 
 //</RENT MAINBLOCK>====================================================================================
+//<RENT ITEMS>====================================================================================
+
+.rent-center {
+	&__location {
+		margin: 0px 0px 390px 0px;
+	}
+}
+
+.rent-center1 {
+	background-image: url('../img/rentpage/items/item1.jpg');
+	background-position: 40% 0%;
+}
+
+.rent-center3 {
+	background-image: url('../img/rentpage/items/item2.jpg');
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+//</RENT ITEMS>====================================================================================
 //<MEDIA>====================================================================================================
 @import "media.scss";

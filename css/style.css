@@ -3120,6 +3120,25 @@ a.bottom-link {
 	width: 100%;
 	margin: 0 auto;
 }
+.object-items__top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.object-items__title sup {
+	font-family: Manrope;
+	font-size: 15px;
+	line-height: 20px;
+	position: relative;
+	top: -30px;
+	right: -5px;
+}
 .object-items__links {
 	margin: -20px 25px 0px;
 	display: -webkit-box;
@@ -3484,6 +3503,22 @@ a.bottom-link {
 .rent-breadcrumbs__list {
 	max-width: 221px;
 	margin: 0px 0px 161px 0px;
+}
+
+.rent-center__location {
+	margin: 0px 0px 390px 0px;
+}
+
+.rent-center1 {
+	background-image: url("../img/rentpage/items/item1.jpg");
+	background-position: 40% 0%;
+}
+
+.rent-center3 {
+	background-image: url("../img/rentpage/items/item2.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
 }
 
 @media (max-width: 1300px) {
