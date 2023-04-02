@@ -1852,7 +1852,7 @@ body {
 	}
 
 	&__links {
-		margin: -20px 25px 0px;
+		margin: -10px 55px 0px;
 		@include flexbox();
 		align-items: center;
 		justify-content: space-between;
@@ -1885,7 +1885,7 @@ body {
 		}
 
 		a.object-items__link2 {
-			margin: 0px 25px 0px 0px;
+			margin: 0px 40px 0px 0px;
 			border-bottom: 1px solid rgba(255, 255, 255, 0);
 
 			&::after {
@@ -1913,7 +1913,8 @@ body {
 		margin: 0px 0px 106px 0px;
 	}
 
-	&__columns3 {
+	&__columns3,
+	&__columns4 {
 		justify-content: space-between;
 	}
 
@@ -1929,8 +1930,8 @@ body {
 	flex: 0 1 53%;
 	position: relative;
 	background-image: url('../img/salespage/items/item1.jpg');
-	background-position: center center;
-	background-size: cover;
+	background-position: center 51%;
+	background-size: 176%;
 
 	&__horizontal-gradient {
 		position: absolute;
@@ -1953,7 +1954,8 @@ body {
 		margin: 56px 48px 68px 48px;
 	}
 
-	&__content3 {
+	&__content3,
+	&__content4 {
 		margin: 44px 42px 97px 42px;
 	}
 
@@ -1984,11 +1986,23 @@ body {
 		margin: 0px 0px 246px 0px;
 	}
 
+	&__location4 {
+		margin: 0px 0px 250px 0px;
+	}
+
 	&__title {
 		max-width: 296px;
 		font-size: 20px;
 		line-height: 24px;
 		margin: 0px 0px 31px 0px;
+	}
+
+	&__title2 {
+		margin: 0px 0px 35px 0px;
+	}
+
+	&__title4 {
+		margin: 0px 0px 35px 0px;
 	}
 
 	&__text {
@@ -2000,10 +2014,13 @@ body {
 
 .sales-center2 {
 	background-image: url('../img/salespage/items/item3.jpg');
-	background-position: 20% 0%;
+	background-size: 212%;
+	background-repeat: no-repeat;
+	background-position: 48% 80%;
 }
 
-.object-left3 {
+.object-left3,
+.object-left4 {
 	flex: 0 1 4%;
 }
 
@@ -2018,13 +2035,13 @@ body {
 .object-center3,
 .object-center4 {
 	position: relative;
-	flex: 0 1 42%;
+	flex: 0 1 41%;
 
 	&__icon {
 		position: absolute;
 		height: 100%;
-		top: -17px;
-		right: 37px;
+		top: -13px;
+		right: 20px;
 	}
 
 	&__top-gradient {
@@ -2044,7 +2061,7 @@ body {
 }
 
 .object-right {
-	flex: 0 1 43%;
+	flex: 0 1 42%;
 	margin: 46px 0px 78px 0px;
 	padding: 60px 69px 38px;
 	background-color: rgba(16, 16, 16, 1);
@@ -2067,7 +2084,8 @@ body {
 		margin: 0px 0px 275px 0px;
 	}
 
-	&__text3 {
+	&__text3,
+	&__text4 {
 		margin: 0px 0px 184px 0px;
 	}
 
@@ -2082,7 +2100,11 @@ body {
 	}
 
 	&__size3 {
-		margin: 0px 0px 51px 0px;
+		margin: 0px 0px 59px 0px;
+	}
+
+	&__size4 {
+		margin: 0px 0px 70px 0px;
 	}
 
 	&__price {
@@ -2095,13 +2117,15 @@ body {
 		margin: 0px 0px 12px 0px;
 	}
 
-	&__price3 {
+	&__price3,
+	&__price4 {
 		margin: 0px 0px 12px 0px;
 	}
 }
 
-.object-right3 {
-	flex: 0 1 43%;
+.object-right3,
+.object-right4 {
+	flex: 0 1 42.5%;
 	margin: 0px 0px 0px 0px;
 	padding: 10px 69px 0px;
 	background-color: rgba(0, 0, 0, 0);
@@ -2129,6 +2153,13 @@ body {
 		align-items: start;
 	}
 
+	&__left4 {
+		img {
+			position: relative;
+			top: -10px;
+		}
+	}
+
 	&__text {
 		font-size: 14px;
 		line-height: 21px;
@@ -2144,11 +2175,12 @@ body {
 }
 
 .tabs {
-	margin: 0px 0px 115px 0px;
+	margin: 0px 0px 132px 0px;
 
 	&__list {
 		@include flexbox();
 		justify-content: end;
+		margin: 0px 35px 0px 0px;
 
 		li {
 			position: relative;
@@ -2232,13 +2264,19 @@ body {
 	background-position: 40% 0%;
 }
 
+.rent-center2 {
+	background-image: url('../img/rentpage/items/item3.jpg');
+	background-size: 225%;
+	background-position: 50% 70%;
+	background-repeat: no-repeat;
+}
+
 .rent-center3 {
 	background-image: url('../img/rentpage/items/item2.jpg');
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
 }
-
 
 //</RENT ITEMS>====================================================================================
 //<MEDIA>====================================================================================================

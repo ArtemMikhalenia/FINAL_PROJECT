@@ -85,7 +85,8 @@
 	.main-button__next.rent__button-next {
 		right: 11.7%;
 	}
-	.object-right3 {
+	.object-right3,
+.object-right4 {
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 1 50%;
 		        flex: 0 1 50%;
@@ -106,6 +107,9 @@
 		-webkit-box-align: start;
 		    -ms-flex-align: start;
 		        align-items: start;
+	}
+	.object-right {
+		padding: 60px 49px 38px;
 	}
 }
 @media (max-width: 1024px) {
@@ -321,6 +325,15 @@
 	}
 	.object-center__location {
 		font-size: 18px;
+	}
+	.sales-center2 {
+		background-image: url("../img/salespage/items/item3.jpg");
+		background-size: cover;
+	}
+	.sales-center4 {
+		background-image: url("../img/salespage/items/item4.jpg");
+		background-size: cover;
+		background-position: 0% 70%;
 	}
 	.rent-mainblock {
 		background: url("../img/rentpage/mainblock/background.jpg") 50% 10% no-repeat;
@@ -644,6 +657,9 @@
 		        flex-direction: column;
 		margin: 0px 0px 0px 0px;
 	}
+	.object-center {
+		background-size: cover;
+	}
 	.object-center__location {
 		font-size: 14px;
 		line-height: 20px;
@@ -655,7 +671,7 @@
 	}
 	.object-right {
 		margin: 0px 0px 78px 0px;
-		padding: 30px 49px 30px;
+		padding: 30px 40px 30px;
 	}
 	.object-right__title {
 		max-width: 100%;
@@ -666,7 +682,7 @@
 	.object-right__text2 {
 		margin: 0px 0px 75px 0px;
 	}
-	.object-right__text3 {
+	.object-right__text3, .object-right__text4 {
 		margin: 0px 0px 44px 0px;
 	}
 	.object-right__size {
@@ -681,7 +697,7 @@
 	.object-right__price2 {
 		margin: 0px 0px 12px 0px;
 	}
-	.object-right__price3 {
+	.object-right__price3, .object-right__price4 {
 		margin: 0px 0px 6px 0px;
 	}
 	.object-bottom__columns {
@@ -1426,6 +1442,18 @@
 .specialist-profession {
 		font-size: 12px;
 		line-height: 19px;
+	}
+	.object-items__links {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.object-items__links a.object-items__link1 {
+		margin: 0px 0px 10px 0px;
+	}
+	.object-items__links a.object-items__link2 {
+		margin: 0px 0px 0px 0px;
 	}
 }
 @media (max-width: 479.98px) {

@@ -15,7 +15,6 @@ $md4: 479.98;
          margin: 0px 0px 28px 0px;
       }
    }
-
 }
 
 @media (max-width: $md1+px) {
@@ -152,7 +151,8 @@ $md4: 479.98;
       right: 11.7%;
    }
 
-   .object-right3 {
+   .object-right3,
+   .object-right4 {
       flex: 0 1 50%;
    }
 
@@ -174,6 +174,10 @@ $md4: 479.98;
          flex-direction: column;
          align-items: start;
       }
+   }
+
+   .object-right {
+      padding: 60px 49px 38px;
    }
 }
 
@@ -467,6 +471,17 @@ $md4: 479.98;
       &__location {
          font-size: 18px;
       }
+   }
+
+   .sales-center2 {
+      background-image: url('../img/salespage/items/item3.jpg');
+      background-size: cover;
+   }
+
+   .sales-center4 {
+      background-image: url('../img/salespage/items/item4.jpg');
+      background-size: cover;
+      background-position: 0% 70%;
    }
 
    .rent-mainblock {
@@ -797,6 +812,8 @@ $md4: 479.98;
    }
 
    .object-center {
+      background-size: cover;
+
       &__location {
          font-size: 14px;
          line-height: 20px;
@@ -811,7 +828,7 @@ $md4: 479.98;
 
    .object-right {
       margin: 0px 0px 78px 0px;
-      padding: 30px 49px 30px;
+      padding: 30px 40px 30px;
 
       &__title {
          max-width: 100%;
@@ -825,7 +842,8 @@ $md4: 479.98;
          margin: 0px 0px 75px 0px;
       }
 
-      &__text3 {
+      &__text3,
+      &__text4 {
          margin: 0px 0px 44px 0px;
       }
 
@@ -845,7 +863,8 @@ $md4: 479.98;
          margin: 0px 0px 12px 0px;
       }
 
-      &__price3 {
+      &__price3,
+      &__price4 {
          margin: 0px 0px 6px 0px;
       }
    }
@@ -1807,6 +1826,20 @@ $md4: 479.98;
    .specialist-profession {
       font-size: 12px;
       line-height: 19px;
+   }
+
+   .object-items {
+      &__links {
+         flex-direction: column;
+
+         a.object-items__link1 {
+            margin: 0px 0px 10px 0px;
+         }
+
+         a.object-items__link2 {
+            margin: 0px 0px 0px 0px;
+         }
+      }
    }
 }
 
