@@ -2,6 +2,9 @@
 	.office-left__link {
 		margin: 0px 0px 28px 0px;
 	}
+	.object-items__top {
+		margin: 0 15px;
+	}
 }
 @media (max-width: 1202px) {
 	.main-button__prev {
@@ -93,6 +96,21 @@
 	}
 	.object-right__size3 {
 		margin: 0px 0px 31px 0px;
+	}
+	.object-items__top {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.rent-title {
+		margin: 0px 0px 40px 0px;
+	}
+	.rent-center {
+		background-size: cover;
+	}
+	.rent-center4 {
+		background-size: cover;
 	}
 }
 @media (max-width: 1110px) {
@@ -344,6 +362,9 @@
 		background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
 		background: -o-linear-gradient(bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
 		background: linear-gradient(360deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+	}
+	.rent-center2 {
+		background-size: cover;
 	}
 }
 @media (max-width: 940px) {
@@ -720,6 +741,10 @@
 	.rent-mainblock {
 		background: url("../img/rentpage/mainblock/background.jpg") 0% 0% no-repeat;
 		background-size: 130%;
+	}
+	.rent-title {
+		font-size: 65px;
+		line-height: 60px;
 	}
 }
 @media (max-width: 600px) {
@@ -1283,6 +1308,10 @@
 		max-width: 60px;
 		width: 100%;
 	}
+	.rent-title sup {
+		top: -55px;
+		right: -95px;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -1807,5 +1836,8 @@
 	}
 	.rent-mainblock__title sup {
 		right: 20px;
+	}
+	.rent-title sup {
+		right: -25px;
 	}
 }

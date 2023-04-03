@@ -1835,20 +1835,12 @@ body {
 	}
 
 	&__top {
+		max-width: 1210px;
+		width: 100%;
+		margin: 0 50px;
 		@include flexbox();
 		align-items: baseline;
-		justify-content: space-between;
-	}
-
-	&__title {
-		sup {
-			font-family: Manrope;
-			font-size: 15px;
-			line-height: 20px;
-			position: relative;
-			top: -30px;
-			right: -5px;
-		}
+		justify-content: start;
 	}
 
 	&__links {
@@ -2252,16 +2244,78 @@ body {
 
 //</RENT MAINBLOCK>====================================================================================
 //<RENT ITEMS>====================================================================================
+.rent-items {
+	padding: 106px 0px 52px 0px;
+}
+
+.rent-title {
+	margin: 0px 40px 0px 0px;
+
+	sup {
+		font-family: Manrope;
+		font-size: 15px;
+		line-height: 20px;
+		position: relative;
+		top: -30px;
+		right: -5px;
+	}
+}
 
 .rent-center {
+	background-image: url('../img/rentpage/items/item1.jpg');
+	background-position: 45% 25%;
+	background-repeat: no-repeat;
+
 	&__location {
 		margin: 0px 0px 390px 0px;
 	}
 }
 
-.rent-center1 {
-	background-image: url('../img/rentpage/items/item1.jpg');
-	background-position: 40% 0%;
+.rent-right {
+	padding: 60px 49px 36px 69px;
+
+	&__size4 {
+		margin: 0px 0px 53px 0px;
+	}
+}
+
+.rent-right2 {
+	padding: 41px 49px 48px 69px;
+	margin: 62px 0px;
+}
+
+.rent-bottom {
+	&__left4 img {
+		top: 0;
+	}
+}
+
+.rent-items {
+	&__tabs {
+		margin: 0px 0px 126px 0px;
+
+		.tabs__list {
+			max-width: 424px;
+			width: 100%;
+			margin: 0px 0px 0px 0px;
+
+			.tabs__link {
+				margin: 0px 38px 0px 0px;
+			}
+
+			.tabs-link {
+				&__last {
+					margin: 0px 0px 0px 0px;
+				}
+			}
+		}
+	}
+}
+
+.rent-item {
+	&__columns4 {
+		margin: 0px 0px 94px 0px;
+	}
 }
 
 .rent-center2 {
@@ -2275,6 +2329,13 @@ body {
 	background-image: url('../img/rentpage/items/item2.jpg');
 	background-size: cover;
 	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.rent-center4 {
+	background-image: url('../img/rentpage/items/item4.jpg');
+	background-size: 270%;
+	background-position: 44% 95%;
 	background-repeat: no-repeat;
 }
 
