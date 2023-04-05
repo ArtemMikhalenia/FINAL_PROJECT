@@ -1,0 +1,420 @@
+//<SALES MAINBLOCK>=======================================================================================
+
+.sales-mainblock {
+   position: relative;
+   background: url('../img/salespage/mainblock/background.jpg') 40% 60% no-repeat;
+   background-size: 120%;
+
+   &__gradient {
+      position: absolute;
+      width: 100%;
+      height: 615px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+   }
+
+   &__content {
+      padding: 38px 0px 450px 0px;
+   }
+
+   &__title {
+      position: relative;
+      max-width: 451px;
+      margin: 0px 0px 31px 0px;
+
+      & sup {
+         position: absolute;
+         height: 100%;
+         top: -35px;
+         right: 20px;
+      }
+   }
+
+   &__text {
+      max-width: 435px;
+   }
+}
+
+.sales-breadcrumbs {
+   margin: 0px 0px 159px 0px;
+
+   &__list {
+      max-width: 235px;
+   }
+}
+
+//</SALES MAINBLOCK>==================================================================================
+//<SALES ITEMS>=======================================================================================
+
+.object-items {
+   padding: 154px 0px 47px 0px;
+   background-color: rgba(21, 21, 21, 1);
+
+   &__content {
+      max-width: 1315px;
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   &__top {
+      max-width: 1210px;
+      width: 100%;
+      margin: 0 50px;
+      @include flexbox();
+      align-items: baseline;
+      justify-content: start;
+   }
+
+   &__links {
+      margin: -10px 55px 0px;
+      @include flexbox();
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      line-height: 24px;
+
+      a {
+         position: relative;
+         padding: 0px 0px 8px 0px;
+         @include anim (0.5s, 0s);
+      }
+
+      a.object-items__link1 {
+         margin: 0px 0px 0px 25px;
+         border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+         &::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            top: calc(50% - 10px);
+            left: -25px;
+            background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+         }
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+         }
+      }
+
+      a.object-items__link2 {
+         margin: 0px 40px 0px 0px;
+         border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+         &::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            top: calc(50% - 10px);
+            @include rotate(180deg);
+            margin: 0px 0px 0px 17px;
+            background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+         }
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+         }
+      }
+   }
+}
+
+.object-item {
+
+   &__columns {
+      @include flexbox();
+      margin: 0px 0px 106px 0px;
+   }
+
+   &__columns3,
+   &__columns4 {
+      justify-content: space-between;
+   }
+
+}
+
+.object-left {
+   flex: 0 1 4%;
+   background-color: rgba(16, 16, 16, 1);
+   margin: 46px 0px 78px 0px;
+}
+
+.object-center {
+   flex: 0 1 53%;
+   position: relative;
+   background-image: url('../img/salespage/items/item1.jpg');
+   background-position: center 51%;
+   background-size: 176%;
+
+   &__horizontal-gradient {
+      position: absolute;
+      width: 100%;
+      height: 40%;
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.63) 100%);
+   }
+
+   &__icon {
+      position: absolute;
+      height: 100%;
+      top: -17px;
+      right: 37px;
+   }
+
+   &__content {
+      position: relative;
+      margin: 56px 48px 68px 48px;
+   }
+
+   &__content3,
+   &__content4 {
+      margin: 44px 42px 97px 42px;
+   }
+
+   &__location {
+      display: inline-block;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0px 0px 422px 0px;
+
+      &::before {
+         content: '';
+         display: inline-block;
+         background-image: url('../img/salespage/items/location-icon.svg');
+         background-size: 100%;
+         background-repeat: no-repeat;
+         margin: 0px 11px 0px 0px;
+         vertical-align: -3px;
+         width: 14px;
+         height: 20px;
+      }
+   }
+
+   &__location2 {
+      margin: 0px 0px 386px 0px;
+   }
+
+   &__location3 {
+      margin: 0px 0px 246px 0px;
+   }
+
+   &__location4 {
+      margin: 0px 0px 250px 0px;
+   }
+
+   &__title {
+      max-width: 296px;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0px 0px 31px 0px;
+   }
+
+   &__title2 {
+      margin: 0px 0px 35px 0px;
+   }
+
+   &__title4 {
+      margin: 0px 0px 35px 0px;
+   }
+
+   &__text {
+      max-width: 340px;
+      font-size: 12px;
+      line-height: 18px;
+   }
+}
+
+.sales-center2 {
+   background-image: url('../img/salespage/items/item3.jpg');
+   background-size: 212%;
+   background-repeat: no-repeat;
+   background-position: 48% 80%;
+}
+
+.object-left3,
+.object-left4 {
+   flex: 0 1 4%;
+}
+
+.sales-center3,
+.sales-center4 {
+   background-image: url('../img/salespage/items/item2.jpg');
+   background-position: 0% 50%;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.object-center3,
+.object-center4 {
+   position: relative;
+   flex: 0 1 41%;
+
+   &__icon {
+      position: absolute;
+      height: 100%;
+      top: -13px;
+      right: 20px;
+   }
+
+   &__top-gradient {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+      transform: rotate(-180deg);
+   }
+}
+
+.sales-center4 {
+   background-image: url('../img/salespage/items/item4.jpg');
+   background-position: 0% 100%;
+}
+
+.object-right {
+   flex: 0 1 42%;
+   margin: 46px 0px 78px 0px;
+   padding: 60px 69px 38px;
+   background-color: rgba(16, 16, 16, 1);
+
+   &__title {
+      max-width: 296px;
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0px 0px 36px 0px;
+   }
+
+   &__text {
+      max-width: 340px;
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0px 0px 26px 0px;
+   }
+
+   &__text2 {
+      margin: 0px 0px 275px 0px;
+   }
+
+   &__text3,
+   &__text4 {
+      margin: 0px 0px 184px 0px;
+   }
+
+   &__size {
+      font-size: 14px;
+      line-height: 21px;
+      margin: 0px 0px 107px 0px;
+   }
+
+   &__size2 {
+      margin: 0px 0px 0px 0px;
+   }
+
+   &__size3 {
+      margin: 0px 0px 59px 0px;
+   }
+
+   &__size4 {
+      margin: 0px 0px 70px 0px;
+   }
+
+   &__price {
+      font-size: 24px;
+      line-height: 29px;
+      margin: 0px 0px 103px 0px;
+   }
+
+   &__price2 {
+      margin: 0px 0px 12px 0px;
+   }
+
+   &__price3,
+   &__price4 {
+      margin: 0px 0px 12px 0px;
+   }
+}
+
+.object-right3,
+.object-right4 {
+   flex: 0 1 42.5%;
+   margin: 0px 0px 0px 0px;
+   padding: 10px 69px 0px;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.object-bottom {
+
+   &__columns {
+      @include flexbox();
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__left {
+      @include flexbox();
+      align-items: center;
+
+      img {
+         margin: 0px 17px 0px 0px;
+      }
+   }
+
+   &__left2 {
+      flex-direction: column;
+      align-items: start;
+   }
+
+   &__left4 {
+      img {
+         position: relative;
+         top: -10px;
+      }
+   }
+
+   &__text {
+      font-size: 14px;
+      line-height: 21px;
+   }
+
+   &__button {
+      padding: 16px 32px;
+      font-size: 15px;
+      line-height: 24px;
+      background-color: rgba(255, 255, 255, 0.07);
+      border-radius: 7px;
+   }
+}
+
+.tabs {
+   margin: 0px 0px 132px 0px;
+
+   &__list {
+      @include flexbox();
+      justify-content: end;
+      margin: 0px 35px 0px 0px;
+
+      li {
+         position: relative;
+      }
+   }
+
+   &__link {
+      position: relative;
+      margin: 0px 69px 0px 0px;
+      color: rgba(255, 255, 255, 1);
+
+      &::after {
+         content: url('../img/salespage/items/arrow.svg');
+         position: absolute;
+         height: 100%;
+         top: -2px;
+         right: -24px;
+      }
+   }
+}
+
+//</SALES ITEMS>=======================================================================================

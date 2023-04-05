@@ -1,0 +1,341 @@
+//<OBJECTS MAINBLOCK>=======================================================================================
+
+.objects-mainblock {
+   position: relative;
+   background: url('../img/objectspage/mainblock/background.jpg') 25% 26% no-repeat;
+   background-size: 145%;
+   padding: 0px 0px 475px 0px;
+
+   &__gradient1 {
+      position: absolute;
+      width: 100%;
+      height: 447px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+   }
+
+   &__gradient2 {
+      position: absolute;
+      width: 100%;
+      height: 268px;
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+      transform: rotate(-180deg);
+   }
+
+   &__gradient3 {
+      position: absolute;
+      width: 287px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+      transform: rotate(-180deg);
+   }
+
+   &__gradient4 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+   }
+
+   &__content {
+      position: relative;
+      padding: 37px 0px 0px 0px;
+   }
+
+   &__title {
+      max-width: 200px;
+      margin: 0px 0px 31px 0px;
+   }
+
+   &__text {
+      max-width: 473px;
+      margin: 0px 0px 0px 0px;
+   }
+}
+
+.objects-breadcrumbs {
+
+   &__list {
+      max-width: 191px;
+      margin: 0px 0px 161px 0px;
+   }
+}
+
+//</OBJECTS MAINBLOCK>=======================================================================================
+//<OBJECTS SELLING>=======================================================================================
+
+.selling {
+   padding: 105px 0px 128px 0px;
+
+   &__title {
+      margin: 0px 0px 112px 25px;
+
+      & sup {
+         position: relative;
+         top: -37px;
+         right: 24px;
+         font-family: Manrope;
+         font-size: 15px;
+         line-height: 20.49px;
+         letter-spacing: 0em;
+         border-bottom: 1px solid rgba(255, 255, 255, 1);
+         @include anim (0.5s, 0s);
+         padding: 0px 0px 3px 0px;
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+         }
+      }
+   }
+
+   &__swiper {
+      right: -2.5%;
+   }
+}
+
+.slide-selling {
+   &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0px 0px 30px 48px;
+   }
+
+   &__text {
+      font-size: 12px;
+      line-height: 18px;
+   }
+}
+
+.slide-selling1 {
+   background-image: url('../img/objectspage/selling/slide1.webp');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0% 55%;
+}
+
+.slide-selling2 {
+   background-image: url('../img/objectspage/selling/slide2.webp');
+   background-repeat: no-repeat;
+   background-size: 130%;
+   background-position: 91% 62%;
+}
+
+.slide-selling3 {
+   background-image: url('../img/objectspage/selling/slide3.webp');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0% 55%;
+}
+
+//</OBJECTS SELLING>=======================================================================================
+//</OBJECTS RENT>=======================================================================================
+
+.rent {
+   padding: 89px 0px 47px 0px;
+   background-color: rgba(21, 21, 21, 1);
+
+   &__title {
+      margin: 0px 0px 164px 0px;
+
+      & sup {
+         position: relative;
+         top: -27px;
+         right: 0;
+         font-family: Manrope;
+         font-size: 15px;
+         line-height: 20.49px;
+         letter-spacing: 0em;
+         border-bottom: 1px solid rgba(255, 255, 255, 1);
+         @include anim (0.5s, 0s);
+         padding: 0px 0px 3px 0px;
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+         }
+      }
+   }
+
+   &__links {
+      max-width: 1190px;
+      margin: 0px 0px 0px;
+      @include flexbox();
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      line-height: 24px;
+
+      a {
+         position: relative;
+         padding: 0px 0px 8px 0px;
+         @include anim (0.5s, 0s);
+      }
+
+      a.rent__link1 {
+         margin: 0px 0px 0px 25px;
+         border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+         &::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            top: calc(50% - 10px);
+            left: -25px;
+            background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+         }
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+         }
+      }
+
+      a.rent__link2 {
+         margin: 0px 25px 0px 0px;
+         border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+         &::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            top: calc(50% - 10px);
+            @include rotate(180deg);
+            margin: 0px 0px 0px 17px;
+            background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+         }
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+         }
+      }
+   }
+}
+
+.rent-swiper {
+   position: relative;
+   width: 100%;
+   margin: 0px 0px 149px 0px;
+
+   &__wrapper {
+      @include flexbox();
+      width: 100%;
+      height: 100%;
+   }
+
+   &__slide {
+      position: relative;
+      flex-shrink: 0;
+      max-width: 546px;
+      width: 100%;
+   }
+}
+
+.slide-rent {
+
+   &__content {
+      @include flexbox();
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+   }
+
+   &__bottom {
+      @include flexbox();
+      flex-direction: column;
+      justify-content: end;
+      height: 100%;
+   }
+
+   &__location {
+      margin: 41px 0px 199.5px 42px;
+   }
+
+   &__title {
+      font-size: 20px;
+      line-height: 24px;
+      margin: 0px 0px 36px 42px;
+   }
+
+   &__text {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 0px 0px 89px 42px;
+   }
+
+   &__label {
+      margin: 0px 0px 21px 42px;
+   }
+}
+
+.rent-slide {
+   position: relative;
+
+   &__bottom-gradient {
+      position: absolute;
+      width: 100%;
+      height: 40%;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.63) 100%);
+   }
+
+   &__top-gradient {
+      position: absolute;
+      width: 100%;
+      height: 60%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.19) 100%);
+      transform: rotate(-180deg);
+   }
+}
+
+.main-button__prev.rent__button-prev {
+   cursor: pointer;
+   position: absolute;
+   width: 30px;
+   height: 40px;
+   top: 41%;
+   left: 18%;
+
+}
+
+.main-button__next.rent__button-next {
+   cursor: pointer;
+   position: absolute;
+   width: 30px;
+   height: 40px;
+   top: 41%;
+   right: 17.7%;
+}
+
+
+.slide-rent1 {
+   background-image: url('../img/objectspage/rent/slide1.webp');
+   background-repeat: no-repeat;
+   background-size: 130%;
+   background-position: 91% 35%;
+}
+
+.slide-rent2 {
+   background-image: url('../img/objectspage/rent/slide2.webp');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: 0% 95%;
+}
+
+.slide-rent3 {
+   background-image: url('../img/objectspage/rent/slide3.webp');
+   background-repeat: no-repeat;
+   background-size: 130%;
+   background-position: 91% 62%;
+}
+
+//</OBJECTS RENT>=======================================================================================

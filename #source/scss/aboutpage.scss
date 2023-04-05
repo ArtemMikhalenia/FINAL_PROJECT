@@ -1,0 +1,357 @@
+//<ABOUT MAINBLOCK>========================================================================================
+.about-mainblock {
+   position: relative;
+   background: url('../img/aboutpage/mainblock/background.webp') 15% 40% no-repeat;
+   background-size: 130%;
+
+   &__gradient1 {
+      position: absolute;
+      width: 705px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 100%);
+      z-index: 0;
+   }
+
+   &__gradient2 {
+      position: absolute;
+      width: 240px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.33) 0%, rgba(0, 0, 0, 0) 100%);
+      transform: rotate(-180deg);
+   }
+
+   &__gradient3 {
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 100%);
+      transform: rotate(-180deg);
+   }
+
+   &__content {
+      padding: 35px 0px 0px 0px;
+   }
+
+   &__title {
+      max-width: 1000px;
+      margin: 0px 0px 40px 0px;
+      font-size: 85px;
+      line-height: 76px;
+      letter-spacing: -0.02em;
+   }
+
+   &__text {
+      max-width: 447px;
+      margin: 0px 0px 25px 0px;
+   }
+
+   &__btn {
+      padding: 16px 24px;
+   }
+}
+
+.breadcrumbs {
+   margin: 0px 0px 69px 0px;
+
+   &__list {
+      max-width: 152px;
+   }
+}
+
+//</ABOUT MAINBLOCK>=======================================================================================
+//<ABOUT QUOTE>=======================================================================================
+
+.quote {
+   position: relative;
+
+   &__backgrounds {
+      position: absolute;
+      width: 100%;
+      height: 526px;
+      top: 0;
+      left: 0;
+   }
+
+   &__content {
+      position: relative;
+      top: -93px;
+      padding: 295px 0px 233px 0px;
+      background-color: rgba(255, 251, 242, 1);
+      @include flexbox();
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   &__text {
+      position: relative;
+      font-family: 'Playfair Display';
+      font-size: 62px;
+      line-height: 56px;
+      letter-spacing: -0.02em;
+      color: rgba(16, 16, 16, 1);
+      text-align: center;
+      margin: 0px 0px 38px 0px;
+
+      & sup {
+         position: absolute;
+         height: 100%;
+         top: -30px;
+         right: -25px;
+      }
+   }
+
+   &__subtext {
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 24px;
+      color: rgba(29, 23, 23, 1);
+   }
+}
+
+.quote-content {
+   &__background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-image: url('../img/aboutpage/quote/A.png');
+      background-size: 70%;
+      background-repeat: no-repeat;
+      background-position: top right;
+   }
+}
+
+.quote-background {
+
+   &__left {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0px;
+      left: 0px;
+      background-image: url('../img/aboutpage/quote/background_left.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+
+   &__right {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0px;
+      right: 0px;
+      background-image: url('../img/aboutpage/quote/background_right.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+   }
+}
+
+//</ABOUT QUOTE>=======================================================================================
+//<ABOUT SPECIALISTS>=======================================================================================
+
+.specialists {
+   padding: 45px 0px 0px 0px;
+   background-image: url('../img/aboutpage/specialists/background.png');
+   background-position: 60% 40%;
+   background-repeat: no-repeat;
+   background-size: 960px;
+
+   &__title {
+      position: relative;
+      max-width: 538px;
+      z-index: 5;
+   }
+
+   &__columns {
+      padding: 485px 0px 285px 0px;
+      @include flexbox();
+      justify-content: space-between;
+   }
+}
+
+.specialist {
+
+   &__left-column,
+   &__right-column {
+      flex: 0 1 390px;
+   }
+}
+
+.specialist-left {
+   position: relative;
+
+   &__photo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -350px;
+      left: 224px;
+      z-index: 2;
+   }
+
+   &__content {
+      position: relative;
+      text-align: right;
+      z-index: 2;
+   }
+}
+
+.specialist-name {
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 24px;
+}
+
+.specialist-profession {
+   margin: 0px 0px 29px 0px;
+}
+
+.specialist-right {
+   position: relative;
+
+   &__photo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -590px;
+      left: -210px;
+      z-index: 1;
+   }
+
+   &__content {
+      position: relative;
+      z-index: 2;
+   }
+}
+
+//</ABOUT SPECIALISTS>=======================================================================================
+//<ABOUT EXPERTISE>=======================================================================================
+
+.expertise {
+   background-color: rgba(21, 21, 21, 1);
+   padding: 0px 0px 47px 0px;
+
+   &__container {
+      max-width: 1240px;
+      width: 100%;
+      margin: 0 auto;
+   }
+
+   &__content {
+      @include flexbox();
+      justify-content: space-between;
+      padding: 15px 0px 0px 0px;
+      margin: 0px 25px 0px;
+   }
+
+   &__left-column {
+      max-width: 460px;
+      flex: 0 1 51%;
+      margin: 0px 20px 0px 0px;
+   }
+
+   &__right-column {
+      flex: 0 1 49%;
+   }
+
+   &__links {
+      max-width: 1190px;
+      margin: -20px 25px 0px;
+      @include flexbox();
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      line-height: 24px;
+
+      a {
+         position: relative;
+         padding: 0px 0px 8px 0px;
+         @include anim (0.5s, 0s);
+      }
+
+      a.expertise__link1 {
+         margin: 0px 0px 0px 25px;
+         border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+         &::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            top: calc(50% - 10px);
+            left: -25px;
+            background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+         }
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+         }
+      }
+
+      a.expertise__link2 {
+         margin: 0px 25px 0px 0px;
+         border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+         &::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            top: calc(50% - 10px);
+            @include rotate(180deg);
+            margin: 0px 0px 0px 17px;
+            background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+         }
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+         }
+      }
+   }
+}
+
+.expertise-left {
+
+   &__title {
+      margin: 0px 0px 30px 0px;
+   }
+
+   &__text {
+      max-width: 419px;
+      margin: 0px 0px 46px 0px;
+   }
+
+   &__stats {
+      margin: 0px 0px 46px 0px;
+   }
+
+   &__button {
+      display: inline-block;
+      padding: 16px 31px;
+      border-radius: 7px;
+      background-color: rgba(255, 255, 255, 0.07);
+   }
+}
+
+.expertise-right {
+
+   &__photo {
+      position: relative;
+      max-width: 586px;
+      width: 100%;
+      top: -100px;
+
+      & img {
+         max-width: 100%;
+         width: 100%;
+      }
+   }
+}
+
+//</ABOUT EXPERTISE>=======================================================================================
