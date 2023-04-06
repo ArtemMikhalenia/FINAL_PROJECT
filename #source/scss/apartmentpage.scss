@@ -108,3 +108,66 @@
 }
 
 //</APARTMENT-MAINBLOCK>============================================================================================
+//<ABOUT-OBJECT>============================================================================================
+
+.about-object {}
+
+.about-columns {
+   padding: 118px 0px 172px 0px;
+   @include flexbox();
+   justify-content: space-between;
+
+
+   &__left {
+      flex: 0 1 40%;
+   }
+
+   &__right {
+      position: relative;
+      flex: 0 1 37%;
+
+      background-image: url('../img/apartmentpage/about-object/building.jpg');
+      background-size: 185%;
+      background-position: 7% 47%;
+      background-repeat: no-repeat;
+
+      & svg {
+         position: absolute;
+         top: -18.3px;
+         right: 24px;
+      }
+   }
+}
+
+.about-left {
+
+   &__title {
+      margin: 0px 0px 72px 0px;
+   }
+
+   &__text {
+      margin: 0px 0px 35px 0px;
+   }
+
+   &__bottom {}
+}
+
+.about-bottom {
+   @include flexbox();
+   align-items: center;
+   justify-content: space-between;
+
+   &__left {
+      @include flexbox();
+      align-items: center;
+      justify-content: space-between;
+   }
+
+   &__image {}
+
+   &__text {}
+
+   &__button {}
+}
+
+//</ABOUT-OBJECT>============================================================================================
