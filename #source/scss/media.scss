@@ -19,6 +19,10 @@ $md4: 479.98;
          margin: 0 15px;
       }
    }
+
+   .apartment-mainblock {
+      background-size: cover;
+   }
 }
 
 @media (max-width: $md1+px) {
@@ -920,6 +924,27 @@ $md4: 479.98;
       font-size: 65px;
       line-height: 60px;
    }
+
+   .apartment-mainblock {
+      &__content {
+         padding: 38px 0px 0px 0px;
+      }
+
+      &__title {
+         font-size: 70px;
+         line-height: 70px;
+
+         & sup {
+            position: absolute;
+            left: 520px;
+            top: 70px;
+
+            & svg {
+               width: 40px;
+            }
+         }
+      }
+   }
 }
 
 @media (max-width: 600px) {
@@ -1553,7 +1578,7 @@ $md4: 479.98;
       background-size: cover;
 
       &__content {
-         padding: 38px 0px 400px 0px;
+         padding: 17px 0px 250px 0px;
       }
 
       &__title {
@@ -1573,6 +1598,10 @@ $md4: 479.98;
             }
          }
       }
+   }
+
+   .sales-breadcrumbs {
+      margin: 0px 0px 100px 0px;
    }
 
    .object-items {
@@ -1617,6 +1646,10 @@ $md4: 479.98;
       background: url('../img/rentpage/mainblock/background.jpg') 60% 0% no-repeat;
       background-size: 800px;
 
+      &__content {
+         padding: 17px 0px 250px 0px;
+      }
+
       &__title {
 
          & sup {
@@ -1631,10 +1664,40 @@ $md4: 479.98;
       }
    }
 
+   .rent-breadcrumbs {
+      &__list {
+         margin: 0px 0px 100px 0px;
+      }
+   }
+
    .rent-title {
       sup {
          top: -55px;
          right: -95px;
+      }
+   }
+
+   .apartment-mainblock {
+      &__content {
+         padding: 17px 0px 0px 0px;
+      }
+
+      &__title {
+         & sup {
+            position: absolute;
+            left: 320px;
+            top: -10px;
+
+            & svg {
+               width: 30px;
+            }
+         }
+      }
+
+      &__location,
+      &__subtitle {
+         font-size: 16px;
+         line-height: 20px;
       }
    }
 }
@@ -2030,6 +2093,15 @@ $md4: 479.98;
          }
       }
    }
+
+   .apartment-mainblock {
+      &__title {
+         & sup {
+            left: 285px;
+            top: 20px;
+         }
+      }
+   }
 }
 
 @media (max-width: 425px) {
@@ -2363,7 +2435,7 @@ $md4: 479.98;
 
    .about-mainblock {
       &__content {
-         padding: 35px 0px 0px 0px;
+         padding: 17px 0px 0px 0px;
       }
    }
 
@@ -2424,5 +2496,14 @@ $md4: 479.98;
       }
    }
 
+   .apartment-mainblock {
+      &__title {
 
+         & sup {
+            position: absolute;
+            left: 175px;
+            top: 60px;
+         }
+      }
+   }
 }

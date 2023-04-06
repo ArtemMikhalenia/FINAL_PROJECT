@@ -17,7 +17,9 @@
 
    &__content {
       position: relative;
-      padding: 38px 0px 0px 0px;
+      @include flexbox();
+      flex-direction: column;
+      padding: 32px 0px 0px 0px;
    }
 
    &__location {
@@ -39,13 +41,14 @@
    }
 
    &__title {
+      position: relative;
+      display: inline-block;
       margin: 0px 0px 27px 0px;
 
-      &::after {
-         content: url('../img/apartmentpage/mainblock/S-icon.svg');
-         position: relative;
-         left: 15px;
-         top: 20px;
+      & sup {
+         position: absolute;
+         left: 640px;
+         top: 90px;
       }
    }
 
@@ -63,11 +66,6 @@
 
       margin: 0px 0px 60px 0px;
    }
-}
-
-.breadcrumbs {
-
-   &__list {}
 }
 
 .apartment-breadcrumbs {
