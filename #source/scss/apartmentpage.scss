@@ -146,18 +146,27 @@
    }
 
    &__text {
-      margin: 0px 0px 35px 0px;
+      margin: 0px 0px 25px 0px;
+
+      &_last-text {
+         margin: 0px 0px 28px 0px;
+      }
    }
 
    &__bottom {}
 }
 
 .about-bottom {
+   max-width: 425px;
+   width: 100%;
+
    @include flexbox();
    align-items: center;
    justify-content: space-between;
 
    &__left {
+      flex: 0 1 139px;
+
       @include flexbox();
       align-items: center;
       justify-content: space-between;
@@ -165,9 +174,17 @@
 
    &__image {}
 
-   &__text {}
+   &__text {
+      font-size: 14px;
+      line-height: 21px;
+      text-align: left;
+   }
 
-   &__button {}
+   &__button {
+      background-color: rgba(255, 255, 255, 0.07);
+      padding: 16px 45px;
+      border-radius: 7px;
+   }
 }
 
 //</ABOUT-OBJECT>============================================================================================
