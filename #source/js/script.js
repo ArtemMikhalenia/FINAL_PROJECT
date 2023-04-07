@@ -79,6 +79,7 @@ wow.init();
 
 const slider = document.querySelectorAll('.main-swiper');
 const rentSlider = document.querySelectorAll('.rent-swiper');
+const objectSlider = document.querySelectorAll('.object-swiper');
 
 
 const swiper = new Swiper('.main-swiper', {
@@ -158,6 +159,27 @@ if (rentSlider.length > 0) {
 				991.98: {
 					spaceBetween: 220
 				},
+			},
+		});
+	}
+}
+
+if (objectSlider.length > 0) {
+	for (let index = 0; index < objectSlider.length; index++) {
+		const swiper = new Swiper('.object-swiper', {
+			slideClass: 'object-swiper__slide',
+			wrapperClass: 'object-swiper__wrapper',
+			slidesPerView: 'auto',
+			//autoHeight: true,
+			spaceBetween: 0,
+			centeredSlides: true,
+			initialSlide: 1,
+			grabCursor: true,
+			loop: true,
+			speed: 300,
+			navigation: {
+				nextEl: '.object-swiper__button-next',
+				prevEl: '.object-swiper__button-prev',
 			},
 		});
 	}

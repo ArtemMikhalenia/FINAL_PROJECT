@@ -3363,6 +3363,60 @@ li.facebook-icon img {
 	border-radius: 7px;
 }
 
+.object-swiper {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.object-swiper__wrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	height: 100%;
+}
+.object-swiper__slide {
+	position: relative;
+	-ms-flex-negative: 0;
+	    flex-shrink: 0;
+	max-width: 100%;
+	width: 100%;
+}
+.object-swiper__slide img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+}
+.object-swiper__button-prev, .object-swiper__button-next {
+	position: absolute;
+	top: calc(50% - 18px);
+	height: 36px;
+	width: 36px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.object-swiper__button-prev {
+	left: 125px;
+}
+.object-swiper__button-prev .arrow-top {
+	position: relative;
+	display: inline-block;
+	height: 9px;
+	width: 1px;
+	background: rgb(105, 105, 105);
+}
+.object-swiper__button-prev .arrow-bottom {
+	position: relative;
+	display: inline-block;
+	height: 9px;
+	width: 1px;
+	background: rgb(105, 105, 105);
+}
+.object-swiper__button-next {
+	right: 125px;
+}
+
 .text-style {
 	font-size: 15px;
 	line-height: 24px;
