@@ -3395,6 +3395,13 @@ li.facebook-icon img {
 	width: 36px;
 	border-radius: 50%;
 	background-color: rgba(255, 255, 255, 0.3);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
+	cursor: pointer;
+}
+.object-swiper__button-prev:hover, .object-swiper__button-next:hover {
+	background-color: rgba(255, 255, 255, 0.9);
 }
 .object-swiper__button-prev {
 	left: 125px;
@@ -3447,9 +3454,38 @@ li.facebook-icon img {
 	        transform: rotate(45deg);
 }
 
+.details__container {
+	position: relative;
+	max-width: 1279px;
+	margin: 0 auto;
+	background-color: rgb(255, 251, 242);
+}
+.details__content {
+	padding: 55px 0px 75px 45px;
+}
+.details__title {
+	margin: 0px 0px 40px 0px;
+}
+.details__text {
+	max-width: 473px;
+	width: 100%;
+	margin: 0px 0px 32px 0px;
+}
+
+.details-tables {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr;
+	color: rgb(16, 16, 16);
+}
+
 .text-style {
 	font-size: 15px;
 	line-height: 24px;
+}
+.text-style_black {
+	color: rgb(16, 16, 16);
 }
 
 a.bottom-link {
@@ -3483,6 +3519,9 @@ a.bottom-link {
 	font-weight: 400;
 	line-height: 76px;
 	letter-spacing: -0.02em;
+}
+.title_black {
+	color: rgb(16, 16, 16);
 }
 
 .submit-btn {

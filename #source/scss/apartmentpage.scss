@@ -217,10 +217,19 @@
    &__button-next {
       position: absolute;
       top: calc(50% - 18px);
+
       height: 36px;
       width: 36px;
+
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.3);
+      @include anim(0.5s, 0s);
+
+      cursor: pointer;
+
+      &:hover {
+         background-color: rgba(255, 255, 255, 0.9);
+      }
    }
 
    &__button-prev {
@@ -281,3 +290,59 @@
 }
 
 //</ABOUT-SLIDER>============================================================================================
+//<ABOUT-DETAILS>============================================================================================
+
+.details {
+
+   &__backgrounds {}
+
+   &__container {
+      position: relative;
+      max-width: 1279px;
+      margin: 0 auto;
+      background-color: rgba(255, 251, 242, 1);
+   }
+
+   &__content {
+      padding: 55px 0px 75px 45px;
+   }
+
+   &__title {
+      margin: 0px 0px 40px 0px;
+   }
+
+   &__text {
+      max-width: 473px;
+      width: 100%;
+
+      margin: 0px 0px 32px 0px;
+   }
+}
+
+.details-background {
+
+   &__left {}
+
+   &__right {}
+}
+
+.details-content {
+
+   &__background {}
+}
+
+.details-tables {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   color: rgba(16, 16, 16, 1);
+}
+
+.table-common {}
+
+.table-services {}
+
+.table-distance {}
+
+
+//</ABOUT-DETAILS>============================================================================================
