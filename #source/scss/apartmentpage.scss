@@ -226,27 +226,57 @@
    &__button-prev {
       left: 125px;
 
-      .arrow-top {
+      .arrow-top,
+      .arrow-bottom {
          position: relative;
          display: inline-block;
-         height: 9px;
+         height: 12px;
          width: 1px;
 
          background: rgba(105, 105, 105, 1);
       }
 
-      .arrow-bottom {
-         position: relative;
-         display: inline-block;
-         height: 9px;
-         width: 1px;
+      .arrow-top {
+         top: 7px;
+         left: 16px;
 
-         background: rgba(105, 105, 105, 1);
+         transform: rotate(45deg);
+      }
+
+      .arrow-bottom {
+         top: 15px;
+         left: 12px;
+
+         transform: rotate(-45deg);
       }
    }
 
    &__button-next {
       right: 125px;
+
+      .arrow-top,
+      .arrow-bottom {
+         position: relative;
+         display: inline-block;
+         height: 11px;
+         width: 1px;
+
+         background: rgba(105, 105, 105, 1);
+      }
+
+      .arrow-top {
+         top: 7px;
+         left: 18.5px;
+
+         transform: rotate(-45deg);
+      }
+
+      .arrow-bottom {
+         top: 15px;
+         left: 14.7px;
+
+         transform: rotate(45deg);
+      }
    }
 }
 

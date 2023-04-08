@@ -201,6 +201,15 @@ $md4: 479.98;
          margin: 35px 0px 0px 0px;
       }
    }
+
+   .object-swiper{
+      &__button-prev{
+         left: 60px;
+      }
+      &__button-next{
+         right: 60px;
+      }
+   }
 }
 
 @media (max-width: 1110px) {
@@ -1754,6 +1763,15 @@ $md4: 479.98;
    .about-bottom {
       max-width: 100%;
       width: 100%;
+   }
+
+   .object-swiper{
+      &__button-prev{
+         left: 10px;
+      }
+      &__button-next{
+         right: 10px;
+      }
    }
 }
 

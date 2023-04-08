@@ -78,8 +78,8 @@ wow.init();
 //<SWIPER>
 
 const slider = document.querySelectorAll('.main-swiper');
-const rentSlider = document.querySelectorAll('.rent-swiper');
-const objectSlider = document.querySelectorAll('.object-swiper');
+const rentSlider = document.querySelector('.rent-swiper');
+const objectSlider = document.querySelector('.object-swiper');
 
 
 const swiper = new Swiper('.main-swiper', {
@@ -121,66 +121,59 @@ const swiper = new Swiper('.main-swiper', {
 	},
 });
 
-if (rentSlider.length > 0) {
-	for (let index = 0; index < rentSlider.length; index++) {
-		const swiper = new Swiper('.rent-swiper', {
-			slideClass: 'rent-swiper__slide',
-			wrapperClass: 'rent-swiper__wrapper',
-			slidesPerView: 'auto',
-			autoHeight: true,
-			spaceBetween: 220,
-			centeredSlides: true,
-			initialSlide: 1,
-			grabCursor: true,
-			loop: true,
-			speed: 300,
-			effect: 'coverflow',
-			coverflowEffect: {
-				rotate: 0,
-				scale: 1.16,
-				slideShadows: false,
+if (rentSlider) {
+	const swiper = new Swiper('.rent-swiper', {
+		slideClass: 'rent-swiper__slide',
+		wrapperClass: 'rent-swiper__wrapper',
+		slidesPerView: 'auto',
+		autoHeight: true,
+		spaceBetween: 220,
+		centeredSlides: true,
+		initialSlide: 1,
+		grabCursor: true,
+		loop: true,
+		speed: 300,
+		effect: 'coverflow',
+		coverflowEffect: {
+			rotate: 0,
+			scale: 1.16,
+			slideShadows: false,
+		},
+		autoplay: {
+			delay: 4000,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: '.main-button__next',
+			prevEl: '.main-button__prev',
+		},
+		breakpoints: {
+			320: {
+				spaceBetween: 50
 			},
-			autoplay: {
-				delay: 4000,
-				pauseOnMouseEnter: true,
+			480: {
+				spaceBetween: 100
 			},
-			navigation: {
-				nextEl: '.main-button__next',
-				prevEl: '.main-button__prev',
-			},
-			breakpoints: {
-				320: {
-					spaceBetween: 50
-				},
-				480: {
-					spaceBetween: 100
-				},
 
-				991.98: {
-					spaceBetween: 220
-				},
+			991.98: {
+				spaceBetween: 220
 			},
-		});
-	}
+		},
+	});
 }
 
-if (objectSlider.length > 0) {
-	for (let index = 0; index < objectSlider.length; index++) {
-		const swiper = new Swiper('.object-swiper', {
-			slideClass: 'object-swiper__slide',
-			wrapperClass: 'object-swiper__wrapper',
-			slidesPerView: 'auto',
-			//autoHeight: true,
-			spaceBetween: 0,
-			centeredSlides: true,
-			initialSlide: 1,
-			grabCursor: true,
-			loop: true,
-			speed: 300,
-			navigation: {
-				nextEl: '.object-swiper__button-next',
-				prevEl: '.object-swiper__button-prev',
-			},
-		});
-	}
+if (objectSlider) {
+	const swiper = new Swiper('.object-swiper', {
+		slideClass: 'object-swiper__slide',
+		wrapperClass: 'object-swiper__wrapper',
+		slidesPerView: 'auto',
+		spaceBetween: 0,
+		grabCursor: true,
+		loop: true,
+		speed: 300,
+		navigation: {
+			nextEl: '.object-swiper__button-next',
+			prevEl: '.object-swiper__button-prev',
+		},
+	});
 }

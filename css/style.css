@@ -3399,22 +3399,52 @@ li.facebook-icon img {
 .object-swiper__button-prev {
 	left: 125px;
 }
-.object-swiper__button-prev .arrow-top {
-	position: relative;
-	display: inline-block;
-	height: 9px;
-	width: 1px;
-	background: rgb(105, 105, 105);
-}
+.object-swiper__button-prev .arrow-top,
 .object-swiper__button-prev .arrow-bottom {
 	position: relative;
 	display: inline-block;
-	height: 9px;
+	height: 12px;
 	width: 1px;
 	background: rgb(105, 105, 105);
 }
+.object-swiper__button-prev .arrow-top {
+	top: 7px;
+	left: 16px;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
+}
+.object-swiper__button-prev .arrow-bottom {
+	top: 15px;
+	left: 12px;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
 .object-swiper__button-next {
 	right: 125px;
+}
+.object-swiper__button-next .arrow-top,
+.object-swiper__button-next .arrow-bottom {
+	position: relative;
+	display: inline-block;
+	height: 11px;
+	width: 1px;
+	background: rgb(105, 105, 105);
+}
+.object-swiper__button-next .arrow-top {
+	top: 7px;
+	left: 18.5px;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
+.object-swiper__button-next .arrow-bottom {
+	top: 15px;
+	left: 14.7px;
+	-webkit-transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 
 .text-style {
@@ -3683,6 +3713,12 @@ a.bottom-link {
 		    -ms-flex: 0 1 47%;
 		        flex: 0 1 47%;
 		margin: 35px 0px 0px 0px;
+	}
+	.object-swiper__button-prev {
+		left: 60px;
+	}
+	.object-swiper__button-next {
+		right: 60px;
 	}
 }
 @media (max-width: 1110px) {
@@ -4956,6 +4992,12 @@ a.bottom-link {
 	.about-bottom {
 		max-width: 100%;
 		width: 100%;
+	}
+	.object-swiper__button-prev {
+		left: 10px;
+	}
+	.object-swiper__button-next {
+		right: 10px;
 	}
 }
 @media (max-width: 528.98px) {
