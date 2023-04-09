@@ -3460,9 +3460,10 @@ li.facebook-icon img {
 .details__backgrounds {
 	position: absolute;
 	width: 100%;
-	height: 560px;
+	height: 580px;
 	top: 0;
 	left: 0;
+	overflow: hidden;
 }
 .details__container {
 	max-width: 1279px;
@@ -3487,10 +3488,8 @@ li.facebook-icon img {
 	position: absolute;
 	width: 50%;
 	height: 100%;
-	top: 0px;
-	left: 0px;
-	background-image: url("../img/aboutpage/quote/background_left.png");
-	background-size: 100%;
+	background-image: url("../img/apartmentpage/details/background-left.png");
+	background-size: 107%;
 	background-repeat: no-repeat;
 }
 .details-background__right {
@@ -3499,9 +3498,25 @@ li.facebook-icon img {
 	height: 100%;
 	top: 0px;
 	right: 0px;
-	background-image: url("../img/aboutpage/quote/background_right.png");
+	background-image: url("../img/apartmentpage/details/background-right.png");
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-position: 100% 20%;
+}
+
+.details-content {
+	position: relative;
+}
+.details-content__background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	background-image: url("../img/apartmentpage/details/A.png");
 	background-size: 100%;
 	background-repeat: no-repeat;
+	background-position: center center;
 }
 
 .details-tables {
