@@ -3476,8 +3476,8 @@ li.facebook-icon img {
 .details-tables {
 	display: -ms-grid;
 	display: grid;
-	-ms-grid-columns: 29% 62px 29% 62px 26%;
-	grid-template-columns: 29% 29% 26%;
+	-ms-grid-columns: 29% 62px 27% 62px 26%;
+	grid-template-columns: 29% 27% 26%;
 	-webkit-column-gap: 62px;
 	   -moz-column-gap: 62px;
 	        column-gap: 62px;
@@ -3505,13 +3505,17 @@ li.facebook-icon img {
 .table-common__item {
 	padding: 0px 68px 0px 0px;
 }
+
 .table-services {
 	border-spacing: 0px 19px;
 	margin: 0px 38px 0px 0px;
 }
+
 .table-distance {
 	border-spacing: 0px 19px;
+	margin: 0px 0px 0px 25px;
 }
+
 .table-item {
 	font-size: 15px;
 	font-weight: 600;

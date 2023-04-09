@@ -297,10 +297,8 @@
    &__backgrounds {}
 
    &__container {
-      //position: relative;
       max-width: 1279px;
       margin: 0 auto;
-      //background-color: rgba(255, 251, 242, 1);
    }
 
    &__content {
@@ -336,7 +334,7 @@
 
 .details-tables {
    display: grid;
-   grid-template-columns: 29% 29% 26%;
+   grid-template-columns: 29% 27% 26%;
    column-gap: 62px;
 
    color: rgba(16, 16, 16, 1);
@@ -363,41 +361,21 @@
 
    margin: 0px 0px 0px 0px;
 
-   &__header {}
-
-   &__row {}
-
    &__item {
       padding: 0px 68px 0px 0px;
    }
-
-   &__value {}
 }
 
 .table-services {
    border-spacing: 0px 19px;
 
    margin: 0px 38px 0px 0px;
-
-   &__header {}
-
-   &__row {}
-
-   &__item {}
-
-   &__value {}
 }
 
 .table-distance {
    border-spacing: 0px 19px;
 
-   &__header {}
-
-   &__row {}
-
-   &__item {}
-
-   &__value {}
+   margin: 0px 0px 0px 25px;
 }
 
 
