@@ -217,6 +217,14 @@ $md4: 479.98;
          height: 700px;
       }
    }
+
+   .application {
+      &__title {
+         & sup {
+            right: 0px;
+         }
+      }
+   }
 }
 
 @media (max-width: 1110px) {
@@ -604,6 +612,13 @@ $md4: 479.98;
       &__left,
       &__right {
          background-size: cover;
+      }
+   }
+
+   .application {
+      &__title {
+         font-size: 65px;
+         line-height: 65px;
       }
    }
 }
@@ -1049,6 +1064,21 @@ $md4: 479.98;
    .table {
       &__first-column {
          width: 60%;
+      }
+   }
+
+   .application {
+      &__title {
+         font-size: 50px;
+         line-height: 50px;
+
+         & sup {
+            left: 500px;
+         }
+
+         & svg {
+            width: 70px;
+         }
       }
    }
 }
@@ -1842,6 +1872,24 @@ $md4: 479.98;
          right: 10px;
       }
    }
+
+   .application {
+      &__subtitle {
+         margin: 0px 0px 20px 0px;
+      }
+
+      &__title {
+         margin: 0px auto 39px;
+
+         & sup {
+            left: 200px;
+         }
+
+         & svg {
+            width: 70px;
+         }
+      }
+   }
 }
 
 @media (max-width: 528.98px) {
@@ -2475,6 +2523,23 @@ $md4: 479.98;
          padding: 16px 0px;
       }
    }
+
+   .form-bottom {
+      flex-direction: column;
+   }
+
+   .form-checkbox {
+      &__block {
+         margin: 0px 0px 15px 0px;
+      }
+   }
+
+   .application-form {
+      &__submit {
+         max-width: 100%;
+         padding: 10px 0px;
+      }
+   }
 }
 
 @media (max-width: 392.98px) {
@@ -2666,6 +2731,19 @@ $md4: 479.98;
             position: absolute;
             left: 175px;
             top: 60px;
+         }
+      }
+   }
+
+   .application {
+
+      &__title {
+         & sup {
+            left: 170px;
+         }
+
+         & svg {
+            width: 55px;
          }
       }
    }

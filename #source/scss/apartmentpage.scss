@@ -452,6 +452,10 @@
    background-repeat: no-repeat;
 
    &__content {
+      @include flexbox();
+      flex-direction: column;
+      justify-content: center;
+
       padding: 305px 0px 47px 0px;
    }
 

@@ -3589,6 +3589,16 @@ li.facebook-icon img {
 	background-repeat: no-repeat;
 }
 .application__content {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	padding: 305px 0px 47px 0px;
 }
 .application__shadow {
@@ -4042,6 +4052,9 @@ a.bottom-link {
 	.details__backgrounds {
 		height: 700px;
 	}
+	.application__title sup {
+		right: 0px;
+	}
 }
 @media (max-width: 1110px) {
 	.object-bottom__left2 {
@@ -4338,6 +4351,10 @@ a.bottom-link {
 	}
 	.details-background__left, .details-background__right {
 		background-size: cover;
+	}
+	.application__title {
+		font-size: 65px;
+		line-height: 65px;
 	}
 }
 @media (max-width: 940px) {
@@ -4750,6 +4767,16 @@ a.bottom-link {
 	}
 	.table__first-column {
 		width: 60%;
+	}
+	.application__title {
+		font-size: 50px;
+		line-height: 50px;
+	}
+	.application__title sup {
+		left: 500px;
+	}
+	.application__title svg {
+		width: 70px;
 	}
 }
 @media (max-width: 600px) {
@@ -5363,6 +5390,18 @@ a.bottom-link {
 	.object-swiper__button-next {
 		right: 10px;
 	}
+	.application__subtitle {
+		margin: 0px 0px 20px 0px;
+	}
+	.application__title {
+		margin: 0px auto 39px;
+	}
+	.application__title sup {
+		left: 200px;
+	}
+	.application__title svg {
+		width: 70px;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -5809,6 +5848,19 @@ a.bottom-link {
 		text-align: center;
 		padding: 16px 0px;
 	}
+	.form-bottom {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.form-checkbox__block {
+		margin: 0px 0px 15px 0px;
+	}
+	.application-form__submit {
+		max-width: 100%;
+		padding: 10px 0px;
+	}
 }
 @media (max-width: 392.98px) {
 	.footer-bottom__checkbox {
@@ -5922,5 +5974,11 @@ a.bottom-link {
 		position: absolute;
 		left: 175px;
 		top: 60px;
+	}
+	.application__title sup {
+		left: 170px;
+	}
+	.application__title svg {
+		width: 55px;
 	}
 }
