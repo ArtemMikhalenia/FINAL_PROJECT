@@ -103,7 +103,118 @@ a.bottom-link {
 	}
 }
 
-//<REMOVE PLACEHOLDER>
+//<FORMS-STYLES>==================================================
+
+.form-field {
+	position: relative;
+	max-width: 429px;
+	width: 100%;
+	padding: 11px 21px;
+
+	margin: 0 auto;
+
+	font-size: 20px;
+	line-height: 32px;
+	letter-spacing: 0em;
+
+	border-radius: 13px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+
+	background-color: transparent;
+	color: rgba(255, 255, 255, 1);
+
+	@include anim(0.5s, 0s);
+
+	&:focus {
+		border-color: rgba(255, 255, 255, 1);
+	}
+}
+
+.form-name,
+.form-phone {
+	margin: 0px auto 21px;
+}
+
+.form-email {
+	margin: 0px auto 24px;
+}
+
+.form-submit {
+	display: inline-block;
+	cursor: pointer;
+
+	font-size: 20px;
+	line-height: 32px;
+	border-radius: 13px;
+	border: 1px solid rgba(255, 255, 255, 0.5);
+
+	color: rgba(255, 255, 255, 0.5);
+	background-color: transparent;
+
+	@include anim(0.5s, 0s);
+
+	&:hover {
+		color: rgba(255, 255, 255, 1);
+		background-color: rgba(255, 255, 255, 0.5);
+		box-shadow: 0 0 10px 2.5px rgba(255, 255, 255, 1);
+	}
+}
+
+.form-bottom {
+	@include flexbox();
+}
+
+.form-checkbox {
+	&__block {
+		@include flexbox();
+		align-items: center;
+	}
+
+	&:checked+.form-label::after {
+		@include scale(1);
+	}
+}
+
+.form-label {
+	position: relative;
+
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 19px;
+
+	color: rgba(255, 255, 255, 0.5);
+
+	cursor: pointer;
+
+	&::before,
+	&::after {
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		border-radius: 6px;
+		top: 1px;
+		left: -25px;
+	}
+
+	&::before {
+		content: '';
+		background-color: rgb(26, 26, 26);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	&::after {
+		content: '';
+		background-color: rgba(255, 255, 255, 1);
+		@include scale(0);
+		@include anim (0.5s, 0s);
+	}
+
+	& a {
+		color: rgba(255, 255, 255, 0.5);
+	}
+}
+
+//<REMOVE PLACEHOLDER>============================================
 
 *:focus::-webkit-input-placeholder {
 	opacity: 0;
