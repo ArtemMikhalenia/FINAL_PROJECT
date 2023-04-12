@@ -1081,6 +1081,13 @@ $md4: 479.98;
          }
       }
    }
+
+   .benefits-block{
+      &__title{
+         font-size: 80px;
+         line-height: 70px;
+      }
+   }
 }
 
 @media (max-width: 600px) {
@@ -2745,6 +2752,13 @@ $md4: 479.98;
          & svg {
             width: 55px;
          }
+      }
+   }
+
+   .benefits-block{
+      &__title{
+         font-size: 40px;
+         line-height: 41px;
       }
    }
 }
