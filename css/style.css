@@ -3808,8 +3808,14 @@ li.facebook-icon img {
 	padding: 52px 0px 141px;
 }
 
+.benefits-block {
+	display: none;
+}
 .benefits-block__background {
 	background-position: center 70%;
+}
+.benefits-block.active {
+	display: block;
 }
 
 .benefits-block2 {

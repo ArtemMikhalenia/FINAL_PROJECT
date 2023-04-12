@@ -82,44 +82,44 @@ const rentSlider = document.querySelector('.rent-swiper');
 const objectSlider = document.querySelector('.object-swiper');
 
 
-const swiper = new Swiper('.main-swiper', {
-	slideClass: 'main-swiper__slide',
-	wrapperClass: 'main-swiper__wrapper',
-	slidesPerView: 'auto',
-	autoHeight: true,
-	spaceBetween: 100,
-	centeredSlides: true,
-	initialSlide: 1,
-	grabCursor: true,
-	loop: true,
-	speed: 300,
-	effect: 'coverflow',
-	coverflowEffect: {
-		rotate: 0,
-		scale: 0.85,
-		slideShadows: false,
-	},
-	autoplay: {
-		delay: 4000,
-		pauseOnMouseEnter: true,
-	},
-	navigation: {
-		nextEl: '.main-button__next',
-		prevEl: '.main-button__prev',
-	},
-	breakpoints: {
-		320: {
-			spaceBetween: 0
-		},
-		480: {
-			spaceBetween: 20
-		},
+// const swiper = new Swiper('.main-swiper', {
+// 	slideClass: 'main-swiper__slide',
+// 	wrapperClass: 'main-swiper__wrapper',
+// 	slidesPerView: 'auto',
+// 	autoHeight: true,
+// 	spaceBetween: 100,
+// 	centeredSlides: true,
+// 	initialSlide: 1,
+// 	grabCursor: true,
+// 	loop: true,
+// 	speed: 300,
+// 	effect: 'coverflow',
+// 	coverflowEffect: {
+// 		rotate: 0,
+// 		scale: 0.85,
+// 		slideShadows: false,
+// 	},
+// 	autoplay: {
+// 		delay: 4000,
+// 		pauseOnMouseEnter: true,
+// 	},
+// 	navigation: {
+// 		nextEl: '.main-button__next',
+// 		prevEl: '.main-button__prev',
+// 	},
+// 	breakpoints: {
+// 		320: {
+// 			spaceBetween: 0
+// 		},
+// 		480: {
+// 			spaceBetween: 20
+// 		},
 
-		991.98: {
-			spaceBetween: 100
-		},
-	},
-});
+// 		991.98: {
+// 			spaceBetween: 100
+// 		},
+// 	},
+// });
 
 if (rentSlider) {
 	const swiper = new Swiper('.rent-swiper', {
@@ -177,3 +177,33 @@ if (objectSlider) {
 		},
 	});
 }
+
+//<TABS>======================================================
+
+const tabsBtn = document.querySelectorAll('.tab-buttons__item');
+const tabsItems = document.querySelectorAll('.benefits-block');
+
+tabsBtn.forEach(onTabClick);
+
+function onTabClick(item) {
+	item.addEventListener("click", function () {
+		let currentBtn = item;
+		let tabId = currentBtn.getAttribute("data-tab");
+		let currentTab = document.querySelector(tabId);
+
+		if (!currentBtn.classList.contains('active')) {
+			tabsBtn.forEach(function (item) {
+				item.classList.remove('active');
+			});
+
+			tabsItems.forEach(function (item) {
+				item.classList.remove('active');
+			});
+
+			currentBtn.classList.add('active');
+			currentTab.classList.add('active');
+		}
+	});
+};
+
+document.querySelector('.tab-buttons__item1').click();

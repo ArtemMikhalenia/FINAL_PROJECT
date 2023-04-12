@@ -156,8 +156,14 @@
 }
 
 .benefits-block {
+   display: none;
+
    &__background {
       background-position: center 70%;
+   }
+
+   &.active {
+      display: block;
    }
 }
 
