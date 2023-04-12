@@ -23,6 +23,12 @@ $md4: 479.98;
    .apartment-mainblock {
       background-size: cover;
    }
+
+   .benefits-tabs {
+      &__content {
+         width: 95%;
+      }
+   }
 }
 
 @media (max-width: $md1+px) {
@@ -223,6 +229,24 @@ $md4: 479.98;
          & sup {
             right: 0px;
          }
+      }
+   }
+
+   .benefits-tabs {
+
+      &__background {
+         background-size: cover;
+      }
+
+      &__content {
+         flex-direction: column;
+         align-items: start;
+
+         padding: 70px 50px 70px 50px;
+      }
+
+      &__title {
+         margin: 0px 0px 40px 0px;
       }
    }
 }
@@ -1082,8 +1106,8 @@ $md4: 479.98;
       }
    }
 
-   .benefits-block{
-      &__title{
+   .benefits-block {
+      &__title {
          font-size: 80px;
          line-height: 70px;
       }
@@ -1895,6 +1919,31 @@ $md4: 479.98;
          & svg {
             width: 70px;
          }
+      }
+   }
+
+   .benefits-tabs {
+      &__title {
+         & sup {
+            top: -30px;
+            right: -35px;
+
+            & svg {
+               width: 60px;
+            }
+         }
+      }
+   }
+
+   .tab-buttons {
+      flex: 0 1 auto;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 0 auto;
+
+      &__item {
+         margin: 0px 0px 40px 0px;
       }
    }
 }
@@ -2755,8 +2804,8 @@ $md4: 479.98;
       }
    }
 
-   .benefits-block{
-      &__title{
+   .benefits-block {
+      &__title {
          font-size: 40px;
          line-height: 41px;
       }
