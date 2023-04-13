@@ -3721,6 +3721,13 @@ li.facebook-icon img {
 	max-width: 285px;
 }
 
+.benefits__content {
+	position: relative;
+	top: -1px;
+	width: 100%;
+	height: 1164px;
+}
+
 .benefits-tabs {
 	background-color: rgb(21, 21, 21);
 }
@@ -3809,25 +3816,35 @@ li.facebook-icon img {
 }
 
 .benefits-block {
-	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transform: scale(0.9);
+	    -ms-transform: scale(0.9);
+	        transform: scale(0.9);
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
 }
 .benefits-block__background {
-	background-position: center 70%;
+	background-position: center;
 }
 .benefits-block.active {
-	display: block;
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	    -ms-transform: scale(1);
+	        transform: scale(1);
 }
 
-.benefits-block2 {
-	display: none;
-}
 .benefits-block2__title {
 	max-width: 100%;
 }
 
-.benefits-block3 {
-	display: none;
-}
 .benefits-block3__title {
 	max-width: 100%;
 }
@@ -4245,6 +4262,13 @@ a.bottom-link {
 	.benefits-tabs__title {
 		margin: 0px 0px 40px 0px;
 	}
+	.benefits__content {
+		height: 1000px;
+	}
+	.benefits-block__background {
+		background-size: 300px;
+		background-position: 50% 70%;
+	}
 }
 @media (max-width: 1110px) {
 	.object-bottom__left2 {
@@ -4545,6 +4569,10 @@ a.bottom-link {
 	.application__title {
 		font-size: 65px;
 		line-height: 65px;
+	}
+	.benefits-block__title {
+		font-size: 65px;
+		line-height: 70px;
 	}
 }
 @media (max-width: 940px) {
@@ -4968,9 +4996,9 @@ a.bottom-link {
 	.application__title svg {
 		width: 70px;
 	}
-	.benefits-block__title {
-		font-size: 80px;
-		line-height: 70px;
+	.benefits-block__background {
+		background-size: 340px;
+		background-position: 50% 55%;
 	}
 }
 @media (max-width: 600px) {
@@ -5619,6 +5647,9 @@ a.bottom-link {
 	.tab-buttons__item {
 		margin: 0px 0px 40px 0px;
 	}
+	.benefits__content {
+		height: 850px;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -6077,6 +6108,9 @@ a.bottom-link {
 	.application-form__submit {
 		max-width: 100%;
 		padding: 10px 0px;
+	}
+	.benefits-block__background {
+		background-position: 50% 80%;
 	}
 }
 @media (max-width: 392.98px) {

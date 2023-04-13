@@ -64,6 +64,15 @@
 
 //</BUYSELL-MAINBLOCK>===================================================================
 //<SECOND-BLOCK>===================================================================
+.benefits {
+   &__content {
+      position: relative;
+      top: -1px;
+      width: 100%;
+      height: 1164px;
+   }
+}
+
 .benefits-tabs {
    background-color: rgba(21, 21, 21, 1);
 
@@ -152,32 +161,37 @@
    position: relative;
    background-color: rgb(21, 21, 21);
    padding: 52px 0px 141px;
-
 }
 
 .benefits-block {
-   display: none;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   visibility: hidden;
+   opacity: 0;
+   transform: scale(0.9);
+   @include anim(0.5s, 0s);
 
    &__background {
-      background-position: center 70%;
+      background-position: center;
    }
 
    &.active {
-      display: block;
+      visibility: visible;
+      opacity: 1;
+      transform: scale(1);
    }
 }
 
 .benefits-block2 {
-   display: none;
-
    &__title {
       max-width: 100%;
    }
 }
 
 .benefits-block3 {
-   display: none;
-
    &__title {
       max-width: 100%;
    }

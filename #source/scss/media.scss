@@ -249,6 +249,19 @@ $md4: 479.98;
          margin: 0px 0px 40px 0px;
       }
    }
+
+   .benefits {
+      &__content {
+         height: 1000px;
+      }
+   }
+
+   .benefits-block {
+      &__background {
+         background-size: 300px;
+         background-position: 50% 70%;
+      }
+   }
 }
 
 @media (max-width: 1110px) {
@@ -643,6 +656,13 @@ $md4: 479.98;
       &__title {
          font-size: 65px;
          line-height: 65px;
+      }
+   }
+
+   .benefits-block {
+      &__title {
+         font-size: 65px;
+         line-height: 70px;
       }
    }
 }
@@ -1107,9 +1127,9 @@ $md4: 479.98;
    }
 
    .benefits-block {
-      &__title {
-         font-size: 80px;
-         line-height: 70px;
+      &__background {
+         background-size: 340px;
+         background-position: 50% 55%;
       }
    }
 }
@@ -1946,6 +1966,12 @@ $md4: 479.98;
          margin: 0px 0px 40px 0px;
       }
    }
+
+   .benefits {
+      &__content {
+         height: 850px;
+      }
+   }
 }
 
 @media (max-width: 528.98px) {
@@ -2594,6 +2620,12 @@ $md4: 479.98;
       &__submit {
          max-width: 100%;
          padding: 10px 0px;
+      }
+   }
+
+   .benefits-block {
+      &__background {
+         background-position: 50% 80%;
       }
    }
 }
