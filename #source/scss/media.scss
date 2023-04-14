@@ -1069,7 +1069,7 @@ $md4: 479.98;
 
    .apartment-mainblock {
       &__content {
-         padding: 38px 0px 0px 0px;
+         padding: 38px 0px 379px 0px;
       }
 
       &__title {
@@ -1866,7 +1866,7 @@ $md4: 479.98;
 
    .apartment-mainblock {
       &__content {
-         padding: 17px 0px 0px 0px;
+         padding: 17px 0px 190px 0px;
       }
 
       &__title {
@@ -2628,6 +2628,16 @@ $md4: 479.98;
          background-position: 50% 80%;
       }
    }
+
+   .apartment-mainblock {
+      &__content {
+         padding: 17px 0px 0px 0px;
+      }
+   }
+
+   .buysell-mainblock {
+      padding: 0px 0px 0px 0px;
+   }
 }
 
 @media (max-width: 392.98px) {
@@ -2813,6 +2823,10 @@ $md4: 479.98;
    }
 
    .apartment-mainblock {
+      &__content {
+         padding: 17px 0px 0px 0px;
+      }
+
       &__title {
 
          & sup {

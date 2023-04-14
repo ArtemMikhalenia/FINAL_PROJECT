@@ -3187,7 +3187,7 @@ li.facebook-icon img {
 
 .apartment-mainblock {
 	position: relative;
-	padding: 0px 0px 379px 0px;
+	padding: 0px 0px 0px 0px;
 	background: url("../img/apartmentpage/mainblock/background.jpg") 25% 35% no-repeat;
 	background-size: 130%;
 }
@@ -3210,7 +3210,7 @@ li.facebook-icon img {
 	-webkit-box-direction: normal;
 	    -ms-flex-direction: column;
 	        flex-direction: column;
-	padding: 32px 0px 0px 0px;
+	padding: 32px 0px 379px 0px;
 }
 .apartment-mainblock__location {
 	display: inline-block;
@@ -3665,12 +3665,9 @@ li.facebook-icon img {
 	padding: 0px 0px 0px 7px;
 }
 
-.mainblock {
-	padding: 0px 0px 0px 0px;
-}
-
 .buysell-mainblock {
 	position: relative;
+	padding: 0px 0px 0px 0px;
 	background-image: url("../img/buy-sellpage/mainblock/background.jpg");
 	background-size: cover;
 	background-position: center;
@@ -4966,7 +4963,7 @@ a.bottom-link {
 		line-height: 60px;
 	}
 	.apartment-mainblock__content {
-		padding: 38px 0px 0px 0px;
+		padding: 38px 0px 379px 0px;
 	}
 	.apartment-mainblock__title {
 		font-size: 70px;
@@ -5587,7 +5584,7 @@ a.bottom-link {
 		right: -95px;
 	}
 	.apartment-mainblock__content {
-		padding: 17px 0px 0px 0px;
+		padding: 17px 0px 190px 0px;
 	}
 	.apartment-mainblock__title sup {
 		position: absolute;
@@ -6123,6 +6120,12 @@ a.bottom-link {
 	.benefits-block__background {
 		background-position: 50% 80%;
 	}
+	.apartment-mainblock__content {
+		padding: 17px 0px 0px 0px;
+	}
+	.buysell-mainblock {
+		padding: 0px 0px 0px 0px;
+	}
 }
 @media (max-width: 392.98px) {
 	.footer-bottom__checkbox {
@@ -6231,6 +6234,9 @@ a.bottom-link {
 	}
 	.rent-title sup {
 		right: -25px;
+	}
+	.apartment-mainblock__content {
+		padding: 17px 0px 0px 0px;
 	}
 	.apartment-mainblock__title sup {
 		position: absolute;

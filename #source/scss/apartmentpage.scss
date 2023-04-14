@@ -1,7 +1,7 @@
 //<APARTMENT-MAINBLOCK>=============================================================================================
 .apartment-mainblock {
    position: relative;
-   padding: 0px 0px 379px 0px;
+   padding: 0px 0px 0px 0px;
    background: url('../img/apartmentpage/mainblock/background.jpg') 25% 35% no-repeat;
    background-size: 130%;
 
@@ -19,7 +19,7 @@
       position: relative;
       @include flexbox();
       flex-direction: column;
-      padding: 32px 0px 0px 0px;
+      padding: 32px 0px 379px 0px;
    }
 
    &__location {
