@@ -65,7 +65,7 @@
 .benefits {
    &__content {
       position: relative;
-      top: -1px;
+      top: 0;
       width: 100%;
       height: 1164px;
    }
@@ -210,3 +210,121 @@
 }
 
 //</SECOND-BLOCK>===================================================================
+//<MORE>===================================================================
+
+.more {
+   background-color: rgba(21, 21, 21, 1);
+
+   &__item {
+      max-width: 1355px;
+      width: 100%;
+      margin: 0 auto;
+   }
+}
+
+.item-more {
+
+   &__body {
+      position: relative;
+
+      margin: 0px 20px;
+
+      background-color: rgba(16, 16, 16, 1);
+
+      overflow: hidden;
+   }
+
+   &__background--b {
+      position: absolute;
+      height: 100%;
+      top: calc(-100% - 30px);
+      right: -9%;
+
+      font-family: 'Playfair Display';
+      font-weight: 400;
+      font-size: 888.703px;
+      line-height: 90%;
+      letter-spacing: -0.02em;
+
+      color: rgba(255, 255, 255, 0.06);
+   }
+
+   &__content {
+      padding: 36px 60px 42px;
+
+      @include flexbox();
+      justify-content: space-between;
+   }
+
+   &__title {
+      margin: -20px 20px 0px 0px;
+   }
+
+   &__center {
+      flex: 0 1 342px;
+
+      margin: 0px 20px 0px 0px;
+   }
+
+   &__link {
+      position: relative;
+
+      display: inline-block;
+
+      font-size: 20px;
+      line-height: 32px;
+
+      cursor: pointer;
+
+      &::after {
+         content: '';
+         position: absolute;
+         width: 100%;
+         height: 1px;
+         bottom: 0;
+         left: 0;
+
+         background-color: rgb(255, 255, 255);
+
+         opacity: 0;
+         visibility: hidden;
+         transform: scale(0);
+         @include anim(0.5s, 0s);
+      }
+
+      &:hover {
+         &::after {
+            opacity: 1;
+            visibility: visible;
+            transform: scale(1);
+         }
+      }
+   }
+}
+
+.center-more {
+
+   &__text {
+      margin: 0px 0px 33px 0px;
+   }
+
+   &__subtext {
+      line-height: 21.5px;
+   }
+
+   &__bottom {
+      @include flexbox();
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__button {
+      border-radius: 7px;
+      padding: 16px 23px;
+
+      background-color: rgba(255, 255, 255, 0.07);
+   }
+}
+
+
+//</MORE>===================================================================
