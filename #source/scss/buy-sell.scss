@@ -232,13 +232,15 @@
       background-color: rgba(16, 16, 16, 1);
 
       overflow: hidden;
+
+      &_transparent {
+         background-color: transparent;
+      }
    }
 
-   &__background--b {
+   &__background {
       position: absolute;
       height: 100%;
-      top: calc(-100% - 30px);
-      right: -9%;
 
       font-family: 'Playfair Display';
       font-weight: 400;
@@ -247,13 +249,33 @@
       letter-spacing: -0.02em;
 
       color: rgba(255, 255, 255, 0.06);
+
+      &_b {
+         top: calc(-100% - 30px);
+         right: -9%;
+      }
+
+      &_r {
+         top: -96%;
+         right: -3%;
+      }
+
+      &_s {
+         top: -80%;
+         left: 0;
+      }
    }
 
    &__content {
       padding: 36px 60px 42px;
 
-      @include flexbox();
+      display: grid;
+      grid-template-columns: 443px 355px 143px;
       justify-content: space-between;
+
+      &_sell {
+         padding: 74px 60px 54px;
+      }
    }
 
    &__title {
