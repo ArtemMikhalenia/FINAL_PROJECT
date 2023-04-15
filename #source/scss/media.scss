@@ -275,7 +275,7 @@ $md4: 479.98;
       &__background {
          font-size: 750px;
 
-         top:-30%;
+         top: -30%;
 
          &_b {
             right: -9%;
@@ -2008,6 +2008,10 @@ $md4: 479.98;
       &__content {
          height: 850px;
       }
+   }
+
+   .more {
+      padding: 0px 0px 0px 0px;
    }
 
    .item-more {

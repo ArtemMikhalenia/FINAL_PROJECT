@@ -3863,6 +3863,7 @@ li.facebook-icon img {
 
 .more {
 	background-color: rgb(21, 21, 21);
+	padding: 0px 0px 145px 0px;
 }
 .more__item {
 	max-width: 1355px;
@@ -5802,6 +5803,9 @@ a.bottom-link {
 	}
 	.benefits__content {
 		height: 850px;
+	}
+	.more {
+		padding: 0px 0px 0px 0px;
 	}
 	.item-more__body {
 		margin: 0px 0px 0px 0px;
