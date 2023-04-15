@@ -350,5 +350,39 @@
    }
 }
 
-
 //</MORE>===================================================================
+//<BUY-SELL_CONTACT>===================================================================
+
+.contact {
+   &__content {
+      &_buy-sell {
+         padding: 275px 0px 0px 0px;
+      }
+   }
+
+   &__title {
+      &_buy-sell {
+         margin: 0px 0px 38px 0px;
+      }
+   }
+}
+
+.contact-form {
+   &__checkbox {
+      &_buy-sell {
+         margin: 20px 0px 354px -19px;
+      }
+   }
+}
+
+.object-items {
+   &__links {
+      &_buy-sell {
+         padding: 0px 0px 47px 0px;
+         margin: 0px 50px 0px;
+      }
+   }
+}
+
+
+//</BUY-SELL_CONTACT>===================================================================

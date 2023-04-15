@@ -3979,6 +3979,22 @@ li.facebook-icon img {
 	background-color: rgba(255, 255, 255, 0.07);
 }
 
+.contact__content_buy-sell {
+	padding: 275px 0px 0px 0px;
+}
+.contact__title_buy-sell {
+	margin: 0px 0px 38px 0px;
+}
+
+.contact-form__checkbox_buy-sell {
+	margin: 20px 0px 354px -19px;
+}
+
+.object-items__links_buy-sell {
+	padding: 0px 0px 47px 0px;
+	margin: 0px 50px 0px;
+}
+
 .text-style {
 	font-size: 15px;
 	line-height: 24px;
@@ -5154,6 +5170,21 @@ a.bottom-link {
 		background-size: 340px;
 		background-position: 50% 55%;
 	}
+	.contact__title_buy-sell {
+		font-size: 65px;
+		line-height: 65px;
+	}
+}
+@media (max-width: 670px) {
+	.object-items__links_buy-sell {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.object-items__links_buy-sell a.object-items__link1_buy-sell {
+		margin: 0px 0px 15px 0px;
+	}
 }
 @media (max-width: 600px) {
 	.mainblock__text {
@@ -5827,6 +5858,15 @@ a.bottom-link {
 		padding: 16px 0px;
 		text-align: center;
 	}
+	.object-items__links_buy-sell {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.object-items__links_buy-sell a.object-items__link1_buy-sell {
+		margin: 0px 0px 15px 0px;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -6003,6 +6043,18 @@ a.bottom-link {
 		padding: 36px 25px 42px;
 		-ms-grid-columns: 1fr;
 		grid-template-columns: 1fr;
+	}
+	.object-items__links_buy-sell {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.object-items__links_buy-sell a.object-items__link1_buy-sell {
+		margin: 0px 0px 15px 0px;
+	}
+	.object-items__links_buy-sell a.object-items__link2_buy-sell {
+		margin: 0px 40px 0px 0px;
 	}
 }
 @media (max-width: 479.98px) {
@@ -6299,6 +6351,12 @@ a.bottom-link {
 	}
 	.buysell-mainblock {
 		padding: 0px 0px 0px 0px;
+	}
+	.object-items__links_buy-sell {
+		font-size: 12.4px;
+	}
+	.object-items__links_buy-sell a.object-items__link2_buy-sell {
+		margin: 0px 40px 0px 0px;
 	}
 }
 @media (max-width: 392.98px) {
