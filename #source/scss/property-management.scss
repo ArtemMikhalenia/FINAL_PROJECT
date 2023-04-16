@@ -118,3 +118,87 @@
 }
 
 //</STATS-BLOCK>===========================================================
+//<SERVICES-BLOCK>===========================================================
+
+.services-block {
+
+   &__background {}
+
+   &__content {}
+
+   &__columns {
+      @include flexbox();
+      justify-content: space-between;
+   }
+
+   &__left-column {
+      flex: 0 1 57%;
+   }
+
+   &__right-column {
+      flex: 0 1 38%;
+
+      background-image: url('../img/property-managementpage/our-services/image.jpg');
+      background-repeat: no-repeat;
+      background-size: 170%;
+      background-position: center;
+   }
+}
+
+.services-left {
+
+   &__title {
+      max-width: 682px;
+      width: 100%;
+
+      margin: 0px 0px 52px 0px;
+   }
+
+   &__content {}
+
+   &__labels {
+      max-width: 300px;
+      width: 100%;
+      @include flexbox();
+      flex-wrap: wrap;
+
+      margin: 0px 0px 45px 0px;
+   }
+
+   &__label {
+      padding: 6px 11px;
+      margin: 0px 6px 15px 0px;
+      border-radius: 8px;
+
+      font-size: 14px;
+      line-height: 21px;
+
+      color: rgba(190, 126, 0, 1);
+      background-color: rgba(255, 249, 236, 1);
+   }
+
+   &__subtitle {
+      font-size: 20px;
+      line-height: 24px;
+
+      margin: -15px 0px 26px 0px;
+   }
+
+   &__text {
+      max-width: 473px;
+
+      margin: 0px 0px 80px 0px;
+   }
+
+   &__button {
+      display: inline-block;
+
+      padding: 16px 34px;
+      border-radius: 7px;
+
+      background-color: rgba(255, 255, 255, 0.07);
+   }
+}
+
+
+//</SERVICES-BLOCK>===========================================================

@@ -4096,6 +4096,69 @@ li.facebook-icon img {
 	        flex: 0 1 434px;
 }
 
+.services-block__columns {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+.services-block__left-column {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 57%;
+	        flex: 0 1 57%;
+}
+.services-block__right-column {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 38%;
+	        flex: 0 1 38%;
+	background-image: url("../img/property-managementpage/our-services/image.jpg");
+	background-repeat: no-repeat;
+	background-size: 170%;
+	background-position: center;
+}
+
+.services-left__title {
+	max-width: 682px;
+	width: 100%;
+	margin: 0px 0px 52px 0px;
+}
+.services-left__labels {
+	max-width: 300px;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	margin: 0px 0px 45px 0px;
+}
+.services-left__label {
+	padding: 6px 11px;
+	margin: 0px 6px 15px 0px;
+	border-radius: 8px;
+	font-size: 14px;
+	line-height: 21px;
+	color: rgb(190, 126, 0);
+	background-color: rgb(255, 249, 236);
+}
+.services-left__subtitle {
+	font-size: 20px;
+	line-height: 24px;
+	margin: -15px 0px 26px 0px;
+}
+.services-left__text {
+	max-width: 473px;
+	margin: 0px 0px 80px 0px;
+}
+.services-left__button {
+	display: inline-block;
+	padding: 16px 34px;
+	border-radius: 7px;
+	background-color: rgba(255, 255, 255, 0.07);
+}
+
 .text-style {
 	font-size: 15px;
 	line-height: 24px;
