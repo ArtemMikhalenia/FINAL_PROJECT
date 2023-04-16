@@ -1176,9 +1176,9 @@ li.facebook-icon img {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	-webkit-box-align: baseline;
+	    -ms-flex-align: baseline;
+	        align-items: baseline;
 	text-align: center;
 }
 .stats-info__number {
@@ -1188,10 +1188,16 @@ li.facebook-icon img {
 	letter-spacing: -0.02em;
 	margin: 0px 0px 28px 0px;
 }
+.stats-info__number_black {
+	color: rgb(46, 46, 46);
+}
 .stats-info__label {
 	font-size: 12px;
 	line-height: 14px;
 	text-align: center;
+}
+.stats-info__label_black {
+	color: rgb(46, 46, 46);
 }
 
 .information-right__photo {
@@ -4011,6 +4017,7 @@ li.facebook-icon img {
 	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 .property-mainblock__content {
+	position: relative;
 	padding: 37.93px 0px 0px 0px;
 }
 .property-mainblock__title {
@@ -4038,6 +4045,50 @@ li.facebook-icon img {
 }
 .button-contact_property-mainblock {
 	padding: 17px 25px;
+}
+
+.stats-block__body {
+	position: relative;
+	top: -69px;
+	max-width: 1279px;
+	width: 100%;
+	margin: 0 auto;
+	background-color: rgb(255, 251, 242);
+}
+.stats-block__content {
+	position: relative;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	padding: 92px 60px 75px;
+}
+.stats-block__background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url("../img/property-managementpage/stats-block/A.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.stats-block__title {
+	position: relative;
+	margin: 0px 0px 29px 0px;
+}
+.stats-block__title sup {
+	position: absolute;
+	height: 100%;
+	top: -30px;
+	right: -35px;
+}
+.stats-block__subtitle {
+	font-size: 20px;
+	line-height: 24px;
+	color: rgb(46, 46, 46);
 }
 
 .text-style {
@@ -4301,6 +4352,9 @@ a.bottom-link {
 		background-size: cover;
 	}
 	.benefits-tabs__content {
+		width: 95%;
+	}
+	.stats-block__body {
 		width: 95%;
 	}
 }
@@ -4792,6 +4846,18 @@ a.bottom-link {
 	.benefits-block__title {
 		font-size: 65px;
 		line-height: 70px;
+	}
+	.stats-block__content {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+	}
+	.stats-block__background {
+		background-size: cover;
 	}
 }
 @media (max-width: 940px) {
@@ -5923,6 +5989,10 @@ a.bottom-link {
 	.object-items__links_buy-sell a.object-items__link1_buy-sell {
 		margin: 0px 0px 15px 0px;
 	}
+	.stats-block__title {
+		font-size: 85px;
+		line-height: 76px;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -6112,6 +6182,19 @@ a.bottom-link {
 	.object-items__links_buy-sell a.object-items__link2_buy-sell {
 		margin: 0px 40px 0px 0px;
 	}
+	.stats-block__body {
+		width: 100%;
+	}
+	.stats-block__title {
+		font-size: 65px;
+		line-height: 66px;
+	}
+	.stats-block__title sup {
+		right: 45px;
+	}
+	.stats-block__title sup svg {
+		width: 60px;
+	}
 }
 @media (max-width: 479.98px) {
 	.mainblock__title {
@@ -6217,6 +6300,34 @@ a.bottom-link {
 	.apartment-mainblock__title sup {
 		left: 285px;
 		top: 20px;
+	}
+	.stats-block__content {
+		padding: 50px 20px 50px;
+	}
+	.stats-block__title sup {
+		right: 0px;
+	}
+	.stats-block__subtitle {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.stats-info__items {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+	.stats-info__number {
+		margin: 0px 0px 20px 0px;
+	}
+	.stats-info__label {
+		margin: 0px 0px 20px 0px;
 	}
 }
 @media (max-width: 425px) {
@@ -6560,5 +6671,12 @@ a.bottom-link {
 	.property-mainblock__subtitle {
 		font-size: 16px;
 		line-height: 20px;
+	}
+	.stats-block__title sup {
+		top: -35px;
+		right: 10px;
+	}
+	.stats-block__title sup svg {
+		width: 50px;
 	}
 }

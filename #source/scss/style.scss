@@ -280,7 +280,7 @@ body {
 	&__items {
 		@include flexbox();
 		justify-content: space-between;
-		align-items: center;
+		align-items: baseline;
 		text-align: center;
 	}
 
@@ -290,12 +290,20 @@ body {
 		line-height: 76px;
 		letter-spacing: -0.02em;
 		margin: 0px 0px 28px 0px;
+
+		&_black{
+			color: rgba(46, 46, 46, 1);
+		}
 	}
 
 	&__label {
 		font-size: 12px;
 		line-height: 14px;
 		text-align: center;
+
+		&_black{
+			color: rgba(46, 46, 46, 1);
+		}
 	}
 }
 

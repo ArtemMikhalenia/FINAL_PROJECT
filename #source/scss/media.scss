@@ -29,6 +29,12 @@ $md4: 479.98;
          width: 95%;
       }
    }
+
+   .stats-block {
+      &__body {
+         width: 95%;
+      }
+   }
 }
 
 @media (max-width: $md1+px) {
@@ -705,6 +711,17 @@ $md4: 479.98;
       &__title {
          font-size: 65px;
          line-height: 70px;
+      }
+   }
+
+   .stats-block {
+      &__content {
+         flex-direction: column;
+         align-items: center;
+      }
+
+      &__background {
+         background-size: cover;
       }
    }
 }
@@ -2092,6 +2109,13 @@ $md4: 479.98;
          }
       }
    }
+
+   .stats-block {
+      &__title {
+         font-size: 85px;
+         line-height: 76px;
+      }
+   }
 }
 
 @media (max-width: 528.98px) {
@@ -2362,6 +2386,25 @@ $md4: 479.98;
          }
       }
    }
+
+   .stats-block {
+      &__body {
+         width: 100%;
+      }
+
+      &__title {
+         font-size: 65px;
+         line-height: 66px;
+
+         & sup {
+            right: 45px;
+
+            & svg {
+               width: 60px;
+            }
+         }
+      }
+   }
 }
 
 @media (max-width: $md4+px) {
@@ -2520,6 +2563,41 @@ $md4: 479.98;
             left: 285px;
             top: 20px;
          }
+      }
+   }
+
+   .stats-block {
+
+      &__content {
+         padding: 50px 20px 50px;
+      }
+
+      &__title {
+         & sup {
+            right: 0px;
+         }
+      }
+
+      &__subtitle {
+         font-size: 16px;
+         line-height: 20px;
+      }
+   }
+
+   .stats-info {
+
+      &__items {
+         flex-direction: column;
+         align-items: center;
+         justify-content: space-between;
+      }
+
+      &__number {
+         margin: 0px 0px 20px 0px;
+      }
+
+      &__label {
+         margin: 0px 0px 20px 0px;
       }
    }
 }
@@ -3040,6 +3118,19 @@ $md4: 479.98;
       &__subtitle {
          font-size: 16px;
          line-height: 20px;
+      }
+   }
+
+   .stats-block {
+      &__title {
+         & sup {
+            top: -35px;
+            right: 10px;
+
+            & svg {
+               width: 50px;
+            }
+         }
       }
    }
 }
