@@ -81,45 +81,46 @@ const slider = document.querySelectorAll('.main-swiper');
 const rentSlider = document.querySelector('.rent-swiper');
 const objectSlider = document.querySelector('.object-swiper');
 
+if (slider.length > 0) {
+	const swiper = new Swiper('.main-swiper', {
+		slideClass: 'main-swiper__slide',
+		wrapperClass: 'main-swiper__wrapper',
+		slidesPerView: 'auto',
+		autoHeight: true,
+		spaceBetween: 100,
+		centeredSlides: true,
+		initialSlide: 1,
+		grabCursor: true,
+		loop: true,
+		speed: 300,
+		effect: 'coverflow',
+		coverflowEffect: {
+			rotate: 0,
+			scale: 0.85,
+			slideShadows: false,
+		},
+		autoplay: {
+			delay: 4000,
+			pauseOnMouseEnter: true,
+		},
+		navigation: {
+			nextEl: '.main-button__next',
+			prevEl: '.main-button__prev',
+		},
+		breakpoints: {
+			320: {
+				spaceBetween: 0
+			},
+			480: {
+				spaceBetween: 20
+			},
 
-// const swiper = new Swiper('.main-swiper', {
-// 	slideClass: 'main-swiper__slide',
-// 	wrapperClass: 'main-swiper__wrapper',
-// 	slidesPerView: 'auto',
-// 	autoHeight: true,
-// 	spaceBetween: 100,
-// 	centeredSlides: true,
-// 	initialSlide: 1,
-// 	grabCursor: true,
-// 	loop: true,
-// 	speed: 300,
-// 	effect: 'coverflow',
-// 	coverflowEffect: {
-// 		rotate: 0,
-// 		scale: 0.85,
-// 		slideShadows: false,
-// 	},
-// 	autoplay: {
-// 		delay: 4000,
-// 		pauseOnMouseEnter: true,
-// 	},
-// 	navigation: {
-// 		nextEl: '.main-button__next',
-// 		prevEl: '.main-button__prev',
-// 	},
-// 	breakpoints: {
-// 		320: {
-// 			spaceBetween: 0
-// 		},
-// 		480: {
-// 			spaceBetween: 20
-// 		},
-
-// 		991.98: {
-// 			spaceBetween: 100
-// 		},
-// 	},
-// });
+			991.98: {
+				spaceBetween: 100
+			},
+		},
+	});
+}
 
 if (rentSlider) {
 	const swiper = new Swiper('.rent-swiper', {
