@@ -299,6 +299,11 @@ $md4: 479.98;
          margin: 0px 0px 30px 0px;
       }
    }
+
+   .property-mainblock {
+      background: url('../img/property-managementpage/mainblock/background.jpg') 30% 50% no-repeat;
+      background-size: cover;
+   }
 }
 
 @media (max-width: 1110px) {
@@ -1176,6 +1181,16 @@ $md4: 479.98;
             font-size: 65px;
             line-height: 65px;
          }
+      }
+   }
+
+   .property-mainblock {
+      padding: 0px 0px 154px 0px;
+
+      background: url('../img/property-managementpage/mainblock/background.jpg') 35% 50% no-repeat;
+
+      &__content {
+         padding: 37.93px 0px 0px 0px;
       }
    }
 }
@@ -2785,6 +2800,12 @@ $md4: 479.98;
          }
       }
    }
+
+   .property-breadcrumbs {
+      &__list {
+         flex-direction: column;
+      }
+   }
 }
 
 @media (max-width: 392.98px) {
@@ -3001,6 +3022,24 @@ $md4: 479.98;
       &__title {
          font-size: 40px;
          line-height: 41px;
+      }
+   }
+
+   .property-mainblock {
+      padding: 0px 0px 154px 0px;
+
+      &__content {
+         padding: 37.93px 0px 0px 0px;
+      }
+
+      &__title {
+         font-size: 32px;
+         line-height: 30px;
+      }
+
+      &__subtitle {
+         font-size: 16px;
+         line-height: 20px;
       }
    }
 }

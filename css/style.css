@@ -3995,6 +3995,51 @@ li.facebook-icon img {
 	margin: 0px 50px 0px;
 }
 
+.property-mainblock {
+	position: relative;
+	padding: 0px 0px 204px 0px;
+	background: url("../img/property-managementpage/mainblock/background.jpg") 0% 60% no-repeat;
+	background-size: 150%;
+}
+.property-mainblock__gradient {
+	position: absolute;
+	width: 100%;
+	height: 650px;
+	bottom: 0;
+	background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.3)));
+	background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.3) 100%);
+}
+.property-mainblock__content {
+	padding: 37.93px 0px 0px 0px;
+}
+.property-mainblock__title {
+	margin: 0px 0px 27px 0px;
+}
+.property-mainblock__subtitle {
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0px 0px 44px 0px;
+}
+.property-mainblock__text {
+	max-width: 452px;
+	margin: 0px 0px 47px 0px;
+}
+
+.property-breadcrumbs {
+	margin: 0px 0px 50px 0px;
+}
+.property-breadcrumbs__list {
+	max-width: 350px;
+}
+
+.button-contact {
+	display: inline-block;
+}
+.button-contact_property-mainblock {
+	padding: 17px 25px;
+}
+
 .text-style {
 	font-size: 15px;
 	line-height: 24px;
@@ -4438,6 +4483,10 @@ a.bottom-link {
 		max-width: 342px;
 		width: 100%;
 		margin: 0px 0px 30px 0px;
+	}
+	.property-mainblock {
+		background: url("../img/property-managementpage/mainblock/background.jpg") 30% 50% no-repeat;
+		background-size: cover;
 	}
 }
 @media (max-width: 1110px) {
@@ -5173,6 +5222,13 @@ a.bottom-link {
 	.contact__title_buy-sell {
 		font-size: 65px;
 		line-height: 65px;
+	}
+	.property-mainblock {
+		padding: 0px 0px 154px 0px;
+		background: url("../img/property-managementpage/mainblock/background.jpg") 35% 50% no-repeat;
+	}
+	.property-mainblock__content {
+		padding: 37.93px 0px 0px 0px;
 	}
 }
 @media (max-width: 670px) {
@@ -6358,6 +6414,12 @@ a.bottom-link {
 	.object-items__links_buy-sell a.object-items__link2_buy-sell {
 		margin: 0px 40px 0px 0px;
 	}
+	.property-breadcrumbs__list {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
 }
 @media (max-width: 392.98px) {
 	.footer-bottom__checkbox {
@@ -6484,5 +6546,19 @@ a.bottom-link {
 	.benefits-block__title {
 		font-size: 40px;
 		line-height: 41px;
+	}
+	.property-mainblock {
+		padding: 0px 0px 154px 0px;
+	}
+	.property-mainblock__content {
+		padding: 37.93px 0px 0px 0px;
+	}
+	.property-mainblock__title {
+		font-size: 32px;
+		line-height: 30px;
+	}
+	.property-mainblock__subtitle {
+		font-size: 16px;
+		line-height: 20px;
 	}
 }
