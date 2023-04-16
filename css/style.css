@@ -4090,6 +4090,11 @@ li.facebook-icon img {
 	line-height: 24px;
 	color: rgb(46, 46, 46);
 }
+.stats-block__right-column {
+	-webkit-box-flex: 0;
+	    -ms-flex: 0 1 434px;
+	        flex: 0 1 434px;
+}
 
 .text-style {
 	font-size: 15px;
@@ -4858,6 +4863,11 @@ a.bottom-link {
 	}
 	.stats-block__background {
 		background-size: cover;
+	}
+	.stats-block__right-column {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 auto;
+		        flex: 0 1 auto;
 	}
 }
 @media (max-width: 940px) {

@@ -723,6 +723,10 @@ $md4: 479.98;
       &__background {
          background-size: cover;
       }
+
+      &__right-column {
+         flex: 0 1 auto;
+      }
    }
 }
 
