@@ -4180,6 +4180,20 @@ li.facebook-icon img {
 	background-color: rgba(255, 255, 255, 0.07);
 }
 
+.property-application {
+	top: 0;
+}
+.property-application__content {
+	padding: 238px 0px 44px 0px;
+}
+.property-application__title {
+	max-width: 765px;
+	margin: 0 auto 39px;
+}
+.property-application__textarea {
+	height: 114px;
+}
+
 .text-style {
 	font-size: 15px;
 	line-height: 24px;
@@ -4392,6 +4406,13 @@ a.bottom-link {
 }
 .form-label a {
 	color: rgba(255, 255, 255, 0.5);
+}
+
+.form-textarea {
+	font-size: 20px;
+	line-height: 32px;
+	resize: none;
+	margin: 0px auto 30px;
 }
 
 *:focus::-webkit-input-placeholder {

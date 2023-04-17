@@ -214,6 +214,15 @@ a.bottom-link {
 	}
 }
 
+.form-textarea {
+	font-size: 20px;
+	line-height: 32px;
+
+	resize: none;
+
+	margin: 0px auto 30px;
+}
+
 //<REMOVE PLACEHOLDER>============================================
 
 *:focus::-webkit-input-placeholder {

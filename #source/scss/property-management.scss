@@ -218,3 +218,23 @@
 }
 
 //</SERVICES-BLOCK>===========================================================
+//<APPLICATION>===========================================================
+
+.property-application {
+   top: 0;
+
+   &__content {
+      padding: 238px 0px 44px 0px;
+   }
+
+   &__title {
+      max-width: 765px;
+      margin: 0 auto 39px;
+   }
+
+   &__textarea {
+      height: 114px;
+   }
+}
+
+//</APPLICATION>===========================================================
