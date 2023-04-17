@@ -310,6 +310,24 @@ $md4: 479.98;
       background: url('../img/property-managementpage/mainblock/background.jpg') 30% 50% no-repeat;
       background-size: cover;
    }
+
+   .services-block {
+
+      &__left-column {
+         flex: 0 1 45%;
+      }
+
+      &__right-column {
+         flex: 0 1 45%;
+      }
+   }
+
+   .services-left {
+
+      &__title {
+         font-size: 67px;
+      }
+   }
 }
 
 @media (max-width: 1110px) {
@@ -726,6 +744,77 @@ $md4: 479.98;
 
       &__right-column {
          flex: 0 1 auto;
+      }
+   }
+
+   .services-block {
+
+      &__container {
+         max-width: 100%;
+         width: 100%;
+      }
+
+      &__content {
+         padding: 0px 0px 0px 0px;
+      }
+
+      &__columns {
+         flex-direction: column;
+         align-items: stretch;
+         justify-content: center;
+      }
+
+      &__left-column {
+         flex: 0 1 100%;
+         margin: 0px 30px 30px 30px;
+      }
+
+      &__right-column {
+         flex: 0 1 100%;
+
+         top: 0;
+
+         background-size: cover;
+      }
+   }
+
+   .services-left {
+
+      &__title {
+         max-width: 100%;
+      }
+
+      &__labels {
+         max-width: 100%;
+         width: 100%;
+      }
+
+      &__label {
+         padding: 8px 13px;
+
+         font-size: 18px;
+         line-height: 21px;
+      }
+
+      &__subtitle {
+         font-size: 26px;
+         line-height: 30px;
+      }
+
+      &__text {
+         font-size: 22px;
+         line-height: 30px;
+
+         max-width: 100%;
+
+         margin: 0px 0px 60px 0px;
+      }
+
+      &__button {
+         font-size: 22px;
+         line-height: 30px;
+
+         padding: 20px 34px;
       }
    }
 }
@@ -1212,6 +1301,12 @@ $md4: 479.98;
 
       &__content {
          padding: 37.93px 0px 0px 0px;
+      }
+   }
+
+   .services-block {
+      &__container {
+         padding: 0px 0px 0px 0px;
       }
    }
 }
@@ -2120,6 +2215,38 @@ $md4: 479.98;
          line-height: 76px;
       }
    }
+
+   .services-left {
+
+      &__label {
+         padding: 6px 11px;
+
+         font-size: 14px;
+         line-height: 21px;
+      }
+
+      &__subtitle {
+         font-size: 20px;
+         line-height: 24px;
+      }
+
+      &__text {
+         font-size: 15px;
+         line-height: 24px;
+
+         margin: 0px 0px 40px 0px;
+      }
+
+      &__button {
+         padding: 16px 0px;
+         width: 100%;
+
+         font-size: 15px;
+         line-height: 24px;
+
+         text-align: center;
+      }
+   }
 }
 
 @media (max-width: 528.98px) {
@@ -2604,6 +2731,13 @@ $md4: 479.98;
          margin: 0px 0px 20px 0px;
       }
    }
+
+   .services-block {
+
+      &__left-column {
+         margin: 0px 20px 30px;
+      }
+   }
 }
 
 @media (max-width: 425px) {
@@ -2888,6 +3022,13 @@ $md4: 479.98;
          flex-direction: column;
       }
    }
+
+   .services-left {
+
+      &__title {
+         font-size: 46px;
+      }
+   }
 }
 
 @media (max-width: 392.98px) {
@@ -3135,6 +3276,14 @@ $md4: 479.98;
                width: 50px;
             }
          }
+      }
+   }
+
+   .services-left {
+
+      &__title {
+         font-size: 38px;
+         line-height: 35px;
       }
    }
 }

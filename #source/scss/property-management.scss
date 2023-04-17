@@ -121,10 +121,25 @@
 //<SERVICES-BLOCK>===========================================================
 
 .services-block {
+   position: relative;
 
-   &__background {}
+   &__background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
 
-   &__content {}
+      background-image: url('../img/property-managementpage/our-services/A.png');
+      background-repeat: no-repeat;
+      background-size: 915px;
+      background-position: 100% 65%;
+   }
+
+   &__content {
+      position: relative;
+      padding: 88px 0px 160px 0px;
+   }
 
    &__columns {
       @include flexbox();
@@ -136,12 +151,16 @@
    }
 
    &__right-column {
+      position: relative;
+      top: -40px;
+      padding: 0px 0px 615px 0px;
+
       flex: 0 1 38%;
 
       background-image: url('../img/property-managementpage/our-services/image.jpg');
       background-repeat: no-repeat;
-      background-size: 170%;
-      background-position: center;
+      background-size: 180%;
+      background-position: 60% 92%;
    }
 }
 
@@ -153,8 +172,6 @@
 
       margin: 0px 0px 52px 0px;
    }
-
-   &__content {}
 
    &__labels {
       max-width: 300px;
@@ -199,6 +216,5 @@
       background-color: rgba(255, 255, 255, 0.07);
    }
 }
-
 
 //</SERVICES-BLOCK>===========================================================

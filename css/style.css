@@ -4096,6 +4096,24 @@ li.facebook-icon img {
 	        flex: 0 1 434px;
 }
 
+.services-block {
+	position: relative;
+}
+.services-block__background {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-image: url("../img/property-managementpage/our-services/A.png");
+	background-repeat: no-repeat;
+	background-size: 915px;
+	background-position: 100% 65%;
+}
+.services-block__content {
+	position: relative;
+	padding: 88px 0px 160px 0px;
+}
 .services-block__columns {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -4110,13 +4128,16 @@ li.facebook-icon img {
 	        flex: 0 1 57%;
 }
 .services-block__right-column {
+	position: relative;
+	top: -40px;
+	padding: 0px 0px 615px 0px;
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 1 38%;
 	        flex: 0 1 38%;
 	background-image: url("../img/property-managementpage/our-services/image.jpg");
 	background-repeat: no-repeat;
-	background-size: 170%;
-	background-position: center;
+	background-size: 180%;
+	background-position: 60% 92%;
 }
 
 .services-left__title {
@@ -4610,6 +4631,19 @@ a.bottom-link {
 		background: url("../img/property-managementpage/mainblock/background.jpg") 30% 50% no-repeat;
 		background-size: cover;
 	}
+	.services-block__left-column {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 45%;
+		        flex: 0 1 45%;
+	}
+	.services-block__right-column {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 45%;
+		        flex: 0 1 45%;
+	}
+	.services-left__title {
+		font-size: 67px;
+	}
 }
 @media (max-width: 1110px) {
 	.object-bottom__left2 {
@@ -4931,6 +4965,65 @@ a.bottom-link {
 		-webkit-box-flex: 0;
 		    -ms-flex: 0 1 auto;
 		        flex: 0 1 auto;
+	}
+	.services-block__container {
+		max-width: 100%;
+		width: 100%;
+	}
+	.services-block__content {
+		padding: 0px 0px 0px 0px;
+	}
+	.services-block__columns {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-align: stretch;
+		    -ms-flex-align: stretch;
+		        align-items: stretch;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.services-block__left-column {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 100%;
+		        flex: 0 1 100%;
+		margin: 0px 30px 30px 30px;
+	}
+	.services-block__right-column {
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 100%;
+		        flex: 0 1 100%;
+		top: 0;
+		background-size: cover;
+	}
+	.services-left__title {
+		max-width: 100%;
+	}
+	.services-left__labels {
+		max-width: 100%;
+		width: 100%;
+	}
+	.services-left__label {
+		padding: 8px 13px;
+		font-size: 18px;
+		line-height: 21px;
+	}
+	.services-left__subtitle {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.services-left__text {
+		font-size: 22px;
+		line-height: 30px;
+		max-width: 100%;
+		margin: 0px 0px 60px 0px;
+	}
+	.services-left__button {
+		font-size: 22px;
+		line-height: 30px;
+		padding: 20px 34px;
 	}
 }
 @media (max-width: 940px) {
@@ -5368,6 +5461,9 @@ a.bottom-link {
 	}
 	.property-mainblock__content {
 		padding: 37.93px 0px 0px 0px;
+	}
+	.services-block__container {
+		padding: 0px 0px 0px 0px;
 	}
 }
 @media (max-width: 670px) {
@@ -6066,6 +6162,27 @@ a.bottom-link {
 		font-size: 85px;
 		line-height: 76px;
 	}
+	.services-left__label {
+		padding: 6px 11px;
+		font-size: 14px;
+		line-height: 21px;
+	}
+	.services-left__subtitle {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.services-left__text {
+		font-size: 15px;
+		line-height: 24px;
+		margin: 0px 0px 40px 0px;
+	}
+	.services-left__button {
+		padding: 16px 0px;
+		width: 100%;
+		font-size: 15px;
+		line-height: 24px;
+		text-align: center;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -6402,6 +6519,9 @@ a.bottom-link {
 	.stats-info__label {
 		margin: 0px 0px 20px 0px;
 	}
+	.services-block__left-column {
+		margin: 0px 20px 30px;
+	}
 }
 @media (max-width: 425px) {
 	.mainblock {
@@ -6604,6 +6724,9 @@ a.bottom-link {
 		    -ms-flex-direction: column;
 		        flex-direction: column;
 	}
+	.services-left__title {
+		font-size: 46px;
+	}
 }
 @media (max-width: 392.98px) {
 	.footer-bottom__checkbox {
@@ -6751,5 +6874,9 @@ a.bottom-link {
 	}
 	.stats-block__title sup svg {
 		width: 50px;
+	}
+	.services-left__title {
+		font-size: 38px;
+		line-height: 35px;
 	}
 }
