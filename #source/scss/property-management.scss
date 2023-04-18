@@ -237,4 +237,60 @@
    }
 }
 
+.property-items {
+   &__links {
+      margin: -10px 55px 0px;
+      @include flexbox();
+      align-items: center;
+      justify-content: space-between;
+      font-size: 20px;
+      line-height: 24px;
+
+      a {
+         position: relative;
+         padding: 0px 0px 8px 0px;
+         @include anim (0.5s, 0s);
+      }
+
+      a.property-items__link1 {
+         margin: 0px 0px 0px 25px;
+         border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+         &::before {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            top: calc(50% - 10px);
+            left: -25px;
+            background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+         }
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+         }
+      }
+
+      a.property-items__link2 {
+         margin: 0px 40px 0px 0px;
+         border-bottom: 1px solid rgba(255, 255, 255, 0);
+
+         &::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 15px;
+            top: calc(50% - 10px);
+            @include rotate(180deg);
+            margin: 0px 0px 0px 17px;
+            background: url('../img/aboutpage/expertise/arrow.svg') no-repeat;
+         }
+
+         &:hover {
+            border-bottom: 1px solid rgba(255, 255, 255, 1);
+         }
+      }
+   }
+}
+
 //</APPLICATION>===========================================================

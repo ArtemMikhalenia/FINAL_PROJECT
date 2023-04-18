@@ -817,6 +817,20 @@ $md4: 479.98;
          padding: 20px 34px;
       }
    }
+
+   .property-items {
+      &__links {
+         flex-direction: column;
+
+         a.property-items__link1 {
+            margin: 0px 0px 20px 0px;
+         }
+
+         a.property-items__link2 {
+            margin: 0px 0px 0px 0px;
+         }
+      }
+   }
 }
 
 @media (max-width: 940px) {
@@ -1307,6 +1321,13 @@ $md4: 479.98;
    .services-block {
       &__container {
          padding: 0px 0px 0px 0px;
+      }
+   }
+
+   .property-application {
+
+      &__content {
+         padding: 138px 0px 44px 0px;
       }
    }
 }
@@ -2247,6 +2268,23 @@ $md4: 479.98;
          text-align: center;
       }
    }
+
+   .property-items {
+      &__links {
+         font-size: 13px;
+         line-height: 20px;
+      }
+   }
+
+   .application-form {
+      margin: 0px 0px 129px 0px;
+   }
+
+   .property-application {
+      &__content {
+         padding: 88px 0px 44px 0px;
+      }
+   }
 }
 
 @media (max-width: 528.98px) {
@@ -3027,6 +3065,28 @@ $md4: 479.98;
 
       &__title {
          font-size: 46px;
+      }
+   }
+
+   .property-items {
+      &__links {
+         margin: 0px 10px 0px;
+
+         a.property-items__link1 {
+
+            &::before {
+               top: calc(50% - 12px);
+               left: -15px;
+            }
+         }
+
+         a.property-items__link2 {
+
+            &::after {
+               top: 10%;
+               margin: 0px 0px 0px 7px;
+            }
+         }
       }
    }
 }
