@@ -1334,6 +1334,12 @@ $md4: 479.98;
          padding: 138px 0px 44px 0px;
       }
    }
+
+   .concierge-mainblock {
+      &__content {
+         padding: 37.93px 0px 0px 0px;
+      }
+   }
 }
 
 @media (max-width: 670px) {
@@ -2287,6 +2293,12 @@ $md4: 479.98;
    .property-application {
       &__content {
          padding: 88px 0px 44px 0px;
+      }
+   }
+
+   .concierge-mainblock {
+      &__title {
+         max-width: 100%;
       }
    }
 }
@@ -3348,6 +3360,19 @@ $md4: 479.98;
       &__title {
          font-size: 38px;
          line-height: 35px;
+      }
+   }
+
+   .concierge-mainblock {
+      &__content {
+         padding: 37.93px 0px 0px 0px;
+      }
+
+      &__title {
+         max-width: 100%;
+         
+         font-size: 38px;
+         line-height: 40px;
       }
    }
 }

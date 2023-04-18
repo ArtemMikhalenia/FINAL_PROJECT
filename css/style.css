@@ -5588,6 +5588,9 @@ a.bottom-link {
 	.property-application__content {
 		padding: 138px 0px 44px 0px;
 	}
+	.concierge-mainblock__content {
+		padding: 37.93px 0px 0px 0px;
+	}
 }
 @media (max-width: 670px) {
 	.object-items__links_buy-sell {
@@ -6316,6 +6319,9 @@ a.bottom-link {
 	.property-application__content {
 		padding: 88px 0px 44px 0px;
 	}
+	.concierge-mainblock__title {
+		max-width: 100%;
+	}
 }
 @media (max-width: 528.98px) {
 	.quote sup {
@@ -7022,5 +7028,13 @@ a.bottom-link {
 	.services-left__title {
 		font-size: 38px;
 		line-height: 35px;
+	}
+	.concierge-mainblock__content {
+		padding: 37.93px 0px 0px 0px;
+	}
+	.concierge-mainblock__title {
+		max-width: 100%;
+		font-size: 38px;
+		line-height: 40px;
 	}
 }
