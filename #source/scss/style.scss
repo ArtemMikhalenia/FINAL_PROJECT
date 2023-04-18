@@ -291,7 +291,7 @@ body {
 		letter-spacing: -0.02em;
 		margin: 0px 0px 28px 0px;
 
-		&_black{
+		&_black {
 			color: rgba(46, 46, 46, 1);
 		}
 	}
@@ -301,7 +301,7 @@ body {
 		line-height: 14px;
 		text-align: center;
 
-		&_black{
+		&_black {
 			color: rgba(46, 46, 46, 1);
 		}
 	}
@@ -1092,7 +1092,8 @@ body {
 @import 'rentpage.scss';
 @import "apartmentpage.scss";
 @import "buy-sell.scss";
-@import "property-management";
+@import "property-management.scss";
+@import "concierge-services.scss";
 
 //</PAGES>==============================================================================================
 //<MEDIA>====================================================================================================

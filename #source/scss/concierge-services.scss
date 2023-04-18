@@ -1,0 +1,40 @@
+//<CONCIERGE-MAINBLOCK>========================================
+
+.concierge-mainblock {
+   padding: 0px 0px 223px 0px;
+
+   background: url('../img/concierge-services/mainblock/background.jpg') 0% 60% no-repeat;
+   background-size: 125%;
+
+   &__content {
+      padding: 37.93px 0px 0px 0px;
+   }
+
+   &__text {
+      max-width: 561px;
+
+      margin: 0px 0px 106px 0px;
+   }
+}
+
+.concierge-breadcrumbs {
+   margin: 0px 0px 107px 0px;
+
+   &__list {
+      max-width: 220px;
+   }
+}
+
+
+
+.button-contact {
+   display: inline-block;
+
+   &_concierge-mainblock {
+      padding: 17px 25px;
+   }
+}
+
+
+
+//</CONCIERGE-MAINBLOCK>=======================================
