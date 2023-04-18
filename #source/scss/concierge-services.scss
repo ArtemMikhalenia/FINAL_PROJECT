@@ -33,6 +33,32 @@
    }
 }
 
-
-
 //</CONCIERGE-MAINBLOCK>=======================================
+//<SERVICES-BLOCK-CONCIERGE>===================================
+
+.services-block {
+
+   &__right-column {
+
+      &_concierge {
+         background-image: url('../img/concierge-services/services-block/image.jpg');
+         background-repeat: no-repeat;
+         background-size: 240%;
+         background-position: 75% 75%;
+      }
+   }
+}
+
+.stats-block {
+   &__title {
+      &_concierge {
+         & sup {
+            right: -65px;
+         }
+      }
+   }
+}
+
+
+
+//</SERVICES-BLOCK-CONCIERGE>==================================

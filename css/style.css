@@ -4139,6 +4139,9 @@ li.facebook-icon img {
 	background-size: 180%;
 	background-position: 60% 92%;
 }
+.services-block__right-column_concierge {
+	top: 0px;
+}
 
 .services-left__title {
 	max-width: 682px;
@@ -4146,7 +4149,7 @@ li.facebook-icon img {
 	margin: 0px 0px 52px 0px;
 }
 .services-left__labels {
-	max-width: 300px;
+	max-width: 310px;
 	width: 100%;
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -4154,6 +4157,9 @@ li.facebook-icon img {
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
 	margin: 0px 0px 45px 0px;
+}
+.services-left__labels_concierge {
+	margin: 0px 0px 32px 0px;
 }
 .services-left__label {
 	padding: 6px 11px;
@@ -4172,6 +4178,10 @@ li.facebook-icon img {
 .services-left__text {
 	max-width: 473px;
 	margin: 0px 0px 80px 0px;
+}
+.services-left__text_concierge {
+	max-width: 362px;
+	margin: 0px 0px 68px 0px;
 }
 .services-left__button {
 	display: inline-block;
@@ -4276,6 +4286,17 @@ li.facebook-icon img {
 }
 .button-contact_concierge-mainblock {
 	padding: 17px 25px;
+}
+
+.services-block__right-column_concierge {
+	background-image: url("../img/concierge-services/services-block/image.jpg");
+	background-repeat: no-repeat;
+	background-size: 240%;
+	background-position: 75% 75%;
+}
+
+.stats-block__title_concierge sup {
+	right: -65px;
 }
 
 .text-style {
@@ -6524,6 +6545,9 @@ a.bottom-link {
 	.stats-block__title sup svg {
 		width: 60px;
 	}
+	.stats-block__title_concierge sup {
+		right: -40px;
+	}
 }
 @media (max-width: 479.98px) {
 	.mainblock__title {
@@ -6635,6 +6659,9 @@ a.bottom-link {
 	}
 	.stats-block__title sup {
 		right: 0px;
+	}
+	.stats-block__title_concierge sup {
+		right: -40px;
 	}
 	.stats-block__subtitle {
 		font-size: 16px;
@@ -7024,6 +7051,9 @@ a.bottom-link {
 	}
 	.stats-block__title sup svg {
 		width: 50px;
+	}
+	.stats-block__title_concierge sup {
+		right: -35px;
 	}
 	.services-left__title {
 		font-size: 38px;

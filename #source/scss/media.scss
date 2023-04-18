@@ -2588,6 +2588,12 @@ $md4: 479.98;
                width: 60px;
             }
          }
+
+         &_concierge {
+            & sup {
+               right: -40px;
+            }
+         }
       }
    }
 }
@@ -2760,6 +2766,12 @@ $md4: 479.98;
       &__title {
          & sup {
             right: 0px;
+         }
+
+         &_concierge {
+            & sup {
+               right: -40px;
+            }
          }
       }
 
@@ -3352,6 +3364,12 @@ $md4: 479.98;
                width: 50px;
             }
          }
+
+         &_concierge {
+            & sup {
+               right: -35px;
+            }
+         }
       }
    }
 
@@ -3370,7 +3388,7 @@ $md4: 479.98;
 
       &__title {
          max-width: 100%;
-         
+
          font-size: 38px;
          line-height: 40px;
       }
