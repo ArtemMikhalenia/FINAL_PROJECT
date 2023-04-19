@@ -835,6 +835,13 @@ $md4: 479.98;
          }
       }
    }
+
+   .expert-application {
+
+      &__content {
+         padding: 349px 0px 44px 0px;
+      }
+   }
 }
 
 @media (max-width: 940px) {
@@ -1338,6 +1345,32 @@ $md4: 479.98;
    .concierge-mainblock {
       &__content {
          padding: 37.93px 0px 0px 0px;
+      }
+   }
+
+   .expert-mainblock {
+      padding: 0px 0px 344px 0px;
+
+      background-position: center;
+      background-size: cover;
+
+      &__gradient2 {
+         display: none;
+      }
+
+      &__content {
+         padding: 37.93px 0px 0px 0px;
+      }
+
+      &__title {
+         font-size: 66px;
+      }
+   }
+
+   .expert-breadcrumbs {
+
+      &__list {
+         margin: 0px 0px 120px 0px;
       }
    }
 }
@@ -2804,6 +2837,13 @@ $md4: 479.98;
          margin: 0px 20px 30px;
       }
    }
+
+   .expert-application {
+
+      &__content {
+         padding: 600px 0px 44px 0px;
+      }
+   }
 }
 
 @media (max-width: 425px) {
@@ -3391,6 +3431,16 @@ $md4: 479.98;
 
          font-size: 38px;
          line-height: 40px;
+      }
+   }
+
+   .expert-mainblock {
+      &__content {
+         padding: 37.93px 0px 0px 0px;
+      }
+
+      &__title {
+         font-size: 42px;
       }
    }
 }
