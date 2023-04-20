@@ -3502,6 +3502,12 @@ $md4: 479.98;
       }
    }
 
+   .expert-application {
+      &__title {
+         max-width: 100%;
+      }
+   }
+
    .error-mainblock {
       &__title {
          font-size: 40px;

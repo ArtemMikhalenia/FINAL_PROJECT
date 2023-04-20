@@ -1,0 +1,77 @@
+// .commission-wrapper {
+//    background-color: rgba(21, 21, 21, 1);
+// }
+
+.commission-mainblock {
+   background-image: url('../img/commissionpage/A.png');
+   background-repeat: no-repeat;
+   background-position: right;
+   background-size: auto;
+
+   background-color: rgba(21, 21, 21, 1);
+
+   &__content {
+      padding: 37.93px 0px 44px 0px;
+   }
+
+   &__title {
+      margin: 0px 0px 177px 0px;
+   }
+}
+
+.commission-breadcrumbs {
+
+   &__list {
+      max-width: 210px;
+   }
+}
+
+.commission-table {
+   width: 100%;
+   margin: 0px 0px 290px 0px;
+
+   border-spacing: 0px 25px;
+
+   &__header {
+      font-size: 20px;
+      line-height: 32px;
+      font-weight: 400;
+
+      padding: 0px 0px 40px 0px;
+   }
+}
+
+.first-column,
+.second-column {
+   text-align: left;
+}
+
+.first-column {
+   width: 267px;
+}
+
+.second-column {
+   width: 93px;
+}
+
+.last-column {
+   text-align: right;
+   width: 849px;
+}
+
+.commission-link {
+   display: inline-block;
+
+   font-size: 20px;
+   line-height: 24px;
+
+   padding: 0px 0px 8px 0px;
+
+   border-bottom: 1px solid rgba(255, 255, 255, 1);
+
+   @include anim(0.5s, 0s);
+
+   &:hover {
+      border-bottom: 1px solid rgba(255, 255, 255, 0);
+   }
+}
