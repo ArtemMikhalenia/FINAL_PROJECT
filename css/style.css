@@ -4483,6 +4483,67 @@ li.facebook-icon img {
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
+.table-line_left {
+	position: relative;
+}
+.table-line_left::before {
+	content: "";
+	position: absolute;
+	width: 80%;
+	height: 1px;
+	bottom: 0;
+	left: 15%;
+	background-color: rgb(51, 51, 51);
+}
+.table-line_left_width {
+	position: relative;
+}
+.table-line_left_width::before {
+	content: "";
+	position: absolute;
+	width: 55%;
+	height: 1px;
+	bottom: 0;
+	left: 40%;
+	background-color: rgb(51, 51, 51);
+}
+.table-line_right {
+	position: relative;
+}
+.table-line_right::before {
+	content: "";
+	position: absolute;
+	width: 60%;
+	height: 1px;
+	bottom: 0;
+	left: -3%;
+	background-color: rgb(51, 51, 51);
+}
+.table-line_right_center {
+	position: relative;
+}
+.table-line_right_center::before {
+	content: "";
+	position: absolute;
+	width: 88%;
+	height: 1px;
+	bottom: 0;
+	left: -3%;
+	background-color: rgb(51, 51, 51);
+}
+.table-line_right_bottom {
+	position: relative;
+}
+.table-line_right_bottom::before {
+	content: "";
+	position: absolute;
+	width: 48%;
+	height: 1px;
+	bottom: 0;
+	left: -3%;
+	background-color: rgb(51, 51, 51);
+}
+
 .text-style {
 	font-size: 15px;
 	line-height: 24px;
@@ -5370,6 +5431,12 @@ a.bottom-link {
 	}
 	.error-mainblock__title sup svg {
 		width: 70px;
+	}
+	.commission-mainblock__title {
+		margin: 0px 0px 100px 0px;
+	}
+	.commission-table {
+		margin: 0px 0px 150px 0px;
 	}
 }
 @media (max-width: 940px) {

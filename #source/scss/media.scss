@@ -870,6 +870,16 @@ $md4: 479.98;
          }
       }
    }
+
+   .commission-mainblock {
+      &__title {
+         margin: 0px 0px 100px 0px;
+      }
+   }
+
+   .commission-table {
+      margin: 0px 0px 150px 0px;
+   }
 }
 
 @media (max-width: 940px) {
