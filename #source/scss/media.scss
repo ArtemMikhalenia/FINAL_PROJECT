@@ -2480,11 +2480,16 @@ $md4: 479.98;
    .commission-link {
       text-align: center;
 
-      a {
+      & a {
+         position: relative;
          font-size: 13px;
          line-height: 20px;
 
          padding: 0px 0px 4px 0px;
+      }
+
+      & svg {
+         height: 9px;
       }
    }
 }
