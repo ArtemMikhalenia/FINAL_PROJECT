@@ -4439,6 +4439,10 @@ li.facebook-icon img {
 	max-width: 210px;
 }
 
+.commission-table-container {
+	overflow-x: scroll;
+}
+
 .commission-table {
 	width: 100%;
 	margin: 0px 0px 290px 0px;
@@ -4469,7 +4473,7 @@ li.facebook-icon img {
 	width: 849px;
 }
 
-.commission-link {
+.commission-link a {
 	display: inline-block;
 	font-size: 20px;
 	line-height: 24px;
@@ -4479,7 +4483,7 @@ li.facebook-icon img {
 	-o-transition: all 0.5s ease 0s;
 	transition: all 0.5s ease 0s;
 }
-.commission-link:hover {
+.commission-link a:hover {
 	border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 
@@ -5432,11 +5436,17 @@ a.bottom-link {
 	.error-mainblock__title sup svg {
 		width: 70px;
 	}
+	.commission-mainblock {
+		background-position: center;
+	}
 	.commission-mainblock__title {
 		margin: 0px 0px 100px 0px;
 	}
 	.commission-table {
+		display: block;
+		width: 750px;
 		margin: 0px 0px 150px 0px;
+		overflow: scroll;
 	}
 }
 @media (max-width: 940px) {
@@ -6649,6 +6659,56 @@ a.bottom-link {
 	.error-mainblock__title sup {
 		top: -35px;
 		right: -30px;
+	}
+	.commission-mainblock__title {
+		margin: 0px 0px 60px 0px;
+	}
+	.commission-table {
+		margin: 0px 0px 100px 0px;
+		width: 605px;
+		border-spacing: 0px 15px;
+	}
+	.commission-table__header {
+		font-size: 16px;
+		line-height: 24px;
+		padding: 0px 0px 20px 0px;
+	}
+	.commission-table__row,
+.commission-table .table-line,
+.commission-table .table-value,
+.commission-table .font-fix {
+		font-size: 12px;
+		line-height: 20px;
+	}
+	.first-column {
+		width: 150px;
+	}
+	.last-column {
+		width: 365px;
+	}
+	.table-line_left::before {
+		width: 100%;
+		left: 0;
+	}
+	.table-line_left_width::before {
+		width: 100%;
+		left: 0;
+	}
+	.table-line_right::before {
+		width: 100%;
+		left: 0;
+	}
+	.table-line_right_center::before, .table-line_right_bottom::before {
+		width: 100%;
+		left: 0;
+	}
+	.commission-link {
+		text-align: center;
+	}
+	.commission-link a {
+		font-size: 13px;
+		line-height: 20px;
+		padding: 0px 0px 4px 0px;
 	}
 }
 @media (max-width: 528.98px) {

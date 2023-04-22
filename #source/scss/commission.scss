@@ -26,6 +26,10 @@
    }
 }
 
+.commission-table-container {
+   overflow-x: scroll;
+}
+
 .commission-table {
    width: 100%;
    margin: 0px 0px 290px 0px;
@@ -60,19 +64,21 @@
 }
 
 .commission-link {
-   display: inline-block;
+   a {
+      display: inline-block;
 
-   font-size: 20px;
-   line-height: 24px;
+      font-size: 20px;
+      line-height: 24px;
 
-   padding: 0px 0px 8px 0px;
+      padding: 0px 0px 8px 0px;
 
-   border-bottom: 1px solid rgba(255, 255, 255, 1);
+      border-bottom: 1px solid rgba(255, 255, 255, 1);
 
-   @include anim(0.5s, 0s);
+      @include anim(0.5s, 0s);
 
-   &:hover {
-      border-bottom: 1px solid rgba(255, 255, 255, 0);
+      &:hover {
+         border-bottom: 1px solid rgba(255, 255, 255, 0);
+      }
    }
 }
 

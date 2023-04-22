@@ -872,13 +872,19 @@ $md4: 479.98;
    }
 
    .commission-mainblock {
+      background-position: center;
+
       &__title {
          margin: 0px 0px 100px 0px;
       }
    }
 
    .commission-table {
+      display: block;
+      width: 750px;
       margin: 0px 0px 150px 0px;
+
+      overflow: scroll;
    }
 }
 
@@ -2400,6 +2406,85 @@ $md4: 479.98;
             top: -35px;
             right: -30px;
          }
+      }
+   }
+
+   .commission-mainblock {
+      &__title {
+         margin: 0px 0px 60px 0px;
+      }
+   }
+
+   .commission-table {
+      margin: 0px 0px 100px 0px;
+      width: 605px;
+
+      border-spacing: 0px 15px;
+
+      &__header {
+         font-size: 16px;
+         line-height: 24px;
+
+         padding: 0px 0px 20px 0px;
+      }
+
+      &__row,
+      .table-line,
+      .table-value,
+      .font-fix {
+         font-size: 12px;
+         line-height: 20px;
+      }
+   }
+
+   .first-column {
+      width: 150px;
+   }
+
+   .last-column {
+      width: 365px;
+   }
+
+   .table-line {
+      &_left {
+         &::before {
+            width: 100%;
+            left: 0;
+         }
+
+         &_width {
+            &::before {
+               width: 100%;
+               left: 0;
+            }
+         }
+      }
+
+      &_right {
+
+         &::before {
+            width: 100%;
+            left: 0;
+         }
+
+         &_center,
+         &_bottom {
+            &::before {
+               width: 100%;
+               left: 0;
+            }
+         }
+      }
+   }
+
+   .commission-link {
+      text-align: center;
+
+      a {
+         font-size: 13px;
+         line-height: 20px;
+
+         padding: 0px 0px 4px 0px;
       }
    }
 }
