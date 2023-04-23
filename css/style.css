@@ -462,6 +462,7 @@ body.lock {
 	font-size: 12px;
 	line-height: 100%;
 	z-index: 1;
+	color: rgb(255, 255, 255);
 }
 .header__language._active {
 	padding: 6px 0px 6px 0px;
