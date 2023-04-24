@@ -6,7 +6,6 @@
 		align-items: center;
 		justify-content: space-between;
 		padding: 43px 0px 0px 0px;
-		z-index: 10;
 	}
 
 	&__rightside {
@@ -143,17 +142,15 @@ li.facebook-icon img {
 
 .menu {
 
-	&__icon {}
-
 	&__body {
 		position: fixed;
-		top: 0%;
+		top: 0;
 		right: -200%;
 		width: 525px;
 		height: 100%;
 		overflow: auto;
 		background-color: rgba(26, 26, 26, 1);
-		transition: all 0.5s ease-in-out 0s;
+		transition: all 0.5s ease 0s;
 		padding: 184px 0px 0px 71px;
 
 		&.active {

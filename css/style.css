@@ -375,7 +375,6 @@ body.lock {
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
 	padding: 43px 0px 0px 0px;
-	z-index: 10;
 }
 .header__rightside {
 	display: -webkit-box;
@@ -514,15 +513,15 @@ li.facebook-icon img {
 
 .menu__body {
 	position: fixed;
-	top: 0%;
+	top: 0;
 	right: -200%;
 	width: 525px;
 	height: 100%;
 	overflow: auto;
 	background-color: rgb(26, 26, 26);
-	-webkit-transition: all 0.5s ease-in-out 0s;
-	-o-transition: all 0.5s ease-in-out 0s;
-	transition: all 0.5s ease-in-out 0s;
+	-webkit-transition: all 0.5s ease 0s;
+	-o-transition: all 0.5s ease 0s;
+	transition: all 0.5s ease 0s;
 	padding: 184px 0px 0px 71px;
 }
 .menu__body.active {
@@ -1839,7 +1838,7 @@ li.facebook-icon img {
 	position: absolute;
 	width: 8px;
 	height: 15px;
-	top: calc(50% - 5px);
+	top: calc(50% - 6px);
 	margin: 0px 0px 0px 12px;
 	background: url("../img/mainpage/contact/arrow.svg") no-repeat;
 }
@@ -3226,7 +3225,7 @@ li.facebook-icon img {
 	margin: 0px 0px 13px 0px;
 }
 .apartment-mainblock__location::before {
-	content: url("/img/apartmentpage/mainblock/location-icon.svg");
+	content: url("../img/apartmentpage/mainblock/location-icon.svg");
 	position: relative;
 	top: 3px;
 	margin: 0px 11px 0px 0px;
@@ -4742,7 +4741,7 @@ a.bottom-link {
 	width: 20px;
 	height: 20px;
 	border-radius: 6px;
-	top: 1px;
+	top: 3px;
 	left: -25px;
 }
 .form-label::before {
@@ -4811,6 +4810,9 @@ a.bottom-link {
 	.office-left__link {
 		margin: 0px 0px 28px 0px;
 	}
+	.management__right-column {
+		left: -60px;
+	}
 	.object-items__top {
 		margin: 0 15px;
 	}
@@ -4840,9 +4842,6 @@ a.bottom-link {
 	}
 	.office-left__title {
 		line-height: 90px;
-	}
-	.management__right-column {
-		left: -100px;
 	}
 	.why__background {
 		background-size: 350px;
@@ -5034,7 +5033,15 @@ a.bottom-link {
 		width: 80px;
 	}
 }
+@media (max-width: 1190px) {
+	.management__right-column {
+		left: -140px;
+	}
+}
 @media (max-width: 1110px) {
+	.management__right-column {
+		left: -250px;
+	}
 	.object-bottom__left2 {
 		margin: 0px 0px 30px 0px;
 	}
@@ -7295,7 +7302,7 @@ a.bottom-link {
 		top: 3px;
 	}
 	.footer-form__label::before, .footer-form__label::after {
-		top: 0;
+		top: 1px;
 	}
 }
 @media (max-width: 375.98px) {
